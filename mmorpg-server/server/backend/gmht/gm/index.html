@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script src="static/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="static/selectpage/selectpage.js?v=2" ></script>
+	<!--<script type="text/javascript" src="static/selectpage/b.selectpage.js" ></script>-->
+	<script src="static/layer/layer.js"></script>
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/selectpage/selectpage.bootstrap3.css" type="text/css">
+	<link rel="stylesheet" href="static/font-awesome-4.7.0/css/font-awesome.min.css"  type="text/css">
+    <style>
+    main{ 
+		width:100%;
+        max-width:700px;
+        position:fixed;
+        left:50%;
+        transform: translate(-50%,0);
+        height:100%;
+        overflow-y:auto;
+        overflow-x: hidden;
+    }
+	main::-webkit-scrollbar {
+		display: none;
+	}
+	.tip_span:{
+		color:#09fa03;
+	}
+    @media screen and (max-width: 700px) {
+        main {
+            width:98%;
+        }
+    }
+    </style>
+</head>
+<body>
+<main class="main-content">
+<div style="height:2rem;line-height:2rem;display:block;"></div>
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h4 class="panel-title gamename"></h4>
+	</div>
+</div>
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h4 class="panel-title namecol"></h4>
+	</div>
+    <div class="panel-body">
+		<div class="row form-group">
+			<div class="col col-md-12">
+				<select class="form-control" id="qid" name="qid"></select>
+			</div>
+		</div>
+		<div class="row form-group">
+			<div class="col col-md-12">
+				<input type="text" class="form-control" id="uid" name="uid" placeholder="" value="">
+			</div>
+		</div>
+		<div class="row form-group">
+			<div class="col col-md-12">
+				<input type="text" class="form-control" id="vippswd" name="vippswd" placeholder="请输入后台密码" value="">
+			</div>
+		</div>
+    </div>
+</div>
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h4 class="panel-title">发送物品</h4>
+	</div>
+    <div class="panel-body">
+		<div class="row form-group">
+			<div class="col col-md-12">
+				<input type="text" class="form-control" id="itemid" name="itemid" placeholder="请选择或搜索物品">
+			</div>
+		</div>
+		<div class="row form-group">
+			<div class="col col-md-12">
+				<input type="number" class="form-control" id="itemnum" name="itemnum" min="1" max="1" placeholder="请输入数量" value="1">
+			</div>
+		</div>
+		<div class="row form-group">
+			<div class="col col-md-12">
+				<button class="btn btn-warning send2btn" style="width:100%">发送物品</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="panel">
+	<div class="panel-body">
+		<h4 class="text-center text-danger" id="copyright"></h4>
+	</div>
+</div>
+</main>
+<script>
+	var items=[];
+	var qid=$('#qid').val();
+	var vippswd=$('#vippswd').val();
+	$('#qid').on('change',function(){
+		qid=$(this).val();
+	})
+	$('#vippswd').on('change',function(){
+		vippswd=$(this).val();
+	})
+	$(document).ready(function(){
+		$.get('getitems.php', function (text, status) {
+			$(document).attr("title",text.gamename + '-玩家后台');
+			$('.gamename').html(text.gamename + '玩家物品后台');
+			$('.namecol').html(text.namecol);
+			$('#copyright').html(text.copyright);
+			$('#uid').attr('placeholder','请输入' + text.namecol);
+			var html='';
+			for(x in text.qus){
+				html='<option value="'+text.qus[x]["id"]+'">'+text.qus[x]["name"]+'</option>';
+				$('#qid').append(html);
+			}
+			qid=$('#qid').val();
+			for(x in text.items){
+				items.push(text.items[x]);
+			}
+		}, 'json');
+		$('#itemid').selectPage({
+			pageSize : 10,
+			showField : 'name',
+			keyField : 'id',
+			data : items
+		});
+	});
+	$('.send2btn').on('click',function(){
+		var user=$.trim($('#uid').val());
+		if(user=='')
+		{
+			layer.alert('请输入角色名', {icon: 2});
+			$('#uid').focus();
+			return false;
+		}
+		if(vippswd==''){
+			layer.alert('请输入后台密码', {icon: 2});
+			$('#vippswd').focus();
+			return false;
+		}
+		var itemid=$('#itemid').val();
+		if(itemid==''){
+			layer.alert('请选择物品', {icon: 2});
+			return false;
+		}
+		var itemnum=$.trim($('#itemnum').val());
+		if(itemnum=='' || isNaN(itemnum)){
+			layer.alert('请输入数量', {icon: 2});
+			$('#itemnum').focus();
+			return false;
+		}
+		$.post('query.php', { action: 'senditem', qid: qid, uid: user, pswd: vippswd, itemid: itemid, itemnum: itemnum  }, function (text, status) {
+			if(text.errno==0){
+				layer.alert(text.message, {icon: 1});
+			}else{
+				layer.alert(text.message, {icon: 2});
+			}
+		},'json');
+　　});
+	$(window).scroll(function(){
+	    console.log('aaa');
+	});
+	</script>
+</body>
+</html>
