@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Application">
+      <UniqueIdentifier>{78113df2-e1eb-4d30-907e-51efb1f0139f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetWork">
+      <UniqueIdentifier>{af865b62-a8b2-46ed-9c3a-60a50611e2d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameZone">
+      <UniqueIdentifier>{1fc122b3-cad6-4364-9e41-896042719383}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Handler">
+      <UniqueIdentifier>{8aa90659-0af8-4013-acd0-bf8de249ff70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{a0c354e4-4930-491a-bd77-817b2edc84e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{eb8ec6bb-33f4-4013-9e92-7516a38f8ae9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Team">
+      <UniqueIdentifier>{d2e7b9ee-b288-40a3-905f-db1a047868b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GMSystem">
+      <UniqueIdentifier>{a016ecc8-892d-45c4-affe-a23102500eec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DungeonMgr">
+      <UniqueIdentifier>{00b1446d-9476-441a-a8d7-2b0c759fd8fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SysUtility">
+      <UniqueIdentifier>{4719c97a-31d0-4acc-b3ff-2d81d8a7b5a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Grid">
+      <UniqueIdentifier>{82b11c11-f686-417e-9c48-4a4e29c88c1c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="TCSApplication.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="TCSNetwork.cpp">
+      <Filter>NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="TCSRegisterProtocols.cpp">
+      <Filter>NetWork</Filter>
+    </ClCompile>
+    <ClCompile Include="GameZone.cpp">
+      <Filter>GameZone</Filter>
+    </ClCompile>
+    <ClCompile Include="GameZoneMgr.cpp">
+      <Filter>GameZone</Filter>
+    </ClCompile>
+    <ClCompile Include="TCSSysHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="TCSSceneHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="TCScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="TCSceneMgr.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="TCSPlayerMgr.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="TCSPlayer.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="TCSTeamMgr.cpp">
+      <Filter>Team</Filter>
+    </ClCompile>
+    <ClCompile Include="TCSTeam.cpp">
+      <Filter>Team</Filter>
+    </ClCompile>
+    <ClCompile Include="TCSTeamHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="TCSRegPlayerProtocol.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="TCSGMSystem.cpp">
+      <Filter>GMSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="TCSDungeonHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="TCSDungeonRace.cpp">
+      <Filter>DungeonMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="TCSDungeonMgr.cpp">
+      <Filter>DungeonMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="TCSTeamCheck.cpp">
+      <Filter>Team</Filter>
+    </ClCompile>
+    <ClCompile Include="SysUtility.cpp">
+      <Filter>SysUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="TCSTeamPlayerInfo.cpp">
+      <Filter>Team</Filter>
+    </ClCompile>
+    <ClCompile Include="TCSPlayerSyncHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="TCSGridCfgMgr.cpp">
+      <Filter>Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="TCSTeamTwo.cpp">
+      <Filter>Team</Filter>
+    </ClCompile>
+    <ClCompile Include="TCSTeamOne.cpp">
+      <Filter>Team</Filter>
+    </ClCompile>
+    <ClCompile Include="TCSGridObj.cpp">
+      <Filter>Grid</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TCSApplication.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="TCSNetwork.h">
+      <Filter>NetWork</Filter>
+    </ClInclude>
+    <ClInclude Include="GameZone.h">
+      <Filter>GameZone</Filter>
+    </ClInclude>
+    <ClInclude Include="GameZoneMgr.h">
+      <Filter>GameZone</Filter>
+    </ClInclude>
+    <ClInclude Include="TCSSysHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="TCSSceneHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="TCScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="TCSceneMgr.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="TCSPlayerMgr.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="TCSPlayer.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="TCSTeamMgr.h">
+      <Filter>Team</Filter>
+    </ClInclude>
+    <ClInclude Include="TCSTeam.h">
+      <Filter>Team</Filter>
+    </ClInclude>
+    <ClInclude Include="TCSTeamHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="TCSGMSystem.h">
+      <Filter>GMSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="TCSDungeonHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="TCSDungeonMgr.h">
+      <Filter>DungeonMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="TCSDungeonRace.h">
+      <Filter>DungeonMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="TCSTeamCheck.h">
+      <Filter>Team</Filter>
+    </ClInclude>
+    <ClInclude Include="SysUtility.h">
+      <Filter>SysUtility</Filter>
+    </ClInclude>
+    <ClInclude Include="TCSTeamPlayerInfo.h">
+      <Filter>Team</Filter>
+    </ClInclude>
+    <ClInclude Include="TCSPlayerSyncHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="TCSGridCfgMgr.h">
+      <Filter>Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="TCSTeamTwo.h">
+      <Filter>Team</Filter>
+    </ClInclude>
+    <ClInclude Include="TCSTeamOne.h">
+      <Filter>Team</Filter>
+    </ClInclude>
+    <ClInclude Include="TCSGridObj.h">
+      <Filter>Grid</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

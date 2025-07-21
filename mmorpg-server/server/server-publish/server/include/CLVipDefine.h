@@ -1,0 +1,71 @@
+#ifndef _CL_VIP_DEFINE_H_
+#define _CL_VIP_DEFINE_H_
+
+#include <CLDefine.h>
+
+/**
+ *@brief vip等级
+ */
+enum VipLevel
+{
+	VIP_LEVEL1	=	1,	//周卡
+	VIP_LEVEL2	=	2,	//月卡
+	VIP_LEVEL3	=	3,	//半年卡
+};
+
+/**
+ *@brief vip特权类型
+ */
+enum VipPrivilegeType
+{
+	VIP_PRIVILEGE_INVALID = 0,
+
+	VIP_PRIVILEGE_DUNGEON_EXP = 1,				//地下城结算经验增加
+	VIP_PRIVILEGE_FREE_REVIVE = 2,				//每日免费复活
+	VIP_PRIVILEGE_DUNGEON_GOLD = 3,				//副本掉落金币
+	VIP_PRIVILEGE_PKCOIN_MAX = 4,				//增加每日决斗币上限
+	VIP_PRIVILEGE_FREE_GOLDBOX = 5,				//开启黄金宝箱
+	VIP_PRIVILEGE_SHOP_LIMIT = 6,				//黒市商店VIP限售商品可购买
+	VIP_PRIVILEGE_DEATH_TOWER_RESET = 7,		//死亡之塔每日重置次数
+	VIP_PRIVILEGE_MAGIC_VEIN_NUM = 8,			//魔晶矿脉次数
+	VIP_PRIVILEGE_MYSTERIOUS_SHOP_REFRESH = 9,	//神秘商店每日刷新次数
+	VIP_PRIVILEGE_GUILD_DAILY_DONATE_NUM = 10,	//公会点卷捐献每日次数
+	VIP_PRIVILEGE_OFFLINE_FATIGUE_LIMIT = 11,	//离线体力上限
+	VIP_PRIVILEGE_GUILD_LUXURY_ORZ = 12,		//豪华膜拜
+	VIP_PRIVILEGE_PERFECT_FIND = 13,			//完美找回
+	VIP_PRIVILEGE_SIGN_IN_DOUBLE  = 14,			//签到双倍
+	VIP_PRIVILEGE_FATIGUE_USE_NUM = 15,			//小疲劳药每日使用次数
+	VIP_PRIVILEGE_GUILD_RED_PACKET = 16,		//公会自费红包
+	VIP_TEAM_BOSS_NUM = 17,						//VIP组队boss次数
+	VIP_AUTO_EATING = 18,						//VIP自动吃药
+	VIP_WORLD_CHAT_FREE = 19,					//VIP世界聊天免费次数
+	VIP_AUCTION_COUNTER_FEE = 20,				//拍卖行折扣
+	VIP_FASHION_PACKAGE_SIZE_ADDITION = 21,		//时装包裹容量加成
+	VIP_TITLE_PACKAGE_SIZE_ADDITION = 22,		//称号包裹容量加成
+	VIP_PRIVILEGE_CREDIT_POINT_MONTH_GET_LIMIT = 24,	//信用点券月获得上限
+	VIP_PRIVILEGE_CREDIT_POINT_HOLD_LIMIT = 25,		//信用点券拥有上限
+	VIP_PRIVILEGE_CREDIT_POINT_TRANSFER_LIMIT = 26,		//信用点券转化上限
+
+	VIP_PRIVILEGE_MAX,
+
+	VIP_PRIVILEGE_DECOMPOSE = 100,				//一键分解
+	VIP_PRIVILEGE_MINOTAUR_PARADISE_EXP,		//牛头怪乐园经验增加
+	VIP_PRIVILEGE_RETINUE_SKILL,				//每日随从技能洗练上限
+	VIP_PRIVILEGE_STORAGE_MAX,					//仓库上限
+	VIP_PRIVILEGE_SOUTH_VALLEY_THREE,			//南部溪谷 3倍收益
+	VIP_PRIVILEGE_HELL_TICKET,					//深渊门票
+	VIP_PRIVILEGE_SOUTH_VALLEY_NUM,				//南部溪谷每日次数
+	VIP_PRIVILEGE_DAILY_TASK_MANAGER,			//日常任务管家
+	VIP_PRIVILEGE_RETINUE_SKILL_POINT,			//随从洗练可以使用点卷
+	VIP_PRIVILEGE_STRENGTHEN_GOLD,				//强化装备消耗金币减少
+	VIP_PRIVILEGE_GUILD_GOLDDONATE_TIMES,		//公会金币捐献每日次数
+	VIP_PRIVILEGE_GUILD_POINTDONATE_TIMES,		//公会点劵捐献每日次数
+
+};
+
+inline bool IsIncrementPrivilege(VipPrivilegeType type)
+{
+	return type == VIP_PRIVILEGE_STORAGE_MAX;
+}
+
+#endif

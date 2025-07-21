@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0D15F836-B60D-437B-8093-03B7F1027013}</ProjectGuid>
+    <RootNamespace>BattleScene</RootNamespace>
+    <ProjectName>BattleScene</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\server_res\bin</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)bin\win32\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)dep\luaplus;$(SolutionDir)dep\avalon\include;$(SolutionDir)include;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)dep\luaplus;$(SolutionDir)dep\zlib\include;$(SolutionDir)dep\avalon\include;$(SolutionDir)dep\fmt\include;$(SolutionDir)include;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdk_IncludePath);$(FrameworkSDKDir)\include;$(VC_IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)dep\avalon\lib\win32\$(Configuration);$(SolutionDir)dep\luaplus\lib\win32\$(Configuration);$(SolutionDir)lib\win32\$(Configuration);$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+      <PreprocessorDefinitions>_MBCS;_CRT_SECURE_NO_WARNINGS;_NEW_SCRIPT_MGR_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>CLPrecompiled.h</PrecompiledHeaderFile>
+      <AdditionalOptions>/Zm128 /bigobj %(AdditionalOptions)/bigobj</AdditionalOptions>
+      <IncludeInUnityFile>true</IncludeInUnityFile>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>AvalonCore.lib;AvalonCodec.lib;AvalonDatabase.lib;AvalonFramework.lib;AvalonLogger.lib;AvalonNetwork.lib;AvalonGame.lib;AvalonThread.lib;AvalonXml.lib;AvalonScript.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)dep\avalon\lib\win32\$(Configuration);$(SolutionDir)lib\win32\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>AvalonCore.lib;AvalonCodec.lib;AvalonDatabase.lib;AvalonFramework.lib;AvalonLogger.lib;AvalonNetwork.lib;AvalonThread.lib;AvalonGame.lib;AvalonXml.lib;AvalonScript.lib;LuaPlus.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AbnormalTransactionMgr.cpp" />
+    <ClCompile Include="AbnormalTransactionRecord.cpp" />
+    <ClCompile Include="ActionCounterMgr.cpp" />
+    <ClCompile Include="ActivityAttribute.cpp" />
+    <ClCompile Include="ActivityAttributeMgr.cpp" />
+    <ClCompile Include="BattleScene.cpp" />
+    <ClCompile Include="CityMonster.cpp" />
+    <ClCompile Include="CondActivateEvent.cpp" />
+    <ClCompile Include="ActiveTask.cpp" />
+    <ClCompile Include="ActivityMgr.cpp" />
+    <ClCompile Include="ActivityScript.cpp" />
+    <ClCompile Include="AIScript.cpp" />
+    <ClCompile Include="BaseTask.cpp" />
+    <ClCompile Include="BaseTaskMgr.cpp" />
+    <ClCompile Include="BuffMgr.cpp" />
+    <ClCompile Include="CommonQuickBuyTransaction.cpp" />
+    <ClCompile Include="CounterMgr.cpp" />
+    <ClCompile Include="Dungeon.cpp" />
+    <ClCompile Include="DungeonEntryScene.cpp" />
+    <ClCompile Include="DungeonEntrySceneDynamic.cpp" />
+    <ClCompile Include="DungeonHardInfo.cpp" />
+    <ClCompile Include="DungeonMgr.cpp" />
+    <ClCompile Include="EquipCalcScript.cpp" />
+    <ClCompile Include="EquipShopMgr.cpp" />
+    <ClCompile Include="EscortScript.cpp" />
+    <ClCompile Include="Fatigue.cpp" />
+    <ClCompile Include="FinalEquipScript.cpp" />
+    <ClCompile Include="GameParamMgr.cpp" />
+    <ClCompile Include="HeadFrameMgr.cpp" />
+    <ClCompile Include="InviteMgr.cpp" />
+    <ClCompile Include="ItemReasonMgr.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="ItemCD.cpp" />
+    <ClCompile Include="ItemMaker.cpp" />
+    <ClCompile Include="ItemMgr.cpp" />
+    <ClCompile Include="ItemScript.cpp" />
+    <ClCompile Include="JarItem.cpp" />
+    <ClCompile Include="LostBattleScene.cpp" />
+    <ClCompile Include="LostDungeonMgr.cpp" />
+    <ClCompile Include="LostDungeonTeam.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MallCheckBuyMgr.cpp" />
+    <ClCompile Include="OpenJarMgr.cpp" />
+    <ClCompile Include="Package.cpp" />
+    <ClCompile Include="Pet.cpp" />
+    <ClCompile Include="PetMgr.cpp" />
+    <ClCompile Include="PKPrepareScene.cpp" />
+    <ClCompile Include="PkStatistic.cpp" />
+    <ClCompile Include="PkStatisticMgr.cpp" />
+    <ClCompile Include="PkOccuRecord.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerScript.cpp" />
+    <ClCompile Include="QuickBar.cpp" />
+    <ClCompile Include="QuickBuyTransaction.cpp" />
+    <ClCompile Include="Retinue.cpp" />
+    <ClCompile Include="RetinueMgr.cpp" />
+    <ClCompile Include="ReviveiQuickBuyTransaction.cpp" />
+    <ClCompile Include="RoutineMgr.cpp" />
+    <ClCompile Include="SceneAdventureTeamHandler.cpp" />
+    <ClCompile Include="SceneAuctionHandler.cpp" />
+    <ClCompile Include="SceneBattleHandler.cpp" />
+    <ClCompile Include="SceneBillingHandler.cpp" />
+    <ClCompile Include="SceneChangeZoneHandler.cpp" />
+    <ClCompile Include="SceneConsoleHandler.cpp" />
+    <ClCompile Include="SceneDataCenterHandler.cpp" />
+    <ClCompile Include="SceneGiftBagHandler.cpp" />
+    <ClCompile Include="SceneGuildHandler.cpp" />
+    <ClCompile Include="SceneHeadFrameHandler.cpp" />
+    <ClCompile Include="SceneInviteHandler.cpp" />
+    <ClCompile Include="SceneDungeonHandler.cpp" />
+    <ClCompile Include="SceneLostDungeonHandler.cpp" />
+    <ClCompile Include="SceneMailHandler.cpp" />
+    <ClCompile Include="SceneMatchHandler.cpp" />
+    <ClCompile Include="SceneNewTitleHandler.cpp" />
+    <ClCompile Include="SceneOperateHandler.cpp" />
+    <ClCompile Include="ScenePetHandler.cpp" />
+    <ClCompile Include="SceneQuickBuyHandler.cpp" />
+    <ClCompile Include="SceneRecordHandler.cpp" />
+    <ClCompile Include="SceneRelationHandler.cpp" />
+    <ClCompile Include="SceneReplayHandler.cpp" />
+    <ClCompile Include="SceneRetinueHandler.cpp" />
+    <ClCompile Include="SceneRoomHandler.cpp" />
+    <ClCompile Include="SceneRoutineHandler.cpp" />
+    <ClCompile Include="SceneScript.cpp" />
+    <ClCompile Include="SceneSecurityLockHandler.cpp" />
+    <ClCompile Include="SceneSortListHandler.cpp" />
+    <ClCompile Include="SceneStoryHandler.cpp" />
+    <ClCompile Include="SceneSyncObjectHandler.cpp" />
+    <ClCompile Include="SceneSysHandler.cpp" />
+    <ClCompile Include="SceneSysNotify.cpp" />
+    <ClCompile Include="SceneChatHandler.cpp" />
+    <ClCompile Include="SceneGMSystem.cpp" />
+    <ClCompile Include="SceneItemHandler.cpp" />
+    <ClCompile Include="SceneSkillHandler.cpp" />
+    <ClCompile Include="SceneSysRecordHandler.cpp" />
+    <ClCompile Include="SceneTaskHandler.cpp" />
+    <ClCompile Include="SceneTeamHandler.cpp" />
+    <ClCompile Include="SceneTradeHandler.cpp" />
+    <ClCompile Include="SceneVipHandler.cpp" />
+    <ClCompile Include="SceneCrossHandler.cpp" />
+    <ClCompile Include="ScriptMgr.cpp" />
+    <ClCompile Include="ScriptUtil.cpp" />
+    <ClCompile Include="SeasonLevel.cpp" />
+    <ClCompile Include="SeasonMgr.cpp" />
+    <ClCompile Include="SettingHandler.cpp" />
+    <ClCompile Include="Shop.cpp" />
+    <ClCompile Include="ShopItem.cpp" />
+    <ClCompile Include="ShopMgr.cpp" />
+    <ClCompile Include="SingleScene.cpp" />
+    <ClCompile Include="SkillMgr.cpp" />
+    <ClCompile Include="SortListMgr.cpp" />
+    <ClCompile Include="SSApplication.cpp" />
+    <ClCompile Include="SSConsoleAgent.cpp" />
+    <ClCompile Include="SSConsoleCmdHandler.cpp" />
+    <ClCompile Include="SSDungeonConfigMgr.cpp" />
+    <ClCompile Include="SSRouter.cpp" />
+    <ClCompile Include="SSNetwork.cpp" />
+    <ClCompile Include="SSRegisterProtocols.cpp" />
+    <ClCompile Include="SceneHandler.cpp" />
+    <ClCompile Include="SSEnterGameHandler.cpp" />
+    <ClCompile Include="SSGateHandler.cpp" />
+    <ClCompile Include="SSLeaveGameHandler.cpp" />
+    <ClCompile Include="SSMoveHandler.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneMgr.cpp" />
+    <ClCompile Include="Creature.cpp" />
+    <ClCompile Include="PlayerMgr.cpp" />
+    <ClCompile Include="SceneObject.cpp" />
+    <ClCompile Include="SSRegPlayerProtocols.cpp" />
+    <ClCompile Include="SSServiceSwitchMgr.cpp" />
+    <ClCompile Include="StrengthenTicketPlanMgr.cpp" />
+    <ClCompile Include="SysInterface.cpp" />
+    <ClCompile Include="Task.cpp" />
+    <ClCompile Include="TaskMgr.cpp" />
+    <ClCompile Include="TaskScript.cpp" />
+    <ClCompile Include="Team.cpp" />
+    <ClCompile Include="TeamMgr.cpp" />
+    <ClCompile Include="Trade.cpp" />
+    <ClCompile Include="Vip.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AbnormalTransactionMgr.h" />
+    <ClInclude Include="AbnormalTransactionRecord.h" />
+    <ClInclude Include="ActionCounterMgr.h" />
+    <ClInclude Include="ActivityAttribute.h" />
+    <ClInclude Include="ActivityAttributeMgr.h" />
+    <ClInclude Include="BattleScene.h" />
+    <ClInclude Include="CondActivateEvent.h" />
+    <ClInclude Include="ActiveTask.h" />
+    <ClInclude Include="ActivityMgr.h" />
+    <ClInclude Include="ActivityScene.h" />
+    <ClInclude Include="ActivityScript.h" />
+    <ClInclude Include="AIScript.h" />
+    <ClInclude Include="BaseTask.h" />
+    <ClInclude Include="BaseTaskMgr.h" />
+    <ClInclude Include="BuffMgr.h" />
+    <ClInclude Include="CommonQuickBuyTransaction.h" />
+    <ClInclude Include="CounterMgr.h" />
+    <ClInclude Include="Dungeon.h" />
+    <ClInclude Include="DungeonEntryScene.h" />
+    <ClInclude Include="DungeonEntrySceneDynamic.h" />
+    <ClInclude Include="DungeonHardInfo.h" />
+    <ClInclude Include="DungeonMgr.h" />
+    <ClInclude Include="EquipCalcScript.h" />
+    <ClInclude Include="EquipShopMgr.h" />
+    <ClInclude Include="EscortScript.h" />
+    <ClInclude Include="Fatigue.h" />
+    <ClInclude Include="FinalEquipScript.h" />
+    <ClInclude Include="GameParamMgr.h" />
+    <ClInclude Include="HeadFrameMgr.h" />
+    <ClInclude Include="InviteMgr.h" />
+    <ClInclude Include="ItemReasonMgr.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="ItemCD.h" />
+    <ClInclude Include="ItemMaker.h" />
+    <ClInclude Include="ItemMgr.h" />
+    <ClInclude Include="ItemScript.h" />
+    <ClInclude Include="JarItem.h" />
+    <ClInclude Include="LostBattleScene.h" />
+    <ClInclude Include="LostDungeonMgr.h" />
+    <ClInclude Include="LostDungeonTeam.h" />
+    <ClInclude Include="MallCheckBuyMgr.h" />
+    <ClInclude Include="CityMonster.h" />
+    <ClInclude Include="OpenJarMgr.h" />
+    <ClInclude Include="Package.h" />
+    <ClInclude Include="Pet.h" />
+    <ClInclude Include="PetMgr.h" />
+    <ClInclude Include="PKPrepareScene.h" />
+    <ClInclude Include="PkScene.h" />
+    <ClInclude Include="PkStatistic.h" />
+    <ClInclude Include="PkStatisticMgr.h" />
+    <ClInclude Include="PKOccuRecord.h" />
+    <ClInclude Include="PlayerLoadCallback.h" />
+    <ClInclude Include="PlayerLoading.h" />
+    <ClInclude Include="PlayerScript.h" />
+    <ClInclude Include="QuickBar.h" />
+    <ClInclude Include="QuickBuyTransaction.h" />
+    <ClInclude Include="QuickBuyTransactionInstances.h" />
+    <ClInclude Include="Retinue.h" />
+    <ClInclude Include="RetinueMgr.h" />
+    <ClInclude Include="ReviveQuickBuyTransaction.h" />
+    <ClInclude Include="RoutineMgr.h" />
+    <ClInclude Include="SceneAdventureTeamHandler.h" />
+    <ClInclude Include="SceneAuctionHandler.h" />
+    <ClInclude Include="SceneBattleHandler.h" />
+    <ClInclude Include="SceneBillingHandler.h" />
+    <ClInclude Include="SceneChangeZoneHandler.h" />
+    <ClInclude Include="SceneConsoleHandler.h" />
+    <ClInclude Include="SceneDataCenterHandler.h" />
+    <ClInclude Include="SceneGiftBagHandler.h" />
+    <ClInclude Include="SceneGuildHandler.h" />
+    <ClInclude Include="SceneHeadFrameHandler.h" />
+    <ClInclude Include="SceneInviteHandler.h" />
+    <ClInclude Include="SceneDungeonHandler.h" />
+    <ClInclude Include="SceneLostDungeonHandler.h" />
+    <ClInclude Include="SceneMailHandler.h" />
+    <ClInclude Include="SceneMatchHandler.h" />
+    <ClInclude Include="SceneNewTitleHandler.h" />
+    <ClInclude Include="SceneOperateHandler.h" />
+    <ClInclude Include="ScenePetHandler.h" />
+    <ClInclude Include="SceneQuickBuyHandler.h" />
+    <ClInclude Include="SceneRecordHandler.h" />
+    <ClInclude Include="SceneRelationHandler.h" />
+    <ClInclude Include="SceneReplayHandler.h" />
+    <ClInclude Include="SceneRetinueHandler.h" />
+    <ClInclude Include="SceneRoomHandler.h" />
+    <ClInclude Include="SceneRoutineHandler.h" />
+    <ClInclude Include="SceneScript.h" />
+    <ClInclude Include="SceneSecurityLockHandler.h" />
+    <ClInclude Include="SceneSortListHandler.h" />
+    <ClInclude Include="SceneStoryHandler.h" />
+    <ClInclude Include="SceneSyncObjectHandler.h" />
+    <ClInclude Include="SceneSysHandler.h" />
+    <ClInclude Include="SceneSysNotify.h" />
+    <ClInclude Include="SceneChatHandler.h" />
+    <ClInclude Include="SceneGMSystem.h" />
+    <ClInclude Include="SceneItemHandler.h" />
+    <ClInclude Include="SceneSkillHandler.h" />
+    <ClInclude Include="SceneSysRecordHandler.h" />
+    <ClInclude Include="SceneTaskHandler.h" />
+    <ClInclude Include="SceneTeamHandler.h" />
+    <ClInclude Include="SceneTradeHandler.h" />
+    <ClInclude Include="SceneVipHandler.h" />
+    <ClInclude Include="SceneCrossHandler.h" />
+    <ClInclude Include="ScriptMgr.h" />
+    <ClInclude Include="ScriptUtil.h" />
+    <ClInclude Include="SeasonLevel.h" />
+    <ClInclude Include="SeasonMgr.h" />
+    <ClInclude Include="SettingHandler.h" />
+    <ClInclude Include="Shop.h" />
+    <ClInclude Include="ShopItem.h" />
+    <ClInclude Include="ShopMgr.h" />
+    <ClInclude Include="SingleScene.h" />
+    <ClInclude Include="SkillMgr.h" />
+    <ClInclude Include="SortListMgr.h" />
+    <ClInclude Include="SSApplication.h" />
+    <ClInclude Include="SSConsoleAgent.h" />
+    <ClInclude Include="SSConsoleCmdHandler.h" />
+    <ClInclude Include="SSDungeonConfigMgr.h" />
+    <ClInclude Include="SSPushNotify.h" />
+    <ClInclude Include="SSRouter.h" />
+    <ClInclude Include="SSNetwork.h" />
+    <ClInclude Include="SceneHandler.h" />
+    <ClInclude Include="SSEnterGameHandler.h" />
+    <ClInclude Include="SSGateHandler.h" />
+    <ClInclude Include="SSLeaveGameHandler.h" />
+    <ClInclude Include="SSMoveHandler.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneMgr.h" />
+    <ClInclude Include="Creature.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerMgr.h" />
+    <ClInclude Include="SceneObject.h" />
+    <ClInclude Include="SSServiceSwitchMgr.h" />
+    <ClInclude Include="StrengthenTicketPlanMgr.h" />
+    <ClInclude Include="SysInterface.h" />
+    <ClInclude Include="Task.h" />
+    <ClInclude Include="TaskMgr.h" />
+    <ClInclude Include="TaskScript.h" />
+    <ClInclude Include="Team.h" />
+    <ClInclude Include="TeamMgr.h" />
+    <ClInclude Include="Trade.h" />
+    <ClInclude Include="Vip.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonLib\CommonLib.vcxproj">
+      <Project>{69e52f08-11ac-4809-b362-6f79ed392b41}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

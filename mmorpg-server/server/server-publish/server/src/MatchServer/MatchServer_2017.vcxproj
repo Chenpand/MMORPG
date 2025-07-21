@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{66E42966-1B06-4159-A381-16DE76E8987F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MatchServer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>MatchServer</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\..\server_res\Bin\</OutDir>
+    <IncludePath>$(SolutionDir)dep\luaplus;$(SolutionDir)dep\zlib\include;$(SolutionDir)dep\avalon\include;$(SolutionDir)include;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdk_IncludePath);$(FrameworkSDKDir)\include;$(VC_IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_MBCS;ENABLE_MEMORY_TRACKER;_NEW_MATCH_;_ADJUEST_MATCH_ALGORITHM;_TEST_PK_ROOM_MATCH;_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)dep\avalon\include;$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <IncludeInUnityFile>true</IncludeInUnityFile>
+      <AdditionalOptions>/bigobj</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)dep\avalon\lib\win32\$(Configuration);$(SolutionDir)lib\win32\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>AvalonCore.lib;AvalonCodec.lib;AvalonGame.lib;AvalonDatabase.lib;AvalonFramework.lib;AvalonLogger.lib;AvalonNetwork.lib;AvalonThread.lib;AvalonXml.lib;AvalonScript.lib;CommonLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ChampionMatchRace.cpp" />
+    <ClCompile Include="ChampionMatchService.cpp" />
+    <ClCompile Include="DungeonMatchAlgorithm.cpp" />
+    <ClCompile Include="DungeonMatchRace.cpp" />
+    <ClCompile Include="DungeonMatchService.cpp" />
+    <ClCompile Include="DungeonTeamService.cpp" />
+    <ClCompile Include="EqualPvPMatchSercive.cpp" />
+    <ClCompile Include="EuqalPvPMatchRace.cpp" />
+    <ClCompile Include="GuildBattleMatchAlgorithm.cpp" />
+    <ClCompile Include="GuildBattleMatchRace.cpp" />
+    <ClCompile Include="GuildBattleMatchService.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MatchAlgorithmBase.cpp" />
+    <ClCompile Include="MatchMgr.cpp" />
+    <ClCompile Include="MatchRace.cpp" />
+    <ClCompile Include="MatchService.cpp" />
+    <ClCompile Include="MatchServiceMgr.cpp" />
+    <ClCompile Include="MatchServicePlayer.cpp" />
+    <ClCompile Include="MatchTeam.cpp" />
+    <ClCompile Include="MatchTeamMember.cpp" />
+    <ClCompile Include="MSApplication.cpp" />
+    <ClCompile Include="MSInternalNetwork.cpp" />
+    <ClCompile Include="MSRegisterProtocols.cpp" />
+    <ClCompile Include="MSRouter.cpp" />
+    <ClCompile Include="Pk2V2ActivityMatchService.cpp" />
+    <ClCompile Include="Pk2V2MatchAlgorithm.cpp" />
+    <ClCompile Include="Pk2V2MatchRace.cpp" />
+    <ClCompile Include="PK3V3ActivityMatchService.cpp" />
+    <ClCompile Include="Pk3V3MatchAlgorithm.cpp" />
+    <ClCompile Include="Pk3V3MatchAlgorithmBase.cpp" />
+    <ClCompile Include="Pk3V3MatchService.cpp" />
+    <ClCompile Include="Pk3V3ScoreWarMatchRace.cpp" />
+    <ClCompile Include="Pk3V3TumbleMatchRace.cpp" />
+    <ClCompile Include="PK3V3TumbleMatchService.cpp" />
+    <ClCompile Include="Pk5V5MatchService.cpp" />
+    <ClCompile Include="Pk5V5MatchAlgorithm.cpp" />
+    <ClCompile Include="Pk5V5MatchRace.cpp" />
+    <ClCompile Include="PkRoomMatchRace.cpp" />
+    <ClCompile Include="PKRoomMatchService.cpp" />
+    <ClCompile Include="PracticeMatchRace.cpp" />
+    <ClCompile Include="PracticeMatchService.cpp" />
+    <ClCompile Include="PremiumLeagueBattleMatchService.cpp" />
+    <ClCompile Include="PremiumLeagueMatchRace.cpp" />
+    <ClCompile Include="PremiumLeaguePreliminayMatchAlgorithm.cpp" />
+    <ClCompile Include="PremiumLeaguePreliminayMatchService.cpp" />
+    <ClCompile Include="PvPMatchRace.cpp" />
+    <ClCompile Include="PvPMatchService.cpp" />
+    <ClCompile Include="RelaySession.cpp" />
+    <ClCompile Include="RelaySessionMgr.cpp" />
+    <ClCompile Include="MatchHandler.cpp" />
+    <ClCompile Include="RobotMgr.cpp" />
+    <ClCompile Include="SeasonLevelMatchAlgorithm.cpp" />
+    <ClCompile Include="SeasonMatchAlgorithm.cpp" />
+    <ClCompile Include="SeasonPvPMatchRace.cpp" />
+    <ClCompile Include="SeasonPvPMatchService.cpp" />
+    <ClCompile Include="TraditionMatchAlgorithm.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ChampionMatchRace.h" />
+    <ClInclude Include="ChampionMatchService.h" />
+    <ClInclude Include="DungeonMatchAlgorithm.h" />
+    <ClInclude Include="DungeonMatchRace.h" />
+    <ClInclude Include="DungeonMatchService.h" />
+    <ClInclude Include="DungeonTeamService.h" />
+    <ClInclude Include="EqualPvPMatchSercive.h" />
+    <ClInclude Include="EuqalPvPMatchRace.h" />
+    <ClInclude Include="GuildBattleMatchAlgorithm.h" />
+    <ClInclude Include="GuildBattleMatchRace.h" />
+    <ClInclude Include="GuildBattleMatchService.h" />
+    <ClInclude Include="MatchAlgorithmBase.h" />
+    <ClInclude Include="MatchMgr.h" />
+    <ClInclude Include="MatchPlayer.h" />
+    <ClInclude Include="MatchRace.h" />
+    <ClInclude Include="MatchResult.h" />
+    <ClInclude Include="MatchService.h" />
+    <ClInclude Include="MatchServiceMgr.h" />
+    <ClInclude Include="MatchServicePlayer.h" />
+    <ClInclude Include="MatchTeam.h" />
+    <ClInclude Include="MatchTeamMember.h" />
+    <ClInclude Include="MSApplication.h" />
+    <ClInclude Include="MSInternalNetwork.h" />
+    <ClInclude Include="MSRouter.h" />
+    <ClInclude Include="Pk2V2ActivityMatchService.h" />
+    <ClInclude Include="Pk2V2MatchAlgorithm.h" />
+    <ClInclude Include="Pk2V2MatchRace.h" />
+    <ClInclude Include="Pk3V3ActivityMatchService.h" />
+    <ClInclude Include="Pk3V3MatchAlgorithm.h" />
+    <ClInclude Include="PK3V3MatchAlgorithmBase.h" />
+    <ClInclude Include="PK3V3MatchService.h" />
+    <ClInclude Include="Pk3V3ScoreWarMatchRace.h" />
+    <ClInclude Include="Pk3V3TumbleMatchRace.h" />
+    <ClInclude Include="Pk3V3TumbleMatchService.h" />
+    <ClInclude Include="Pk5V5MatchService.h" />
+    <ClInclude Include="Pk5V5MatchAlgorithm.h" />
+    <ClInclude Include="Pk5V5MatchRace.h" />
+    <ClInclude Include="PkRoomMatchRace.h" />
+    <ClInclude Include="PKRoomMatchService.h" />
+    <ClInclude Include="PracticeMatchRace.h" />
+    <ClInclude Include="PracticeMatchService.h" />
+    <ClInclude Include="PremiumLeagueBattleMatchService.h" />
+    <ClInclude Include="PremiumLeaguePreliminayMatchAlgorithm.h" />
+    <ClInclude Include="PremiumLeagueMatchRace.h" />
+    <ClInclude Include="PremiumLeaguePreliminayMatchService.h" />
+    <ClInclude Include="PvPMatchRace.h" />
+    <ClInclude Include="PvPMatchService.h" />
+    <ClInclude Include="RelaySession.h" />
+    <ClInclude Include="RelaySessionMgr.h" />
+    <ClInclude Include="MatchHandler.h" />
+    <ClInclude Include="RobotMgr.h" />
+    <ClInclude Include="SeasonLevelMatchAlgorithm.h" />
+    <ClInclude Include="SeasonMatchAlgorithm.h" />
+    <ClInclude Include="SeasonPvPMatchRace.h" />
+    <ClInclude Include="SeasonPvPMatchService.h" />
+    <ClInclude Include="SeTimer.h" />
+    <ClInclude Include="TraditionMatchAlgorithm.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

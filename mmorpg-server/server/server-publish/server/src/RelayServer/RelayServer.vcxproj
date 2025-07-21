@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4CE835C5-D6C6-48EE-B48A-E1A2E0C630E4}</ProjectGuid>
+    <RootNamespace>RelayServer</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\CommonLib\Debug\CommonLibDebug.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)dep\luaplus;$(SolutionDir)dep\zlib\include;$(SolutionDir)dep\fmt\include;$(SolutionDir)dep\avalon\include;$(SolutionDir)include;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdk_IncludePath);$(FrameworkSDKDir)\include;$(VC_IncludePath)</IncludePath>
+    <LinkIncremental />
+    <OutDir>$(SolutionDir)..\server_res\bin</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)dep\avalon\include;$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);_NEW_RACE_MODE_;ENABLE_MEMORY_TRACKER;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)dep\zlib\lib\win32\;$(SolutionDir)dep\avalon\lib\win32\$(Configuration);$(SolutionDir)lib\win32\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>AvalonCore.lib;AvalonCodec.lib;AvalonDatabase.lib;AvalonFramework.lib;AvalonLogger.lib;Winmm.lib;AvalonNetwork.lib;AvalonGame.lib;AvalonThread.lib;AvalonXml.lib;AvalonScript.lib;enet.lib;CommonLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>libcmt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DungeonRace.cpp" />
+    <ClCompile Include="GameSessionHandler.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="PkRoomRace.cpp" />
+    <ClCompile Include="PvPRace.cpp" />
+    <ClCompile Include="Race.cpp" />
+    <ClCompile Include="RaceGamer.cpp" />
+    <ClCompile Include="RaceMgr.cpp" />
+    <ClCompile Include="RelaySvrRouter.cpp" />
+    <ClCompile Include="RLApplication.cpp" />
+    <ClCompile Include="RLChannels.cpp" />
+    <ClCompile Include="RLInternalNetwork.cpp" />
+    <ClCompile Include="RLPlayer.cpp" />
+    <ClCompile Include="RLPlayerHandler.cpp" />
+    <ClCompile Include="RLPlayerMgr.cpp" />
+    <ClCompile Include="RLPlayerMonitorMgr.cpp" />
+    <ClCompile Include="RLPlayerRegisterProtocol.cpp" />
+    <ClCompile Include="RLRegisterProtocol.cpp" />
+    <ClCompile Include="VerifyHandler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DungeonRace.h" />
+    <ClInclude Include="GameSessionHandler.h" />
+    <ClInclude Include="PkRoomRace.h" />
+    <ClInclude Include="PvPRace.h" />
+    <ClInclude Include="Race.h" />
+    <ClInclude Include="RaceDefine.h" />
+    <ClInclude Include="RaceGamer.h" />
+    <ClInclude Include="RaceMgr.h" />
+    <ClInclude Include="RelaySvrRouter.h" />
+    <ClInclude Include="RLApplication.h" />
+    <ClInclude Include="RLChannels.h" />
+    <ClInclude Include="RLInternalNetwork.h" />
+    <ClInclude Include="RLPlayer.h" />
+    <ClInclude Include="RLPlayerMgr.h" />
+    <ClInclude Include="RLPlayerMonitorMgr.h" />
+    <ClInclude Include="VerifyHandler.h" />
+    <ClInclude Include="VerifyServerMgr.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

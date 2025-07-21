@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Application">
+      <UniqueIdentifier>{f7653f1c-7dc4-482a-86d0-2c68ad52b0c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{f6f04ccf-9dca-4940-918a-6201612b0196}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RelaySession">
+      <UniqueIdentifier>{46fa2e99-567b-4670-a2ea-e43d84bb2652}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Match">
+      <UniqueIdentifier>{fe599e5a-9bbd-4f6c-9dd7-e489501ce4f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Handler">
+      <UniqueIdentifier>{dbf7f88b-3271-4832-b230-351802d28c1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MatchAlgorithm">
+      <UniqueIdentifier>{91f4af0e-1605-425b-86ae-ba5a7cc48c85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MatchTeam">
+      <UniqueIdentifier>{f536b66b-7f01-4250-a309-39d13480e8f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MatchService">
+      <UniqueIdentifier>{106fb4e4-b804-4ac2-a23a-e81c966121fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MatchRace">
+      <UniqueIdentifier>{ca934a35-fa53-42ce-909d-143f0fca9e17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MatchService\Services">
+      <UniqueIdentifier>{5d37709d-27ab-4880-86a0-3e2ca54a6b3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MatchPlayer">
+      <UniqueIdentifier>{f9d9febe-cd1c-4b96-baad-ee25318a2e36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MatchRace\Races">
+      <UniqueIdentifier>{cc485158-e501-4b3b-90c9-4b715ccf9c7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MatchAlgorithm\Algorithms">
+      <UniqueIdentifier>{de77e5b3-431c-4dae-ab44-03d040f8155b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Robot">
+      <UniqueIdentifier>{4af4593e-f8b3-4b0b-8210-8277dc4cc8a3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="MSApplication.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="MSInternalNetwork.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="MSRegisterProtocols.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="RelaySession.cpp">
+      <Filter>RelaySession</Filter>
+    </ClCompile>
+    <ClCompile Include="RelaySessionMgr.cpp">
+      <Filter>RelaySession</Filter>
+    </ClCompile>
+    <ClCompile Include="MSRouter.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchMgr.cpp">
+      <Filter>Match</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchAlgorithmBase.cpp">
+      <Filter>MatchAlgorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchTeam.cpp">
+      <Filter>MatchTeam</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchTeamMember.cpp">
+      <Filter>MatchTeam</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchService.cpp">
+      <Filter>MatchService</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchRace.cpp">
+      <Filter>MatchRace</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchServiceMgr.cpp">
+      <Filter>MatchService</Filter>
+    </ClCompile>
+    <ClCompile Include="PvPMatchService.cpp">
+      <Filter>MatchService\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchServicePlayer.cpp">
+      <Filter>MatchPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="PracticeMatchService.cpp">
+      <Filter>MatchService\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonMatchRace.cpp">
+      <Filter>MatchRace\Races</Filter>
+    </ClCompile>
+    <ClCompile Include="PvPMatchRace.cpp">
+      <Filter>MatchRace\Races</Filter>
+    </ClCompile>
+    <ClCompile Include="PracticeMatchRace.cpp">
+      <Filter>MatchRace\Races</Filter>
+    </ClCompile>
+    <ClCompile Include="SeasonPvPMatchRace.cpp">
+      <Filter>MatchRace\Races</Filter>
+    </ClCompile>
+    <ClCompile Include="SeasonPvPMatchService.cpp">
+      <Filter>MatchService\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="TraditionMatchAlgorithm.cpp">
+      <Filter>MatchAlgorithm\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="SeasonMatchAlgorithm.cpp">
+      <Filter>MatchAlgorithm\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonMatchAlgorithm.cpp">
+      <Filter>MatchAlgorithm\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonTeamService.cpp">
+      <Filter>MatchService\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonMatchService.cpp">
+      <Filter>MatchService\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="RobotMgr.cpp">
+      <Filter>Robot</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildBattleMatchRace.cpp">
+      <Filter>MatchRace\Races</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildBattleMatchService.cpp">
+      <Filter>MatchService\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildBattleMatchAlgorithm.cpp">
+      <Filter>MatchAlgorithm\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="SeasonLevelMatchAlgorithm.cpp">
+      <Filter>MatchAlgorithm\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="PremiumLeaguePreliminayMatchService.cpp">
+      <Filter>MatchService\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="PremiumLeagueMatchRace.cpp">
+      <Filter>MatchRace\Races</Filter>
+    </ClCompile>
+    <ClCompile Include="PremiumLeagueBattleMatchService.cpp">
+      <Filter>MatchService\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="PremiumLeaguePreliminayMatchAlgorithm.cpp">
+      <Filter>MatchAlgorithm\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="PKRoomMatchService.cpp">
+      <Filter>MatchService\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="PkRoomMatchRace.cpp">
+      <Filter>MatchRace\Races</Filter>
+    </ClCompile>
+    <ClCompile Include="Pk3V3MatchService.cpp">
+      <Filter>MatchService\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="Pk3V3MatchAlgorithm.cpp">
+      <Filter>MatchAlgorithm\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="Pk3V3MatchAlgorithmBase.cpp">
+      <Filter>MatchAlgorithm\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="Pk3V3ScoreWarMatchRace.cpp">
+      <Filter>MatchRace\Races</Filter>
+    </ClCompile>
+    <ClCompile Include="PK3V3TumbleMatchService.cpp">
+      <Filter>MatchService\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="PK3V3ActivityMatchService.cpp">
+      <Filter>MatchService\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="Pk3V3TumbleMatchRace.cpp">
+      <Filter>MatchRace\Races</Filter>
+    </ClCompile>
+    <ClCompile Include="EqualPvPMatchSercive.cpp">
+      <Filter>MatchService\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="EuqalPvPMatchRace.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MSApplication.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="MSInternalNetwork.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="RelaySession.h">
+      <Filter>RelaySession</Filter>
+    </ClInclude>
+    <ClInclude Include="RelaySessionMgr.h">
+      <Filter>RelaySession</Filter>
+    </ClInclude>
+    <ClInclude Include="MSRouter.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchMgr.h">
+      <Filter>Match</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchPlayer.h">
+      <Filter>Match</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchResult.h">
+      <Filter>Match</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchAlgorithmBase.h">
+      <Filter>MatchAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="SeTimer.h">
+      <Filter>MatchAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchTeam.h">
+      <Filter>MatchTeam</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchTeamMember.h">
+      <Filter>MatchTeam</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchService.h">
+      <Filter>MatchService</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchRace.h">
+      <Filter>MatchRace</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchServiceMgr.h">
+      <Filter>MatchService</Filter>
+    </ClInclude>
+    <ClInclude Include="PvPMatchService.h">
+      <Filter>MatchService\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchServicePlayer.h">
+      <Filter>MatchPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="PracticeMatchService.h">
+      <Filter>MatchService\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonMatchRace.h">
+      <Filter>MatchRace\Races</Filter>
+    </ClInclude>
+    <ClInclude Include="PracticeMatchRace.h">
+      <Filter>MatchRace\Races</Filter>
+    </ClInclude>
+    <ClInclude Include="PvPMatchRace.h">
+      <Filter>MatchRace\Races</Filter>
+    </ClInclude>
+    <ClInclude Include="SeasonPvPMatchRace.h">
+      <Filter>MatchRace\Races</Filter>
+    </ClInclude>
+    <ClInclude Include="SeasonPvPMatchService.h">
+      <Filter>MatchService\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="TraditionMatchAlgorithm.h">
+      <Filter>MatchAlgorithm\Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="SeasonMatchAlgorithm.h">
+      <Filter>MatchAlgorithm\Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonMatchAlgorithm.h">
+      <Filter>MatchAlgorithm\Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonTeamService.h">
+      <Filter>MatchService\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonMatchService.h">
+      <Filter>MatchService\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="RobotMgr.h">
+      <Filter>Robot</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildBattleMatchRace.h">
+      <Filter>MatchRace\Races</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildBattleMatchService.h">
+      <Filter>MatchService\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildBattleMatchAlgorithm.h">
+      <Filter>MatchAlgorithm\Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="SeasonLevelMatchAlgorithm.h">
+      <Filter>MatchAlgorithm\Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="PremiumLeaguePreliminayMatchService.h">
+      <Filter>MatchService\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="PremiumLeagueMatchRace.h">
+      <Filter>MatchRace\Races</Filter>
+    </ClInclude>
+    <ClInclude Include="PremiumLeagueBattleMatchService.h">
+      <Filter>MatchService\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="PremiumLeaguePreliminayMatchAlgorithm.h">
+      <Filter>MatchAlgorithm\Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="PKRoomMatchService.h">
+      <Filter>MatchService\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="PkRoomMatchRace.h">
+      <Filter>MatchRace\Races</Filter>
+    </ClInclude>
+    <ClInclude Include="PK3V3MatchService.h">
+      <Filter>MatchService\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Pk3V3MatchAlgorithm.h">
+      <Filter>MatchAlgorithm\Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="PK3V3MatchAlgorithmBase.h">
+      <Filter>MatchAlgorithm\Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="Pk3V3ActivityMatchService.h">
+      <Filter>MatchService\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Pk3V3ScoreWarMatchRace.h">
+      <Filter>MatchRace\Races</Filter>
+    </ClInclude>
+    <ClInclude Include="Pk3V3TumbleMatchService.h">
+      <Filter>MatchService\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Pk3V3TumbleMatchRace.h">
+      <Filter>MatchRace\Races</Filter>
+    </ClInclude>
+    <ClInclude Include="EqualPvPMatchSercive.h">
+      <Filter>MatchService\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="EuqalPvPMatchRace.h" />
+  </ItemGroup>
+</Project>

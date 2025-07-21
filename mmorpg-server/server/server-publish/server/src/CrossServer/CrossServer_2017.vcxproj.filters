@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Application">
+      <UniqueIdentifier>{78113df2-e1eb-4d30-907e-51efb1f0139f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Challenge">
+      <UniqueIdentifier>{54560671-7c3c-4db9-8ee2-e5e08395dcbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameZone">
+      <UniqueIdentifier>{4788cf6f-c313-4c2d-8bfb-23b619292166}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{4a23a924-95d8-46f8-8c3a-85d3209948dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameParam">
+      <UniqueIdentifier>{99b029c2-c0ae-483b-8e13-6237e2c6fc41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Handler">
+      <UniqueIdentifier>{a6b782c5-cc07-417f-8ce9-6509083ad814}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GuildBattle">
+      <UniqueIdentifier>{2e811ed3-09cb-4ef8-9158-63c45a7a35f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScoreWar">
+      <UniqueIdentifier>{47a99766-a2be-481a-bc77-87214d10b860}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Room">
+      <UniqueIdentifier>{91f7c620-8a67-493e-b2bc-14239b3a32e6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="CSApplication.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenger.cpp">
+      <Filter>Challenge</Filter>
+    </ClCompile>
+    <ClCompile Include="ChallengeMgr.cpp">
+      <Filter>Challenge</Filter>
+    </ClCompile>
+    <ClCompile Include="GameZone.cpp">
+      <Filter>GameZone</Filter>
+    </ClCompile>
+    <ClCompile Include="GameZoneMgr.cpp">
+      <Filter>GameZone</Filter>
+    </ClCompile>
+    <ClCompile Include="CSNetwork.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="CSRegisterProtocols.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="CSSceneHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="ChallengeScene.cpp">
+      <Filter>Challenge</Filter>
+    </ClCompile>
+    <ClCompile Include="CSChallengeHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="GameParamMgr.cpp">
+      <Filter>GameParam</Filter>
+    </ClCompile>
+    <ClCompile Include="CSGuildBattleHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="CSGuildBattleMgr.cpp">
+      <Filter>GuildBattle</Filter>
+    </ClCompile>
+    <ClCompile Include="CSGuildBattleTerritory.cpp">
+      <Filter>GuildBattle</Filter>
+    </ClCompile>
+    <ClCompile Include="CSSysHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="CSScoreWarMgr.cpp">
+      <Filter>ScoreWar</Filter>
+    </ClCompile>
+    <ClCompile Include="CSScoreWarHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="CSRoom.cpp">
+      <Filter>Room</Filter>
+    </ClCompile>
+    <ClCompile Include="CSRoomMgr.cpp">
+      <Filter>Room</Filter>
+    </ClCompile>
+    <ClCompile Include="CSRoomHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="CS2V2ScoreWarMgr.cpp">
+      <Filter>ScoreWar</Filter>
+    </ClCompile>
+    <ClCompile Include="CS2V2ScoreWarHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CSApplication.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenger.h">
+      <Filter>Challenge</Filter>
+    </ClInclude>
+    <ClInclude Include="ChallengeMgr.h">
+      <Filter>Challenge</Filter>
+    </ClInclude>
+    <ClInclude Include="GameZone.h">
+      <Filter>GameZone</Filter>
+    </ClInclude>
+    <ClInclude Include="GameZoneMgr.h">
+      <Filter>GameZone</Filter>
+    </ClInclude>
+    <ClInclude Include="CSNetwork.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="CSSceneHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="ChallengeScene.h">
+      <Filter>Challenge</Filter>
+    </ClInclude>
+    <ClInclude Include="CSChallengeHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="GameParamMgr.h">
+      <Filter>GameParam</Filter>
+    </ClInclude>
+    <ClInclude Include="CSGuildBattleHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="CSGuildBattleMgr.h">
+      <Filter>GuildBattle</Filter>
+    </ClInclude>
+    <ClInclude Include="CSGuildBattleTerritory.h">
+      <Filter>GuildBattle</Filter>
+    </ClInclude>
+    <ClInclude Include="CSSysHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="CSScoreWarMgr.h">
+      <Filter>ScoreWar</Filter>
+    </ClInclude>
+    <ClInclude Include="CSScoreWarHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="CSRoom.h">
+      <Filter>Room</Filter>
+    </ClInclude>
+    <ClInclude Include="CSRoomMgr.h">
+      <Filter>Room</Filter>
+    </ClInclude>
+    <ClInclude Include="CSRoomHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="CS2V2ScoreWarMgr.h">
+      <Filter>ScoreWar</Filter>
+    </ClInclude>
+    <ClInclude Include="CS2V2ScoreWarHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

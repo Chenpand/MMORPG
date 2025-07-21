@@ -1,0 +1,1726 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="CLApplication.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="CLDatabaseDefine.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="CLExternalNetwork.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="CLInternalNetwork.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="CLNetAddress.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="CLNetwork.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="CLGrid.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CLScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CLRecordCommand.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="CLRecordCallback.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="CLRecordClient.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="CLSkillDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLPlayerDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLParameter.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="CLBuffDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLItemDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLTaskDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLItemProperty.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CLNetLogAppender.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="CLRequest.cpp">
+      <Filter>Request</Filter>
+    </ClCompile>
+    <ClCompile Include="CLGameLoggerMgr.cpp">
+      <Filter>GameLogger</Filter>
+    </ClCompile>
+    <ClCompile Include="CLGameLoggerAppender.cpp">
+      <Filter>GameLogger</Filter>
+    </ClCompile>
+    <ClCompile Include="CLSysNotify.cpp">
+      <Filter>Text</Filter>
+    </ClCompile>
+    <ClCompile Include="CLMsgParser.cpp">
+      <Filter>Text</Filter>
+    </ClCompile>
+    <ClCompile Include="CLForbitWord.cpp">
+      <Filter>Text</Filter>
+    </ClCompile>
+    <ClCompile Include="CLSceneDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLMallDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\include\CLVipDefine.h">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="CLVipDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleAgent.cpp">
+      <Filter>ConsoleAgent</Filter>
+    </ClCompile>
+    <ClCompile Include="kingnet_analyzer.cpp">
+      <Filter>udplog</Filter>
+    </ClCompile>
+    <ClCompile Include="udplog_codeengine.cpp">
+      <Filter>udplog</Filter>
+    </ClCompile>
+    <ClCompile Include="udplog_config.cpp">
+      <Filter>udplog</Filter>
+    </ClCompile>
+    <ClCompile Include="udplog_lib.cpp">
+      <Filter>udplog</Filter>
+    </ClCompile>
+    <ClCompile Include="CLSysNotifyDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLFunctionDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLDataLogAppender.cpp">
+      <Filter>DataLog</Filter>
+    </ClCompile>
+    <ClCompile Include="CLDataLogMgr.cpp">
+      <Filter>DataLog</Filter>
+    </ClCompile>
+    <ClCompile Include="CLNetHeader.cpp">
+      <Filter>NetHead</Filter>
+    </ClCompile>
+    <ClCompile Include="PerformanceMgr.cpp">
+      <Filter>Performance</Filter>
+    </ClCompile>
+    <ClCompile Include="CLDropItemDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="DropItemMgr.cpp">
+      <Filter>Drop</Filter>
+    </ClCompile>
+    <ClCompile Include="CLDungeonDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLMonsterDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLDungeonAreaDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLDungeonChestDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="AsyncMsgCallback.cpp">
+      <Filter>MsgCallback</Filter>
+    </ClCompile>
+    <ClCompile Include="AsyncMsgCallbackMgr.cpp">
+      <Filter>MsgCallback</Filter>
+    </ClCompile>
+    <ClCompile Include="CLAnnouncementDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLJobDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLMonsterPrefixDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLPkLevelDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLShopItemDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLMonsterGroupDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLDungeonPrefixLimitDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLMonsterAttributeTable.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLDungeonDestructTable.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLWarpStoneDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLDungeonHellDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLRetinueDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLDeathTowerAwardDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLSeasonRewardDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="ServiceSwitchMgr.cpp">
+      <Filter>ServiceSwitch</Filter>
+    </ClCompile>
+    <ClCompile Include="CLRaceEndDropDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLDungeonConfigMgr.cpp">
+      <Filter>DungeonConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="CLDungeonMatchDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLRewardAdapter.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLScriptMgr.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="CLRareItemDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLSystemValueDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLQuickBuyDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLActiveEventDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLGuildDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLGuildBuildingDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLGuildSkillDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLRobotDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLGuildStatueDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLGuildTableDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLRedPacketDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEqualItemDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLGuildBattleDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLTeamDungeonDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLWudaoRewardDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLChargeMallDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLChargePacketDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLDungeonTimesDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLTeamRewardDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLLevelAdapterDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLSeasonDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLAuctionBoothDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLCurrencyCostDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEventMgr.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="CLDungeonGuaranteeDropDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLPlayerMonitorMgr.cpp">
+      <Filter>MonitorMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="CLPetDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLMallGiftPackDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLDungeonDailyDropDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLDungeonTimeDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLXtea.cpp">
+      <Filter>Crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="CLMallPersonalTailorDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLVerifyNode.cpp">
+      <Filter>VerifyServerMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="CLVerifyNodeMgr.cpp">
+      <Filter>VerifyServerMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="CLPremiumLeagueDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLLoginDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLActivityMonsterDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLActivitySuitAdditionDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLDrawPrizeDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEquipSuitDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEquipRecoveryPriceDataEntryBase.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEquipRecoveryRewardDataEntryBase.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEquipRecoScUpConsRtiDataEntryBase.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEquipRecoScUpPrbWeightDataEntryBase.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEquipTransMapDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLMoneyManageDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLActivityMonsterProbDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLChannelNameSwitchDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLCityMonsterDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLNpcDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLScoreWarDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLMasterSysGiftDataEntry.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="CLDigDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLBetHorseDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="ActivityUtil.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeUtil.cpp">
+      <Filter>TimeHelp</Filter>
+    </ClCompile>
+    <ClCompile Include="CLDungeonVerifyProbDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLShopMainFrameDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLDropStrengthenControlDataEntry.cpp">
+      <Filter>Drop</Filter>
+    </ClCompile>
+    <ClCompile Include="CLSkillRecommendDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLBuffRandomDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLFashionMergeChangeActiveDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLFriendWelfareAddDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLStrengthenTicketSynthesisDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLStrengthenTicketFuseDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLStrenTicketFusePramMappingDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLStrenTicketFuseMaterialDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLStandardNormalDistributionDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLGuildDungeonTimeDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLGuildDungeonRewardDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLGuildDungeonLotteryDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLGuildDungeonLvlDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLGuildDungeonTypeDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLItemBuffDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEquipInitAttriOnMakeDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerHelper.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="CLAccountShopItemDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLAdventureTeamDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="MallHelper.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="CLAuctionSysValueDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="AbnormalTransHelper.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="CLArtifactJarLotteryDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLAuctionPageStruct.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLGuildDungeonDamageCoeffDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLRoleValueTotalScoreCalcDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLAdventureTeamGradeDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLAccountCounterDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLBlackMarketItemDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEquieUpdateDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLExpeditionMapDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLExpeditionMapRewardDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEquipBaseScoreDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEquipStrenLvScoreCoeDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLRechargePushDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLChijiSpawnItemDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLGuildEmblemDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLChiJiPointDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLChiJiRegionDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLHeadFrameCompensateDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLWeekSignSumDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLWeekSignDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLChiJiTimeDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLGuildBuildingPointDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLAuctionRecoveItemDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLNewTitleDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLChiJiSkillDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLAuctionNoTreasAverPriceMinNumDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLChiJiDropDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLChiJiScoreDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLChiJiSwitchDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLAuctionMagicStrengAdditDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEqualPvPEuqipDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLDailyTodoDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLDropSmellControlDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLChiJiNpcRewardDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLMonthSignAwardDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEquipBaseScoreModDataEntry.cpp" />
+    <ClCompile Include="CLEqSuitScoreDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLUltimateChallengeDungeonDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLUltimateChallengeBuffDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLGuildProsperityDataEntry.cpp" />
+    <ClCompile Include="CLDungeonClearTimeDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLTeamCopyBossDataEntry.cpp" />
+    <ClCompile Include="CLTeamCopyFieldDataEntry.cpp" />
+    <ClCompile Include="CLTeamCopyFlopDataEntry.cpp" />
+    <ClCompile Include="CLTeamCopyTargetDataEntry.cpp" />
+    <ClCompile Include="CLTeamCopyValueDataEntry.cpp" />
+    <ClCompile Include="CLMallShopMultiIDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLDropItemVipLimitDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLInscriptionDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLInscriptionDropItemDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLInscriptionExtractDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLInscriptionHoleSetDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLInscriptionSynthesisDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+    <ClCompile Include="CLFashionDecomposeDataEntry.cpp">
+      <Filter>DataEntry</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\CLApplication.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLErrorCode.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGameDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLEnterGameProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGateProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLLeaveGameProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLLoginProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLMoveProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLRecordProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLSceneProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDatabaseDefine.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLInternalNetwork.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLExternalNetwork.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLNetAddress.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLNetwork.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLPacketExecutor.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLObject.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLObjectIndex.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLObjectProperty.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLProtocolDefine.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLSysProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLSyncObject.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGrid.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLSceneObject.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLRecordCommand.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLRecordCallback.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLRecordClient.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLSkillProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLSkillDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLBuffDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLSyncObjectProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLPlayerDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLChatProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLChatDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLParameter.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLItemDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLSkillDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLItemDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLItemProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLTaskProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLTaskDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLSettingProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLMaskProperty.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLScriptDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLTaskDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLItemTypeDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLTradeProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLMailProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLItemProperty.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLNetLogAppender.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLTeamProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLRequest.h">
+      <Filter>Request</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLRelationProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGameLoggerMgr.h">
+      <Filter>GameLogger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGameLoggerAppender.h">
+      <Filter>GameLogger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLSysNotify.h">
+      <Filter>Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLMsgParser.h">
+      <Filter>Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLUtf8Define.h">
+      <Filter>Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLForbitWord.h">
+      <Filter>Text</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLSceneDefine.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLSceneDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLSortListDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLSortListProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLMallProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLMallDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLRoutineProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGiftBagProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLVipProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLVipDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDataCenterProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\kingnet_analyzer.h">
+      <Filter>udplog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\udplog_codeengine.h">
+      <Filter>udplog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\udplog_config.h">
+      <Filter>udplog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\udplog_lib.h">
+      <Filter>udplog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\udplog_singleton.h">
+      <Filter>udplog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\udplog_typedef.h">
+      <Filter>udplog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLConsoleProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\json\elements.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\json\reader.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\json\visitor.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\json\writer.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ConsoleAgent.h">
+      <Filter>ConsoleAgent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLAuctionProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLAuctionDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLBillingProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGSActivityProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDBLogger.h">
+      <Filter>GameLogger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLInviteGameProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLWorldLevelProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLCounterDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLCenterProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLFunctionDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLObjectDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLRelationDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLSettingDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLMailDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLTeamDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLStoryProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLChangeZoneProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDir.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDataLogAppender.h">
+      <Filter>DataLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDataLogMgr.h">
+      <Filter>DataLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLNetHeader.h">
+      <Filter>NetHead</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGameSessionProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGameSessionDefine.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="..\..\include\CLRelayServerProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\PerformanceMgr.h">
+      <Filter>Performance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\PerformanceCheck.h">
+      <Filter>Performance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDropItemDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DropItemMgr.h">
+      <Filter>Drop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDropItemDefine.h">
+      <Filter>Drop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDungeonDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDungeonProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDungeonDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLMonsterDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDungeonAreaDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDungeonChestDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\AsyncMsgCallback.h">
+      <Filter>MsgCallback</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\AsyncMsgCallbackMgr.h">
+      <Filter>MsgCallback</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLMatchProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLSysNotifyDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLAnnouncementDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLJobDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLMonsterPrefixDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLPkLevelDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLShopItemDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLMatchDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLMonsterGroupDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLMonsterAttributeTable.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDungeonPrefixLimitDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDungeonDestructTable.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLWarpStoneDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLWarpStoneDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLWarpStoneProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDungeonHellDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLRetinueProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLRetinueDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLRetinueDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDeathTowerAwardDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLPkStatisticDefine.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ServiceSwitchMgr.h">
+      <Filter>ServiceSwitch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLSeasonRewardDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLRaceEndDropDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDungeonConfigMgr.h">
+      <Filter>DungeonConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLQuickBuyProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDungeonMatchDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLRewardAdapter.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLScriptMgr.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLRareItemDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLSystemValueDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLQuickBuyDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLAnnouncementDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLActiveEventDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGuildProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGuildDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGuildDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGuildBuildingDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGuildSkillDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLRobotDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGuildStatueDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLRedPacketDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLRedPacketProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGuildTableDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLRedPacketDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLEqualItemDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLCounterNameDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGuildBattleDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLTeamDungeonDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLWudaoRewardDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLChargeMallDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLBillingDefine.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLChargePacketDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDungeonTimesDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLTeamRewardDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLLevelAdapterDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLSeasonDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLSeasonDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLAuctionBoothDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLCurrencyCostDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLEventMgr.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDungeonGuaranteeDropDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLOpActiveProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLOperateDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLPlayerMonitorMgr.h">
+      <Filter>MonitorMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLPetDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLPetDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLPetProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLReplayDefine.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLReplayProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLMallGiftPackDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDungeonDailyDropDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDungeonTimeDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLVerifyDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLVerifyProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLFigureStatueDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLXtea.h">
+      <Filter>Crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLMallPersonalTailorDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLVerifyNode.h">
+      <Filter>VerifyServerMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLVerifyNodeMgr.h">
+      <Filter>VerifyServerMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLPremiumLeagueDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLPremiumLeagueDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLPremiumLeagueProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLLoginDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLMallDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLActivityMonsterDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLActivitySuitAdditionDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDrawPrizeDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLRoomDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLRoomProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLEquipSuitDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGlobalServerDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLNewbieGuideDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLCrossProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLEquipRecoveryPriceDataEntryBase.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLEquipRecoveryRewardDataEntryBase.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLEquipRecoScUpConsRtiDataEntryBase.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLEquipRecoScUpPrbWeightDataEntryBase.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLEquipTransMapDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGambingProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGlobalActivityProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGlobalActivityServerDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLMoneyManageDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLMoneyManageDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLActivityMonsterProbDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLChannelNameSwitchDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLCityMonsterDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLNpcDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLSysRecordProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLSysRecordDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLScoreWarDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLScoreWarDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLScoreWarProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLPlayerDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLMasterSysGiftDataEntry.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLMasterSystemDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDigDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDigDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDigProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLBetHorseDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLBetHorseProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLBetHorseDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ActivityUtil.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLActivityInfo.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\TimeUtil.h">
+      <Filter>TimeHelp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDungeonVerifyProbDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLShopMainFrameDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDropStrengthenControlDataEntry.h">
+      <Filter>Drop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLSecurityLockDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLSecurityLockProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLSkillRecommendDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLBuffRandomDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLFashionMergeChangeActiveDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLFriendWelfareAddDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLActivityDefine.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLStrengthenTicketSynthesisDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLStrengthenTicketFuseDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLStrenTicketFusePramMappingDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLStrenTicketFuseMaterialDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLStandardNormalDistributionDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLBattleProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGuildDungeonTimeDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGuildDungeonRewardDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGuildDungeonLotteryDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGuildDungeonLvlDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGuildDungeonTypeDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLItemBuffDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLEquipInitAttriOnMakeDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLAdventureTeamProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\PlayerHelper.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLRoleProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLAccountShopItemDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLShopProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLAdventureTeamDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\MallHelper.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLAuctionSysValueDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLCheatDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\AbnormalTransHelper.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLAbnormalTransDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLArtifactJarLotteryDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLActivityAttributeDefine.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLAuctionPageStruct.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGuildDungeonDamageCoeffDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLRoleValueTotalScoreCalcDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLAdventureTeamGradeDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLAccountCounterDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLBlackMarketItemDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLBlackMarketProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLBlackMarketDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLEquieUpdateDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLAdventureTeamDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLExpeditionMapDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLExpeditionMapRewardDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLEquipBaseScoreDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLEquipStrenLvScoreCoeDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLRechargePushDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLChijiSpawnItemDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGuildEmblemDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLChiJiPointDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLChiJiRegionDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLHeadFrameProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLHeadFrameCompensateDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLWeekSignSumDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLWeekSignDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLChiJiTimeDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGuildBuildingPointDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLAuctionRecoveItemDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLNewTitleDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLNewTitleDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLNewTitleProtocol.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLChiJiSkillDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLAuctionNoTreasAverPriceMinNumDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLChiJiDropDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLChiJiScoreDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLChiJiSwitchDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLAuctionMagicStrengAdditDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLPlayerJoinEventDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLEqualPvPEuqipDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDailyTodoDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDailyTodoProtocol.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDailyTodoDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLDropSmellControlDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLChiJiNpcRewardDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLMonthSignAwardDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLEquipBaseScoreModDataEntry.h" />
+    <ClInclude Include="..\..\include\CLEqSuitScoreDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLAccountProtocol.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLUltimateChallengeDungeonDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLUltimateChallengeBuffDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLGuildProsperityDataEntry.h" />
+    <ClInclude Include="..\..\include\CLDungeonClearTimeDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLCrossDungeonDefine.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLTeamCopyBossDataEntry.h" />
+    <ClInclude Include="..\..\include\CLTeamCopyDefine.h" />
+    <ClInclude Include="..\..\include\CLTeamCopyFieldDataEntry.h" />
+    <ClInclude Include="..\..\include\CLTeamCopyFlopDataEntry.h" />
+    <ClInclude Include="..\..\include\CLTeamCopyProtocol.h" />
+    <ClInclude Include="..\..\include\CLTeamCopyTargetDataEntry.h" />
+    <ClInclude Include="..\..\include\CLTeamCopyValueDataEntry.h" />
+    <ClInclude Include="..\..\include\CLInscriptionDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLInscriptionDropItemDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLInscriptionExtractDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLInscriptionHoleSetDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLInscriptionSynthesisDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\CLFashionDecomposeDataEntry.h">
+      <Filter>DataEntry</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Base">
+      <UniqueIdentifier>{c9b59428-9a46-49cf-8979-99440801bac4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol">
+      <UniqueIdentifier>{7f698c24-bab5-4249-a936-6b488223b6ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database">
+      <UniqueIdentifier>{3b475173-424f-4531-b9dc-fac55fe4fad1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{f946c313-bf9b-4273-b50e-066460246c0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{8a97e5ee-107e-475d-b7e9-a337ef610036}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataEntry">
+      <UniqueIdentifier>{83ea3177-3458-42f8-a7b8-44d601121bee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Request">
+      <UniqueIdentifier>{e8a5a9bd-ad8d-47fa-b570-71f1b604de14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameLogger">
+      <UniqueIdentifier>{a925c3e5-5853-4fb3-9a9b-1496c66de743}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Text">
+      <UniqueIdentifier>{ad3d7b90-bf15-48ca-85f5-096a6657a6a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Json">
+      <UniqueIdentifier>{1685bbcc-2163-4c1b-b5a6-08c8b1dc2702}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConsoleAgent">
+      <UniqueIdentifier>{bd023689-9acd-4c54-9f21-2b9e62d33174}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="udplog">
+      <UniqueIdentifier>{b9b4b32c-ff53-420e-acd0-5e0f7ce819dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{39471fae-e21e-4866-876b-3e465b60b5b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataLog">
+      <UniqueIdentifier>{ac9e1297-4cb7-4fd3-89e9-889db90dc4b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetHead">
+      <UniqueIdentifier>{0347a0a9-c3d4-4cc8-924f-da01f8fbb7a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Performance">
+      <UniqueIdentifier>{b9efa5bc-4c90-457e-88d1-319845c3f6b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drop">
+      <UniqueIdentifier>{038bf537-c83f-42d5-8ca2-820d01127586}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MsgCallback">
+      <UniqueIdentifier>{84571848-b259-4b13-b7c9-602b45110367}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServiceSwitch">
+      <UniqueIdentifier>{aeb04782-ecfa-4fb7-b8e6-fb842853170a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DungeonConfig">
+      <UniqueIdentifier>{cd611f1c-c768-480b-9fef-40b98a3b4f9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script">
+      <UniqueIdentifier>{cfa21844-fb4f-4123-8e13-a4d7c52e2869}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Event">
+      <UniqueIdentifier>{25e9f3fd-28c5-4e7d-8965-8079c73ff950}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MonitorMgr">
+      <UniqueIdentifier>{387a1470-67e0-4054-8531-dbc5b3d45c9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VerifyServerMgr">
+      <UniqueIdentifier>{a472f7d4-778a-464c-a52a-0171ce91a2ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crypto">
+      <UniqueIdentifier>{f7adde1d-7dfa-4f8e-b5fa-eedad0ea569b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{779e1539-a2dc-4dc7-acfa-33d56b52565f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HttpServer">
+      <UniqueIdentifier>{846d05f9-0c1d-40d1-9550-ba06e664bfb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Activity">
+      <UniqueIdentifier>{89bd5457-28c1-4f33-ad64-497f6de9bcad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TimeHelp">
+      <UniqueIdentifier>{1f6cd4d6-9d5d-417c-9822-c4c1d887b081}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{9e1b95f0-3377-47db-bc50-7ec0c88c7075}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\include\json\elements.inl">
+      <Filter>Json</Filter>
+    </None>
+    <None Include="..\..\include\json\reader.inl">
+      <Filter>Json</Filter>
+    </None>
+    <None Include="..\..\include\json\writer.inl">
+      <Filter>Json</Filter>
+    </None>
+  </ItemGroup>
+</Project>

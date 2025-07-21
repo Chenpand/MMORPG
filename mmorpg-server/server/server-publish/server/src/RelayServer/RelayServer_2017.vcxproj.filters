@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Application">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Handler">
+      <UniqueIdentifier>{c93b9ad8-ecc5-4343-95ce-6c64f6573dfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{79eb08f7-d7ed-4153-a854-a91c8aedbfb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{2db41915-ae91-4bba-bad6-5f6465b4dd0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Race">
+      <UniqueIdentifier>{2bdc783b-9205-4aca-a7a8-4eeb979b67f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Race\RaceInstance">
+      <UniqueIdentifier>{c330c844-e5e0-43db-9e3f-5d431a03dd38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RaceMgr">
+      <UniqueIdentifier>{718fdeed-5f5c-444b-98ad-aebe5d0eb842}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VerifyServerMgr">
+      <UniqueIdentifier>{052a5576-5b00-4e4d-ad72-4f973738a8cf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="RLApplication.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="RLChannels.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="RLPlayer.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="RLPlayerMgr.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="RLInternalNetwork.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSessionHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="RLPlayerRegisterProtocol.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="RLRegisterProtocol.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="RelaySvrRouter.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="RLPlayerHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="RaceGamer.cpp">
+      <Filter>Race</Filter>
+    </ClCompile>
+    <ClCompile Include="Race.cpp">
+      <Filter>Race</Filter>
+    </ClCompile>
+    <ClCompile Include="RaceMgr.cpp">
+      <Filter>RaceMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="PvPRace.cpp">
+      <Filter>Race\RaceInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonRace.cpp">
+      <Filter>Race\RaceInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="RLPlayerMonitorMgr.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="VerifyHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="PkRoomRace.cpp">
+      <Filter>Race\RaceInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="RLObserveHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="ChampionPvPRace.cpp">
+      <Filter>Race\RaceInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="ObservedRace.cpp">
+      <Filter>Race\RaceInstance</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RLApplication.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="RLChannels.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="RLPlayer.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="RLPlayerMgr.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="RLInternalNetwork.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSessionHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="RelaySvrRouter.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Race.h">
+      <Filter>Race</Filter>
+    </ClInclude>
+    <ClInclude Include="RaceGamer.h">
+      <Filter>Race</Filter>
+    </ClInclude>
+    <ClInclude Include="RaceMgr.h">
+      <Filter>RaceMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="PvPRace.h">
+      <Filter>Race\RaceInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="RaceDefine.h">
+      <Filter>Race</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonRace.h">
+      <Filter>Race\RaceInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="RLPlayerMonitorMgr.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="VerifyServerMgr.h">
+      <Filter>VerifyServerMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="VerifyHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="PkRoomRace.h">
+      <Filter>Race\RaceInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="RLObserveHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionPvPRace.h">
+      <Filter>Race\RaceInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="ObservedRace.h">
+      <Filter>Race\RaceInstance</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,87 @@
+/**********************************************************************************
+
+   注意:
+           1. _CUSTOM_*_BEGIN和_CUSTOM_*_END之间的代码是可以手动修改的。
+           2. 其他地方的代码都不要改动!!!!
+
+*********************************************************************************/
+#ifndef __CL_ADVENTURETEAMGRADE_DATA_ENTRY_H__
+#define __CL_ADVENTURETEAMGRADE_DATA_ENTRY_H__
+
+#include <CLDefine.h>
+#include <AvalonDataEntry.h>
+#include <AvalonDataEntryMgr.h>
+
+// 自定义头文件
+// __CUSTOM_HEADER_BEGIN__
+// __CUSTOM_HEADER_END__
+
+// 自定义结构、枚举
+// __CUSTOM_STRUCT_BEGIN__
+// __CUSTOM_STRUCT_END__
+
+class AdventureTeamGradeDataEntry : public Avalon::DataEntry
+{
+public:
+	AdventureTeamGradeDataEntry();
+	virtual ~AdventureTeamGradeDataEntry();
+
+	UInt32 GetKey() const;
+	bool Read(Avalon::DataRow &row);
+
+// 自定义接口
+// __CUSTOM_ENTRYFUNCTION_BEGIN__
+
+	bool IsInScoreRange(UInt64 totalScore);
+
+	bool IsInRankingRange(UInt32 socreRanking);
+
+// __CUSTOM_ENTRYFUNCTION_END__
+
+public:
+	// ID
+	UInt32                                          id;
+	// 佣兵团评级
+	std::string                                     adventureTeamGrade;
+	// 角色总评分
+	std::string                                     roleValueTotalScore;
+	// 单服排名前n%
+	UInt32                                          singleServerRanking;
+	// 是否可加入排行榜
+	UInt32                                          canJoinSortList;
+	// 可选任务
+	std::string                                     optionalTasks;
+
+// 自定义字段
+// __CUSTOM_ENTRYFIELD_BEGIN__
+	// 角色总评分下限
+	UInt64 lowerScoreLimit;
+	// 角色总评分上限
+	UInt64 upperScoreLimit;
+	// 可选任务(级别:数量)
+	std::map<UInt32, UInt32> optionalTaskMap;
+// __CUSTOM_ENTRYFIELD_END__
+};
+
+class AdventureTeamGradeDataEntryMgr : public Avalon::DataEntryMgrBase<AdventureTeamGradeDataEntry>
+	, public Avalon::Singleton<AdventureTeamGradeDataEntryMgr>
+{
+public:
+	virtual bool AddEntry(AdventureTeamGradeDataEntry* entry);
+
+// 自定义接口、字段
+// __CUSTOM_MGR_BEGIN__
+
+	// 是否已经有最高评级
+	bool HasHigestGradeData();
+
+	// 计算冒险队评级
+	AdventureTeamGradeDataEntry* CalcAdventureTeamGrade(UInt64 totalScore, UInt32 scoreRanking);
+
+	// 是否可加入排行榜
+	bool CanJoinSortList(UInt64 score);
+
+// __CUSTOM_MGR_END__
+};
+
+#endif

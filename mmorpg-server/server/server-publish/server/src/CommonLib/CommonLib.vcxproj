@@ -1,0 +1,655 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{69E52F08-11AC-4809-B362-6F79ED392B41}</ProjectGuid>
+    <RootNamespace>CommonLib</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)lib\win32\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)lib\win32\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)dep\luaplus;$(SolutionDir)dep\zlib\include;$(SolutionDir)dep\avalon\include;$(SolutionDir)dep\fmt\include;$(SolutionDir)include;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdk_IncludePath);$(FrameworkSDKDir)\include;$(VC_IncludePath);$(SolutionDir)dep\snappy\include</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)dep\luaplus;$(SolutionDir)dep\zlib\include;$(SolutionDir)dep\avalon\include;$(SolutionDir)include;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>CLPrecompiled.h</PrecompiledHeaderFile>
+      <AdditionalOptions>/Zm128 %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>_MBCS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>libmysql.lib;fmt.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)dep\mysql\lib\win32\;$(SolutionDir)dep\snappy\lib\win32\;$(SolutionDir)dep\fmt\lib\win32\</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\include\CLVipDefine.h" />
+    <ClCompile Include="AbnormalTransHelper.cpp" />
+    <ClCompile Include="ActivityUtil.cpp" />
+    <ClCompile Include="AsyncMsgCallback.cpp" />
+    <ClCompile Include="AsyncMsgCallbackMgr.cpp" />
+    <ClCompile Include="CLAccountCounterDataEntry.cpp" />
+    <ClCompile Include="CLAccountShopItemDataEntry.cpp" />
+    <ClCompile Include="CLAdventureTeamDataEntry.cpp" />
+    <ClCompile Include="CLAuctionMagicStrengAdditDataEntry.cpp" />
+    <ClCompile Include="CLAuctionNoTreasAverPriceMinNumDataEntry.cpp" />
+    <ClCompile Include="CLAuctionPageStruct.cpp" />
+    <ClCompile Include="CLAdventureTeamGradeDataEntry.cpp" />
+    <ClCompile Include="CLArtifactJarLotteryDataEntry.cpp" />
+    <ClCompile Include="CLAuctionRecoveItemDataEntry.cpp" />
+    <ClCompile Include="CLAuctionSysValueDataEntry.cpp" />
+    <ClCompile Include="CLBetHorseDataEntry.cpp" />
+    <ClCompile Include="CLBlackMarketItemDataEntry.cpp" />
+    <ClCompile Include="CLBuffRandomDataEntry.cpp" />
+    <ClCompile Include="CLChiJiDropDataEntry.cpp" />
+    <ClCompile Include="CLChiJiNpcRewardDataEntry.cpp" />
+    <ClCompile Include="CLChiJiPointDataEntry.cpp" />
+    <ClCompile Include="CLChiJiRegionDataEntry.cpp" />
+    <ClCompile Include="CLChiJiScoreDataEntry.cpp" />
+    <ClCompile Include="CLChiJiSkillDataEntry.cpp" />
+    <ClCompile Include="CLChijiSpawnItemDataEntry.cpp" />
+    <ClCompile Include="CLChiJiSwitchDataEntry.cpp" />
+    <ClCompile Include="CLChiJiTimeDataEntry.cpp" />
+    <ClCompile Include="CLCityMonsterDataEntry.cpp" />
+    <ClCompile Include="CLActiveEventDataEntry.cpp" />
+    <ClCompile Include="CLActivityMonsterDataEntry.cpp" />
+    <ClCompile Include="CLActivityMonsterProbDataEntry.cpp" />
+    <ClCompile Include="CLActivitySuitAdditionDataEntry.cpp" />
+    <ClCompile Include="CLAnnouncementDataEntry.cpp" />
+    <ClCompile Include="CLAuctionBoothDataEntry.cpp" />
+    <ClCompile Include="CLChannelNameSwitchDataEntry.cpp" />
+    <ClCompile Include="CLChargeMallDataEntry.cpp" />
+    <ClCompile Include="CLChargePacketDataEntry.cpp" />
+    <ClCompile Include="CLCurrencyCostDataEntry.cpp" />
+    <ClCompile Include="CLDailyTodoDataEntry.cpp" />
+    <ClCompile Include="CLDeathTowerAwardDataEntry.cpp" />
+    <ClCompile Include="CLDigDataEntry.cpp" />
+    <ClCompile Include="CLDrawPrizeDataEntry.cpp" />
+    <ClCompile Include="CLDropItemDataEntry.cpp" />
+    <ClCompile Include="CLDropItemVipLimitDataEntry.cpp" />
+    <ClCompile Include="CLDropSmellControlDataEntry.cpp" />
+    <ClCompile Include="CLDropStrengthenControlDataEntry.cpp" />
+    <ClCompile Include="CLDungeonAreaDataEntry.cpp" />
+    <ClCompile Include="CLDungeonChestDataEntry.cpp" />
+    <ClCompile Include="CLDungeonClearTimeDataEntry.cpp" />
+    <ClCompile Include="CLDungeonConfigMgr.cpp" />
+    <ClCompile Include="CLDungeonDailyDropDataEntry.cpp" />
+    <ClCompile Include="CLDungeonDestructTable.cpp" />
+    <ClCompile Include="CLDungeonHellDataEntry.cpp" />
+    <ClCompile Include="CLDungeonMatchDataEntry.cpp" />
+    <ClCompile Include="CLDungeonPrefixLimitDataEntry.cpp" />
+    <ClCompile Include="CLDungeonTimeDataEntry.cpp" />
+    <ClCompile Include="CLDungeonTimesDataEntry.cpp" />
+    <ClCompile Include="CLDungeonVerifyProbDataEntry.cpp" />
+    <ClCompile Include="CLEqSuitScoreDataEntry.cpp" />
+    <ClCompile Include="CLEqualItemDataEntry.cpp" />
+    <ClCompile Include="CLEqualPvPEuqipDataEntry.cpp" />
+    <ClCompile Include="CLEquieUpdateDataEntry.cpp" />
+    <ClCompile Include="CLEquipBaseScoreDataEntry.cpp" />
+    <ClCompile Include="CLEquipBaseScoreModDataEntry.cpp" />
+    <ClCompile Include="CLEquipInitAttriOnMakeDataEntry.cpp" />
+    <ClCompile Include="CLEquipRecoScUpConsRtiDataEntryBase.cpp" />
+    <ClCompile Include="CLEquipRecoScUpPrbWeightDataEntryBase.cpp" />
+    <ClCompile Include="CLEquipRecoveryPriceDataEntryBase.cpp" />
+    <ClCompile Include="CLEquipRecoveryRewardDataEntryBase.cpp" />
+    <ClCompile Include="CLEquipStrenLvScoreCoeDataEntry.cpp" />
+    <ClCompile Include="CLEquipSuitDataEntry.cpp" />
+    <ClCompile Include="CLEquipTransMapDataEntry.cpp" />
+    <ClCompile Include="CLEventMgr.cpp" />
+    <ClCompile Include="CLExpeditionMapDataEntry.cpp" />
+    <ClCompile Include="CLExpeditionMapRewardDataEntry.cpp" />
+    <ClCompile Include="CLFashionDecomposeDataEntry.cpp" />
+    <ClCompile Include="CLFashionMergeChangeActiveDataEntry.cpp" />
+    <ClCompile Include="CLForbitWord.cpp" />
+    <ClCompile Include="CLFriendWelfareAddDataEntry.cpp" />
+    <ClCompile Include="CLFunctionDataEntry.cpp" />
+    <ClCompile Include="CLGameLoggerAppender.cpp" />
+    <ClCompile Include="CLGameLoggerMgr.cpp" />
+    <ClCompile Include="CLDungeonDataEntry.cpp" />
+    <ClCompile Include="CLGuildBuildingDataEntry.cpp" />
+    <ClCompile Include="CLGuildBuildingPointDataEntry.cpp" />
+    <ClCompile Include="CLGuildDataEntry.cpp" />
+    <ClCompile Include="CLGuildDungeonDamageCoeffDataEntry.cpp" />
+    <ClCompile Include="CLGuildDungeonLotteryDataEntry.cpp" />
+    <ClCompile Include="CLGuildDungeonLvlDataEntry.cpp" />
+    <ClCompile Include="CLGuildDungeonRewardDataEntry.cpp" />
+    <ClCompile Include="CLGuildDungeonTimeDataEntry.cpp" />
+    <ClCompile Include="CLGuildDungeonTypeDataEntry.cpp" />
+    <ClCompile Include="CLGuildEmblemDataEntry.cpp" />
+    <ClCompile Include="CLGuildProsperityDataEntry.cpp" />
+    <ClCompile Include="CLGuildSkillDataEntry.cpp" />
+    <ClCompile Include="CLGuildStatueDataEntry.cpp" />
+    <ClCompile Include="CLGuildTableDataEntry.cpp" />
+    <ClCompile Include="CLGuildBattleDataEntry.cpp" />
+    <ClCompile Include="CLHeadFrameCompensateDataEntry.cpp" />
+    <ClCompile Include="CLInscriptionDataEntry.cpp" />
+    <ClCompile Include="CLInscriptionDropItemDataEntry.cpp" />
+    <ClCompile Include="CLInscriptionExtractDataEntry.cpp" />
+    <ClCompile Include="CLInscriptionHoleSetDataEntry.cpp" />
+    <ClCompile Include="CLInscriptionSynthesisDataEntry.cpp" />
+    <ClCompile Include="CLItemBuffDataEntry.cpp" />
+    <ClCompile Include="CLJobDataEntry.cpp" />
+    <ClCompile Include="CLLevelAdapterDataEntry.cpp" />
+    <ClCompile Include="CLLoginDataEntry.cpp" />
+    <ClCompile Include="CLMallDataEntry.cpp" />
+    <ClCompile Include="CLMallGiftPackDataEntry.cpp" />
+    <ClCompile Include="CLMallPersonalTailorDataEntry.cpp" />
+    <ClCompile Include="CLMallShopMultiIDataEntry.cpp" />
+    <ClCompile Include="CLMasterSysGiftDataEntry.cpp" />
+    <ClCompile Include="CLMoneyManageDataEntry.cpp" />
+    <ClCompile Include="CLMonsterAttributeTable.cpp" />
+    <ClCompile Include="CLMonsterDataEntry.cpp" />
+    <ClCompile Include="CLMonsterGroupDataEntry.cpp" />
+    <ClCompile Include="CLMonsterPrefixDataEntry.cpp" />
+    <ClCompile Include="CLMonthSignAwardDataEntry.cpp" />
+    <ClCompile Include="CLNetLogAppender.cpp" />
+    <ClCompile Include="CLApplication.cpp" />
+    <ClCompile Include="CLBuffDataEntry.cpp" />
+    <ClCompile Include="CLExternalNetwork.cpp" />
+    <ClCompile Include="CLInternalNetwork.cpp" />
+    <ClCompile Include="CLItemDataEntry.cpp" />
+    <ClCompile Include="CLItemProperty.cpp" />
+    <ClCompile Include="CLMsgParser.cpp" />
+    <ClCompile Include="CLNetAddress.cpp" />
+    <ClCompile Include="CLNetwork.cpp" />
+    <ClCompile Include="CLGrid.cpp" />
+    <ClCompile Include="CLNewTitleDataEntry.cpp" />
+    <ClCompile Include="CLNpcDataEntry.cpp" />
+    <ClCompile Include="CLParameter.cpp" />
+    <ClCompile Include="CLPetDataEntry.cpp" />
+    <ClCompile Include="CLPkLevelDataEntry.cpp" />
+    <ClCompile Include="CLPlayerDataEntry.cpp" />
+    <ClCompile Include="CLPlayerMonitorMgr.cpp" />
+    <ClCompile Include="CLPremiumLeagueDataEntry.cpp" />
+    <ClCompile Include="CLQuickBuyDataEntry.cpp" />
+    <ClCompile Include="CLRaceEndDropDataEntry.cpp" />
+    <ClCompile Include="CLRareItemDataEntry.cpp" />
+    <ClCompile Include="CLRechargePushDataEntry.cpp" />
+    <ClCompile Include="CLRecordCallback.cpp" />
+    <ClCompile Include="CLRecordClient.cpp" />
+    <ClCompile Include="CLRecordCommand.cpp" />
+    <ClCompile Include="CLRedPacketDataEntry.cpp" />
+    <ClCompile Include="CLRequest.cpp" />
+    <ClCompile Include="CLRetinueDataEntry.cpp" />
+    <ClCompile Include="CLRewardAdapter.cpp" />
+    <ClCompile Include="CLRobotDataEntry.cpp" />
+    <ClCompile Include="CLRoleValueTotalScoreCalcDataEntry.cpp" />
+    <ClCompile Include="CLScene.cpp" />
+    <ClCompile Include="CLDatabaseDefine.cpp" />
+    <ClCompile Include="CLSceneDataEntry.cpp" />
+    <ClCompile Include="CLScoreWarDataEntry.cpp" />
+    <ClCompile Include="CLScriptMgr.cpp" />
+    <ClCompile Include="CLSeasonDataEntry.cpp" />
+    <ClCompile Include="CLSeasonRewardDataEntry.cpp" />
+    <ClCompile Include="CLShopItemDataEntry.cpp" />
+    <ClCompile Include="CLShopMainFrameDataEntry.cpp" />
+    <ClCompile Include="CLSkillDataEntry.cpp" />
+    <ClCompile Include="CLSkillRecommendDataEntry.cpp" />
+    <ClCompile Include="CLStandardNormalDistributionDataEntry.cpp" />
+    <ClCompile Include="CLStrengthenTicketFuseDataEntry.cpp" />
+    <ClCompile Include="CLStrengthenTicketSynthesisDataEntry.cpp" />
+    <ClCompile Include="CLStrenTicketFuseMaterialDataEntry.cpp" />
+    <ClCompile Include="CLStrenTicketFusePramMappingDataEntry.cpp" />
+    <ClCompile Include="CLSysNotify.cpp" />
+    <ClCompile Include="CLSysNotifyDataEntry.cpp" />
+    <ClCompile Include="CLTaskDataEntry.cpp" />
+    <ClCompile Include="CLDataLogAppender.cpp" />
+    <ClCompile Include="CLDataLogMgr.cpp" />
+    <ClCompile Include="CLTeamCopyBossDataEntry.cpp" />
+    <ClCompile Include="CLTeamCopyFieldDataEntry.cpp" />
+    <ClCompile Include="CLTeamCopyFlopDataEntry.cpp" />
+    <ClCompile Include="CLTeamCopyTargetDataEntry.cpp" />
+    <ClCompile Include="CLTeamCopyValueDataEntry.cpp" />
+    <ClCompile Include="CLTeamDungeonDataEntry.cpp" />
+    <ClCompile Include="CLTeamRewardDataEntry.cpp" />
+    <ClCompile Include="CLUltimateChallengeBuffDataEntry.cpp" />
+    <ClCompile Include="CLUltimateChallengeDungeonDataEntry.cpp" />
+    <ClCompile Include="CLVerifyNode.cpp" />
+    <ClCompile Include="CLVerifyNodeMgr.cpp" />
+    <ClCompile Include="CLVipDataEntry.cpp" />
+    <ClCompile Include="CLWarpStoneDataEntry.cpp" />
+    <ClCompile Include="CLWeekSignDataEntry.cpp" />
+    <ClCompile Include="CLWeekSignSumDataEntry.cpp" />
+    <ClCompile Include="CLXtea.cpp" />
+    <ClCompile Include="ConsoleAgent.cpp" />
+    <ClCompile Include="DropItemMgr.cpp" />
+    <ClCompile Include="CLDungeonGuaranteeDropDataEntry.cpp" />
+    <ClCompile Include="kingnet_analyzer.cpp" />
+    <ClCompile Include="CLNetHeader.cpp" />
+    <ClCompile Include="MallHelper.cpp" />
+    <ClCompile Include="PerformanceMgr.cpp" />
+    <ClCompile Include="PlayerHelper.cpp" />
+    <ClCompile Include="ServiceSwitchMgr.cpp" />
+    <ClCompile Include="CLSystemValueDataEntry.cpp" />
+    <ClCompile Include="TimeUtil.cpp" />
+    <ClCompile Include="udplog_codeengine.cpp" />
+    <ClCompile Include="udplog_config.cpp" />
+    <ClCompile Include="udplog_lib.cpp" />
+    <ClCompile Include="CLWudaoRewardDataEntry.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\AbnormalTransHelper.h" />
+    <ClInclude Include="..\..\include\ActivityUtil.h" />
+    <ClInclude Include="..\..\include\AsyncMsgCallback.h" />
+    <ClInclude Include="..\..\include\AsyncMsgCallbackMgr.h" />
+    <ClInclude Include="..\..\include\CLAbnormalTransDefine.h" />
+    <ClInclude Include="..\..\include\CLAccountCounterDataEntry.h" />
+    <ClInclude Include="..\..\include\CLAccountProtocol.h" />
+    <ClInclude Include="..\..\include\CLAccountShopItemDataEntry.h" />
+    <ClInclude Include="..\..\include\CLActiveEventDataEntry.h" />
+    <ClInclude Include="..\..\include\CLActivityAttributeDefine.h" />
+    <ClInclude Include="..\..\include\CLActivityDefine.h" />
+    <ClInclude Include="..\..\include\CLActivityInfo.h" />
+    <ClInclude Include="..\..\include\CLActivityMonsterDataEntry.h" />
+    <ClInclude Include="..\..\include\CLActivityMonsterProbDataEntry.h" />
+    <ClInclude Include="..\..\include\CLActivitySuitAdditionDataEntry.h" />
+    <ClInclude Include="..\..\include\CLAdventureTeamDataEntry.h" />
+    <ClInclude Include="..\..\include\CLAdventureTeamDefine.h" />
+    <ClInclude Include="..\..\include\CLAdventureTeamGradeDataEntry.h" />
+    <ClInclude Include="..\..\include\CLAdventureTeamProtocol.h" />
+    <ClInclude Include="..\..\include\CLAnnouncementDataEntry.h" />
+    <ClInclude Include="..\..\include\CLAnnouncementDefine.h" />
+    <ClInclude Include="..\..\include\CLArtifactJarLotteryDataEntry.h" />
+    <ClInclude Include="..\..\include\CLAuctionBoothDataEntry.h" />
+    <ClInclude Include="..\..\include\CLAuctionDefine.h" />
+    <ClInclude Include="..\..\include\CLAuctionMagicStrengAdditDataEntry.h" />
+    <ClInclude Include="..\..\include\CLAuctionNoTreasAverPriceMinNumDataEntry.h" />
+    <ClInclude Include="..\..\include\CLAuctionPageStruct.h" />
+    <ClInclude Include="..\..\include\CLAuctionProtocol.h" />
+    <ClInclude Include="..\..\include\CLAuctionRecoveItemDataEntry.h" />
+    <ClInclude Include="..\..\include\CLAuctionSysValueDataEntry.h" />
+    <ClInclude Include="..\..\include\CLBattleProtocol.h" />
+    <ClInclude Include="..\..\include\CLBetHorseDataEntry.h" />
+    <ClInclude Include="..\..\include\CLBetHorseDefine.h" />
+    <ClInclude Include="..\..\include\CLBetHorseProtocol.h" />
+    <ClInclude Include="..\..\include\CLBillingDefine.h" />
+    <ClInclude Include="..\..\include\CLBillingProtocol.h" />
+    <ClInclude Include="..\..\include\CLBlackMarketDefine.h" />
+    <ClInclude Include="..\..\include\CLBlackMarketItemDataEntry.h" />
+    <ClInclude Include="..\..\include\CLBlackMarketProtocol.h" />
+    <ClInclude Include="..\..\include\CLBuffRandomDataEntry.h" />
+    <ClInclude Include="..\..\include\CLCenterProtocol.h" />
+    <ClInclude Include="..\..\include\CLChangeZoneProtocol.h" />
+    <ClInclude Include="..\..\include\CLChannelNameSwitchDataEntry.h" />
+    <ClInclude Include="..\..\include\CLChargeMallDataEntry.h" />
+    <ClInclude Include="..\..\include\CLChargePacketDataEntry.h" />
+    <ClInclude Include="..\..\include\CLCheatDefine.h" />
+    <ClInclude Include="..\..\include\CLChiJiDropDataEntry.h" />
+    <ClInclude Include="..\..\include\CLChiJiNpcRewardDataEntry.h" />
+    <ClInclude Include="..\..\include\CLChiJiPointDataEntry.h" />
+    <ClInclude Include="..\..\include\CLChiJiRegionDataEntry.h" />
+    <ClInclude Include="..\..\include\CLChiJiScoreDataEntry.h" />
+    <ClInclude Include="..\..\include\CLChiJiSkillDataEntry.h" />
+    <ClInclude Include="..\..\include\CLChijiSpawnItemDataEntry.h" />
+    <ClInclude Include="..\..\include\CLChiJiSwitchDataEntry.h" />
+    <ClInclude Include="..\..\include\CLChiJiTimeDataEntry.h" />
+    <ClInclude Include="..\..\include\CLCityMonsterDataEntry.h" />
+    <ClInclude Include="..\..\include\CLConsoleProtocol.h" />
+    <ClInclude Include="..\..\include\CLCounterDefine.h" />
+    <ClInclude Include="..\..\include\CLCounterNameDefine.h" />
+    <ClInclude Include="..\..\include\CLCrossDungeonDefine.h" />
+    <ClInclude Include="..\..\include\CLCurrencyCostDataEntry.h" />
+    <ClInclude Include="..\..\include\CLDailyTodoDataEntry.h" />
+    <ClInclude Include="..\..\include\CLDailyTodoDefine.h" />
+    <ClInclude Include="..\..\include\CLDailyTodoProtocol.h" />
+    <ClInclude Include="..\..\include\CLDBLogger.h" />
+    <ClInclude Include="..\..\include\CLDeathTowerAwardDataEntry.h" />
+    <ClInclude Include="..\..\include\CLDigDataEntry.h" />
+    <ClInclude Include="..\..\include\CLDigDefine.h" />
+    <ClInclude Include="..\..\include\CLDigProtocol.h" />
+    <ClInclude Include="..\..\include\CLDir.h" />
+    <ClInclude Include="..\..\include\CLDrawPrizeDataEntry.h" />
+    <ClInclude Include="..\..\include\CLDropItemDataEntry.h" />
+    <ClInclude Include="..\..\include\CLDropItemDefine.h" />
+    <ClInclude Include="..\..\include\CLDropSmellControlDataEntry.h" />
+    <ClInclude Include="..\..\include\CLDropStrengthenControlDataEntry.h" />
+    <ClInclude Include="..\..\include\CLDungeonAreaDataEntry.h" />
+    <ClInclude Include="..\..\include\CLDungeonChestDataEntry.h" />
+    <ClInclude Include="..\..\include\CLDungeonClearTimeDataEntry.h" />
+    <ClInclude Include="..\..\include\CLDungeonConfigMgr.h" />
+    <ClInclude Include="..\..\include\CLDungeonDailyDropDataEntry.h" />
+    <ClInclude Include="..\..\include\CLDungeonDestructTable.h" />
+    <ClInclude Include="..\..\include\CLDungeonHellDataEntry.h" />
+    <ClInclude Include="..\..\include\CLDungeonMatchDataEntry.h" />
+    <ClInclude Include="..\..\include\CLDungeonPrefixLimitDataEntry.h" />
+    <ClInclude Include="..\..\include\CLDungeonTimeDataEntry.h" />
+    <ClInclude Include="..\..\include\CLDungeonTimesDataEntry.h" />
+    <ClInclude Include="..\..\include\CLEqSuitScoreDataEntry.h" />
+    <ClInclude Include="..\..\include\CLEqualPvPEuqipDataEntry.h" />
+    <ClInclude Include="..\..\include\CLEquieUpdateDataEntry.h" />
+    <ClInclude Include="..\..\include\CLEquipBaseScoreDataEntry.h" />
+    <ClInclude Include="..\..\include\CLEquipBaseScoreModDataEntry.h" />
+    <ClInclude Include="..\..\include\CLEquipInitAttriOnMakeDataEntry.h" />
+    <ClInclude Include="..\..\include\CLEquipRecoScUpConsRtiDataEntryBase.h" />
+    <ClInclude Include="..\..\include\CLEquipRecoScUpPrbWeightDataEntryBase.h" />
+    <ClInclude Include="..\..\include\CLEquipRecoveryPriceDataEntryBase.h" />
+    <ClInclude Include="..\..\include\CLEquipRecoveryRewardDataEntryBase.h" />
+    <ClInclude Include="..\..\include\CLEquipStrenLvScoreCoeDataEntry.h" />
+    <ClInclude Include="..\..\include\CLEquipSuitDataEntry.h" />
+    <ClInclude Include="..\..\include\CLDungeonVerifyProbDataEntry.h" />
+    <ClInclude Include="..\..\include\CLEquipTransMapDataEntry.h" />
+    <ClInclude Include="..\..\include\CLEventMgr.h" />
+    <ClInclude Include="..\..\include\CLExpeditionMapDataEntry.h" />
+    <ClInclude Include="..\..\include\CLExpeditionMapRewardDataEntry.h" />
+    <ClInclude Include="..\..\include\CLFashionDecomposeDataEntry.h" />
+    <ClInclude Include="..\..\include\CLFashionMergeChangeActiveDataEntry.h" />
+    <ClInclude Include="..\..\include\CLFigureStatueDefine.h" />
+    <ClInclude Include="..\..\include\CLFriendWelfareAddDataEntry.h" />
+    <ClInclude Include="..\..\include\CLGambingProtocol.h" />
+    <ClInclude Include="..\..\include\CLGlobalActivityProtocol.h" />
+    <ClInclude Include="..\..\include\CLGlobalActivityServerDefine.h" />
+    <ClInclude Include="..\..\include\CLGlobalServerDefine.h" />
+    <ClInclude Include="..\..\include\CLGuildBuildingPointDataEntry.h" />
+    <ClInclude Include="..\..\include\CLGuildDungeonDamageCoeffDataEntry.h" />
+    <ClInclude Include="..\..\include\CLGuildDungeonLotteryDataEntry.h" />
+    <ClInclude Include="..\..\include\CLGuildDungeonLvlDataEntry.h" />
+    <ClInclude Include="..\..\include\CLGuildDungeonRewardDataEntry.h" />
+    <ClInclude Include="..\..\include\CLGuildDungeonTimeDataEntry.h" />
+    <ClInclude Include="..\..\include\CLGuildDungeonTypeDataEntry.h" />
+    <ClInclude Include="..\..\include\CLGuildProsperityDataEntry.h" />
+    <ClInclude Include="..\..\include\CLHeadFrameCompensateDataEntry.h" />
+    <ClInclude Include="..\..\include\CLHeadFrameProtocol.h" />
+    <ClInclude Include="..\..\include\CLGuildEmblemDataEntry.h" />
+    <ClInclude Include="..\..\include\CLInscriptionDataEntry.h" />
+    <ClInclude Include="..\..\include\CLInscriptionDropItemDataEntry.h" />
+    <ClInclude Include="..\..\include\CLInscriptionExtractDataEntry.h" />
+    <ClInclude Include="..\..\include\CLInscriptionHoleSetDataEntry.h" />
+    <ClInclude Include="..\..\include\CLInscriptionSynthesisDataEntry.h" />
+    <ClInclude Include="..\..\include\CLItemBuffDataEntry.h" />
+    <ClInclude Include="..\..\include\CLLevelAdapterDataEntry.h" />
+    <ClInclude Include="..\..\include\CLLoginDataEntry.h" />
+    <ClInclude Include="..\..\include\CLMallDefine.h" />
+    <ClInclude Include="..\..\include\CLMallGiftPackDataEntry.h" />
+    <ClInclude Include="..\..\include\CLMallPersonalTailorDataEntry.h" />
+    <ClInclude Include="..\..\include\CLMasterSysGiftDataEntry.h" />
+    <ClInclude Include="..\..\include\CLMasterSystemDefine.h" />
+    <ClInclude Include="..\..\include\CLMoneyManageDataEntry.h" />
+    <ClInclude Include="..\..\include\CLMoneyManageDefine.h" />
+    <ClInclude Include="..\..\include\CLMonthSignAwardDataEntry.h" />
+    <ClInclude Include="..\..\include\CLNewbieGuideDataEntry.h" />
+    <ClInclude Include="..\..\include\CLNewTitleDataEntry.h" />
+    <ClInclude Include="..\..\include\CLNewTitleDefine.h" />
+    <ClInclude Include="..\..\include\CLNewTitleProtocol.h" />
+    <ClInclude Include="..\..\include\CLNpcDataEntry.h" />
+    <ClInclude Include="..\..\include\CLOpActiveProtocol.h" />
+    <ClInclude Include="..\..\include\CLOperateDefine.h" />
+    <ClInclude Include="..\..\include\CLPetDataEntry.h" />
+    <ClInclude Include="..\..\include\CLPetDefine.h" />
+    <ClInclude Include="..\..\include\CLPetProtocol.h" />
+    <ClInclude Include="..\..\include\CLPlayerDefine.h" />
+    <ClInclude Include="..\..\include\CLPlayerJoinEventDefine.h" />
+    <ClInclude Include="..\..\include\CLPlayerMonitorMgr.h" />
+    <ClInclude Include="..\..\include\CLPremiumLeagueDataEntry.h" />
+    <ClInclude Include="..\..\include\CLPremiumLeagueDefine.h" />
+    <ClInclude Include="..\..\include\CLPremiumLeagueProtocol.h" />
+    <ClInclude Include="..\..\include\CLRechargePushDataEntry.h" />
+    <ClInclude Include="..\..\include\CLReplayDefine.h" />
+    <ClInclude Include="..\..\include\CLReplayProtocol.h" />
+    <ClInclude Include="..\..\include\CLRoleProtocol.h" />
+    <ClInclude Include="..\..\include\CLRoleValueTotalScoreCalcDataEntry.h" />
+    <ClInclude Include="..\..\include\CLRoomDefine.h" />
+    <ClInclude Include="..\..\include\CLRoomProtocol.h" />
+    <ClInclude Include="..\..\include\CLScoreWarDataEntry.h" />
+    <ClInclude Include="..\..\include\CLScoreWarDefine.h" />
+    <ClInclude Include="..\..\include\CLScoreWarProtocol.h" />
+    <ClInclude Include="..\..\include\CLSeasonDataEntry.h" />
+    <ClInclude Include="..\..\include\CLSeasonDefine.h" />
+    <ClInclude Include="..\..\include\CLSecurityLockDefine.h" />
+    <ClInclude Include="..\..\include\CLSecurityLockProtocol.h" />
+    <ClInclude Include="..\..\include\CLShopMainFrameDataEntry.h" />
+    <ClInclude Include="..\..\include\CLShopProtocol.h" />
+    <ClInclude Include="..\..\include\CLSkillRecommendDataEntry.h" />
+    <ClInclude Include="..\..\include\CLStandardNormalDistributionDataEntry.h" />
+    <ClInclude Include="..\..\include\CLStrengthenTicketFuseDataEntry.h" />
+    <ClInclude Include="..\..\include\CLStrengthenTicketSynthesisDataEntry.h" />
+    <ClInclude Include="..\..\include\CLStrenTicketFuseMaterialDataEntry.h" />
+    <ClInclude Include="..\..\include\CLStrenTicketFusePramMappingDataEntry.h" />
+    <ClInclude Include="..\..\include\CLSysRecordDefine.h" />
+    <ClInclude Include="..\..\include\CLSysRecordProtocol.h" />
+    <ClInclude Include="..\..\include\CLTeamCopyBossDataEntry.h" />
+    <ClInclude Include="..\..\include\CLTeamCopyDefine.h" />
+    <ClInclude Include="..\..\include\CLTeamCopyFieldDataEntry.h" />
+    <ClInclude Include="..\..\include\CLTeamCopyFlopDataEntry.h" />
+    <ClInclude Include="..\..\include\CLTeamCopyProtocol.h" />
+    <ClInclude Include="..\..\include\CLTeamCopyTargetDataEntry.h" />
+    <ClInclude Include="..\..\include\CLTeamCopyValueDataEntry.h" />
+    <ClInclude Include="..\..\include\CLTeamRewardDataEntry.h" />
+    <ClInclude Include="..\..\include\CLTeamDungeonDataEntry.h" />
+    <ClInclude Include="..\..\include\CLEqualItemDataEntry.h" />
+    <ClInclude Include="..\..\include\CLForbitWord.h" />
+    <ClInclude Include="..\..\include\CLFunctionDataEntry.h" />
+    <ClInclude Include="..\..\include\CLGameLoggerAppender.h" />
+    <ClInclude Include="..\..\include\CLGameLoggerMgr.h" />
+    <ClInclude Include="..\..\include\CLGameSessionDefine.h" />
+    <ClInclude Include="..\..\include\CLGameSessionProtocol.h" />
+    <ClInclude Include="..\..\include\CLGiftBagProtocol.h" />
+    <ClInclude Include="..\..\include\CLGSActivityProtocol.h" />
+    <ClInclude Include="..\..\include\CLDungeonDataEntry.h" />
+    <ClInclude Include="..\..\include\CLDungeonDefine.h" />
+    <ClInclude Include="..\..\include\CLDungeonProtocol.h" />
+    <ClInclude Include="..\..\include\CLGuildBuildingDataEntry.h" />
+    <ClInclude Include="..\..\include\CLGuildDataEntry.h" />
+    <ClInclude Include="..\..\include\CLGuildDefine.h" />
+    <ClInclude Include="..\..\include\CLGuildProtocol.h" />
+    <ClInclude Include="..\..\include\CLGuildSkillDataEntry.h" />
+    <ClInclude Include="..\..\include\CLGuildStatueDataEntry.h" />
+    <ClInclude Include="..\..\include\CLGuildTableDataEntry.h" />
+    <ClInclude Include="..\..\include\CLGuildBattleDataEntry.h" />
+    <ClInclude Include="..\..\include\CLJobDataEntry.h" />
+    <ClInclude Include="..\..\include\CLMailDefine.h" />
+    <ClInclude Include="..\..\include\CLMallDataEntry.h" />
+    <ClInclude Include="..\..\include\CLMallProtocol.h" />
+    <ClInclude Include="..\..\include\CLMatchDefine.h" />
+    <ClInclude Include="..\..\include\CLMatchProtocol.h" />
+    <ClInclude Include="..\..\include\CLMonsterAttributeTable.h" />
+    <ClInclude Include="..\..\include\CLMonsterDataEntry.h" />
+    <ClInclude Include="..\..\include\CLMonsterGroupDataEntry.h" />
+    <ClInclude Include="..\..\include\CLMonsterPrefixDataEntry.h" />
+    <ClInclude Include="..\..\include\CLNetHeader.h" />
+    <ClInclude Include="..\..\include\CLNetLogAppender.h" />
+    <ClInclude Include="..\..\include\CLApplication.h" />
+    <ClInclude Include="..\..\include\CLBuffDataEntry.h" />
+    <ClInclude Include="..\..\include\CLChatDefine.h" />
+    <ClInclude Include="..\..\include\CLChatProtocol.h" />
+    <ClInclude Include="..\..\include\CLDefine.h" />
+    <ClInclude Include="..\..\include\CLErrorCode.h" />
+    <ClInclude Include="..\..\include\CLGameDefine.h" />
+    <ClInclude Include="..\..\include\CLExternalNetwork.h" />
+    <ClInclude Include="..\..\include\CLItemDataEntry.h" />
+    <ClInclude Include="..\..\include\CLItemDefine.h" />
+    <ClInclude Include="..\..\include\CLItemProperty.h" />
+    <ClInclude Include="..\..\include\CLItemProtocol.h" />
+    <ClInclude Include="..\..\include\CLItemTypeDefine.h" />
+    <ClInclude Include="..\..\include\CLMailProtocol.h" />
+    <ClInclude Include="..\..\include\CLMaskProperty.h" />
+    <ClInclude Include="..\..\include\CLMsgParser.h" />
+    <ClInclude Include="..\..\include\CLObjectDefine.h" />
+    <ClInclude Include="..\..\include\CLParameter.h" />
+    <ClInclude Include="..\..\include\CLInternalNetwork.h" />
+    <ClInclude Include="..\..\include\CLNetAddress.h" />
+    <ClInclude Include="..\..\include\CLNetwork.h" />
+    <ClInclude Include="..\..\include\CLPacketExecutor.h" />
+    <ClInclude Include="..\..\include\CLEnterGameProtocol.h" />
+    <ClInclude Include="..\..\include\CLGateProtocol.h" />
+    <ClInclude Include="..\..\include\CLLeaveGameProtocol.h" />
+    <ClInclude Include="..\..\include\CLLoginProtocol.h" />
+    <ClInclude Include="..\..\include\CLMoveProtocol.h" />
+    <ClInclude Include="..\..\include\CLPkLevelDataEntry.h" />
+    <ClInclude Include="..\..\include\CLPkStatisticDefine.h" />
+    <ClInclude Include="..\..\include\CLPlayerDataEntry.h" />
+    <ClInclude Include="..\..\include\CLProtocolDefine.h" />
+    <ClInclude Include="..\..\include\CLQuickBuyDataEntry.h" />
+    <ClInclude Include="..\..\include\CLQuickBuyProtocol.h" />
+    <ClInclude Include="..\..\include\CLRaceEndDropDataEntry.h" />
+    <ClInclude Include="..\..\include\CLRareItemDataEntry.h" />
+    <ClInclude Include="..\..\include\CLRedPacketDataEntry.h" />
+    <ClInclude Include="..\..\include\CLRedPacketDefine.h" />
+    <ClInclude Include="..\..\include\CLRedPacketProtocol.h" />
+    <ClInclude Include="..\..\include\CLRelationDefine.h" />
+    <ClInclude Include="..\..\include\CLRelationProtocol.h" />
+    <ClInclude Include="..\..\include\CLRelayServerProtocol.h" />
+    <ClInclude Include="..\..\include\CLRequest.h" />
+    <ClInclude Include="..\..\include\CLRetinueDataEntry.h" />
+    <ClInclude Include="..\..\include\CLRetinueDefine.h" />
+    <ClInclude Include="..\..\include\CLRetinueProtocol.h" />
+    <ClInclude Include="..\..\include\CLRewardAdapter.h" />
+    <ClInclude Include="..\..\include\CLRobotDataEntry.h" />
+    <ClInclude Include="..\..\include\CLRoutineProtocol.h" />
+    <ClInclude Include="..\..\include\CLSceneDataEntry.h" />
+    <ClInclude Include="..\..\include\CLSceneDefine.h" />
+    <ClInclude Include="..\..\include\CLScriptDefine.h" />
+    <ClInclude Include="..\..\include\CLScriptMgr.h" />
+    <ClInclude Include="..\..\include\CLSeasonRewardDataEntry.h" />
+    <ClInclude Include="..\..\include\CLSettingDefine.h" />
+    <ClInclude Include="..\..\include\CLSettingProtocol.h" />
+    <ClInclude Include="..\..\include\CLRecordCallback.h" />
+    <ClInclude Include="..\..\include\CLRecordClient.h" />
+    <ClInclude Include="..\..\include\CLRecordCommand.h" />
+    <ClInclude Include="..\..\include\CLRecordProtocol.h" />
+    <ClInclude Include="..\..\include\CLSceneProtocol.h" />
+    <ClInclude Include="..\..\include\CLShopItemDataEntry.h" />
+    <ClInclude Include="..\..\include\CLSkillDataEntry.h" />
+    <ClInclude Include="..\..\include\CLSkillDefine.h" />
+    <ClInclude Include="..\..\include\CLSkillProtocol.h" />
+    <ClInclude Include="..\..\include\CLInviteGameProtocol.h" />
+    <ClInclude Include="..\..\include\CLSortListDefine.h" />
+    <ClInclude Include="..\..\include\CLSortListProtocol.h" />
+    <ClInclude Include="..\..\include\CLStoryProtocol.h" />
+    <ClInclude Include="..\..\include\CLSyncObjectProtocol.h" />
+    <ClInclude Include="..\..\include\CLSysNotify.h" />
+    <ClInclude Include="..\..\include\CLSysNotifyDataEntry.h" />
+    <ClInclude Include="..\..\include\CLSysProtocol.h" />
+    <ClInclude Include="..\..\include\CLGrid.h" />
+    <ClInclude Include="..\..\include\CLScene.h" />
+    <ClInclude Include="..\..\include\CLSceneObject.h" />
+    <ClInclude Include="..\..\include\CLObject.h" />
+    <ClInclude Include="..\..\include\CLObjectIndex.h" />
+    <ClInclude Include="..\..\include\CLObjectProperty.h" />
+    <ClInclude Include="..\..\include\CLSyncObject.h" />
+    <ClInclude Include="..\..\include\CLDatabaseDefine.h" />
+    <ClInclude Include="..\..\include\CLTaskDataEntry.h" />
+    <ClInclude Include="..\..\include\CLTaskDefine.h" />
+    <ClInclude Include="..\..\include\CLTaskProtocol.h" />
+    <ClInclude Include="..\..\include\CLTeamDefine.h" />
+    <ClInclude Include="..\..\include\CLTeamProtocol.h" />
+    <ClInclude Include="..\..\include\CLTradeProtocol.h" />
+    <ClInclude Include="..\..\include\CLDataLogAppender.h" />
+    <ClInclude Include="..\..\include\CLUltimateChallengeBuffDataEntry.h" />
+    <ClInclude Include="..\..\include\CLUltimateChallengeDungeonDataEntry.h" />
+    <ClInclude Include="..\..\include\CLUtf8Define.h" />
+    <ClInclude Include="..\..\include\CLVerifyDefine.h" />
+    <ClInclude Include="..\..\include\CLVerifyNode.h" />
+    <ClInclude Include="..\..\include\CLVerifyProtocol.h" />
+    <ClInclude Include="..\..\include\CLVerifyNodeMgr.h" />
+    <ClInclude Include="..\..\include\CLVipDataEntry.h" />
+    <ClInclude Include="..\..\include\CLVipProtocol.h" />
+    <ClInclude Include="..\..\include\CLWarpStoneDataEntry.h" />
+    <ClInclude Include="..\..\include\CLWarpStoneDefine.h" />
+    <ClInclude Include="..\..\include\CLWarpStoneProtocol.h" />
+    <ClInclude Include="..\..\include\CLCrossProtocol.h" />
+    <ClInclude Include="..\..\include\CLWeekSignDataEntry.h" />
+    <ClInclude Include="..\..\include\CLWeekSignSumDataEntry.h" />
+    <ClInclude Include="..\..\include\CLWorldLevelProtocol.h" />
+    <ClInclude Include="..\..\include\CLWudaoRewardDataEntry.h" />
+    <ClInclude Include="..\..\include\CLXtea.h" />
+    <ClInclude Include="..\..\include\ConsoleAgent.h" />
+    <ClInclude Include="..\..\include\CLDataLogMgr.h" />
+    <ClInclude Include="..\..\include\DropItemMgr.h" />
+    <ClInclude Include="..\..\include\CLDungeonGuaranteeDropDataEntry.h" />
+    <ClInclude Include="..\..\include\json\elements.h" />
+    <ClInclude Include="..\..\include\json\reader.h" />
+    <ClInclude Include="..\..\include\json\visitor.h" />
+    <ClInclude Include="..\..\include\json\writer.h" />
+    <ClInclude Include="..\..\include\CLDataCenterProtocol.h" />
+    <ClInclude Include="..\..\include\kingnet_analyzer.h" />
+    <ClInclude Include="..\..\include\MallHelper.h" />
+    <ClInclude Include="..\..\include\PerformanceCheck.h" />
+    <ClInclude Include="..\..\include\PerformanceMgr.h" />
+    <ClInclude Include="..\..\include\PlayerHelper.h" />
+    <ClInclude Include="..\..\include\ServiceSwitchMgr.h" />
+    <ClInclude Include="..\..\include\CLSystemValueDataEntry.h" />
+    <ClInclude Include="..\..\include\TimeUtil.h" />
+    <ClInclude Include="..\..\include\udplog_codeengine.h" />
+    <ClInclude Include="..\..\include\udplog_config.h" />
+    <ClInclude Include="..\..\include\udplog_lib.h" />
+    <ClInclude Include="..\..\include\udplog_singleton.h" />
+    <ClInclude Include="..\..\include\udplog_typedef.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\include\json\elements.inl" />
+    <None Include="..\..\include\json\reader.inl" />
+    <None Include="..\..\include\json\writer.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

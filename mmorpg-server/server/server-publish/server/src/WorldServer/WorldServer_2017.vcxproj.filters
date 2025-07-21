@@ -1,0 +1,1263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="WSApplication.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="WSEnterGameHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WSGateHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WSSceneHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WSSysHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WSNetwork.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="WSRegisterProtocols.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="WSPlayerMgr.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="WSPlayer.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="WSRegPlayerProtocols.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="WSScene.cpp">
+      <Filter>RelaySession\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="WSSceneMgr.cpp">
+      <Filter>RelaySession\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="WSMoveHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldSysNotify.cpp">
+      <Filter>Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptMgr.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatDataMgr.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="WSChatHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WSTeam.cpp">
+      <Filter>Team</Filter>
+    </ClCompile>
+    <ClCompile Include="WSRouter.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="MailBox.cpp">
+      <Filter>Mail</Filter>
+    </ClCompile>
+    <ClCompile Include="WSItem.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldMailHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WSTeamMgr.cpp">
+      <Filter>Team</Filter>
+    </ClCompile>
+    <ClCompile Include="WSTeamHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WSRelation.cpp">
+      <Filter>Relation</Filter>
+    </ClCompile>
+    <ClCompile Include="WSRelationMgr.cpp">
+      <Filter>Relation</Filter>
+    </ClCompile>
+    <ClCompile Include="WSRelationHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldSyncObjectHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WSSelectInitDataCallback.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="WSItemTransaction.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="WSItemHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="OfflineEvent.cpp">
+      <Filter>OfflineEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="OfflineEventMgr.cpp">
+      <Filter>OfflineEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="SysInterface.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="TimerScript.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="WSSortListMgr.cpp">
+      <Filter>SortList</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldSortListHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="MallMgr.cpp">
+      <Filter>Mall</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldMallHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldBossMgr.cpp">
+      <Filter>WorldBoss</Filter>
+    </ClCompile>
+    <ClCompile Include="WSConsoleHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WSConsoleAgent.cpp">
+      <Filter>Console</Filter>
+    </ClCompile>
+    <ClCompile Include="WSConsoleCmdHandler.cpp">
+      <Filter>Console</Filter>
+    </ClCompile>
+    <ClCompile Include="PunishmentMgr.cpp">
+      <Filter>Punishment</Filter>
+    </ClCompile>
+    <ClCompile Include="AnnouncementMgr.cpp">
+      <Filter>Announcement</Filter>
+    </ClCompile>
+    <ClCompile Include="BroadcastMailMgr.cpp">
+      <Filter>Mail</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGMSystem.cpp">
+      <Filter>Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="WSActivityMgr.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="GameParamMgr.cpp">
+      <Filter>GameParam</Filter>
+    </ClCompile>
+    <ClCompile Include="WSPackage.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="WSItemMgr.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldAuctionHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WSBillingHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="SortlistActivityScript.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="MallScript.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="WSCenterHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldSettingHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldPlayerScript.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="WSActivityHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WSWorldChallengeHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="OfflineNotifyMgr.cpp">
+      <Filter>OfflineNotify</Filter>
+    </ClCompile>
+    <ClCompile Include="WSChangeZoneHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldMatchHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="RelaySession.cpp">
+      <Filter>RelaySession</Filter>
+    </ClCompile>
+    <ClCompile Include="RelaySessionMgr.cpp">
+      <Filter>RelaySession</Filter>
+    </ClCompile>
+    <ClCompile Include="WSLeaveGameHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldDungeonHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WSAsyncMsgHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="NewAuctionMgr.cpp">
+      <Filter>Auction</Filter>
+    </ClCompile>
+    <ClCompile Include="WSAdminHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WSServiceSwitchMgr.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="WSDungeonConfigMgr.cpp">
+      <Filter>DungeonConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonArea.cpp">
+      <Filter>DungeonRace</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonMonsterGenerator.cpp">
+      <Filter>DungeonRace</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonPlayer.cpp">
+      <Filter>DungeonRace</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonRace.cpp">
+      <Filter>DungeonRace</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonRaceMgr.cpp">
+      <Filter>DungeonRace</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonChestTask.cpp">
+      <Filter>DungeonRace</Filter>
+    </ClCompile>
+    <ClCompile Include="SysRecordMgr.cpp">
+      <Filter>SysRecord</Filter>
+    </ClCompile>
+    <ClCompile Include="Guild.cpp">
+      <Filter>Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildMgr.cpp">
+      <Filter>Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildMember.cpp">
+      <Filter>Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGuildHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildBuilding.cpp">
+      <Filter>Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildDonate.cpp">
+      <Filter>Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildTable.cpp">
+      <Filter>Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="RedPacketReceiver.cpp">
+      <Filter>RedPacket</Filter>
+    </ClCompile>
+    <ClCompile Include="RedPacket.cpp">
+      <Filter>RedPacket</Filter>
+    </ClCompile>
+    <ClCompile Include="RedPacketMgr.cpp">
+      <Filter>RedPacket</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldRedPacketHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildBattleMgr.cpp">
+      <Filter>GuildBattle</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildBattleTerritory.cpp">
+      <Filter>GuildBattle</Filter>
+    </ClCompile>
+    <ClCompile Include="ChargeManager.cpp">
+      <Filter>Charge</Filter>
+    </ClCompile>
+    <ClCompile Include="ChargeOrderContext.cpp">
+      <Filter>Charge</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountChargeRecord.cpp">
+      <Filter>Charge</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountMgr.cpp">
+      <Filter>Account</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountInfo.cpp">
+      <Filter>Account</Filter>
+    </ClCompile>
+    <ClCompile Include="TeamMatchMgr.cpp">
+      <Filter>Team</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountChargeElem.cpp">
+      <Filter>Charge</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonHardInfo.cpp">
+      <Filter>Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="WSSeasonMgr.cpp">
+      <Filter>Season</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldOperateHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WSJarMgr.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="MallGiftPack.cpp">
+      <Filter>Mall</Filter>
+    </ClCompile>
+    <ClCompile Include="MallGiftPackMgr.cpp">
+      <Filter>Mall</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildStorage.cpp">
+      <Filter>Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="FigureStatueMgr.cpp">
+      <Filter>FigureStatue</Filter>
+    </ClCompile>
+    <ClCompile Include="FigureStatue.cpp">
+      <Filter>FigureStatue</Filter>
+    </ClCompile>
+    <ClCompile Include="CondActivateInfo.cpp">
+      <Filter>Mall</Filter>
+    </ClCompile>
+    <ClCompile Include="CondActivateMgr.cpp">
+      <Filter>Mall</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldVerifyHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="PremiumLeagueGamer.cpp">
+      <Filter>PremiumLeague</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldPremiumLeagueHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleRecordMgr.cpp">
+      <Filter>PremiumLeague\Record</Filter>
+    </ClCompile>
+    <ClCompile Include="PremiumLeagueBattle.cpp">
+      <Filter>PremiumLeague</Filter>
+    </ClCompile>
+    <ClCompile Include="PremiumLeagueMgr.cpp">
+      <Filter>PremiumLeague</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginPushMgr.cpp">
+      <Filter>Login</Filter>
+    </ClCompile>
+    <ClCompile Include="WSActivityMonsterMgr.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountActivityTaskMgr.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="WSActivityTask.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="Room.cpp">
+      <Filter>Room</Filter>
+    </ClCompile>
+    <ClCompile Include="RoomMgr.cpp">
+      <Filter>Room</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldRoomHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldGlobalActivityHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldSysRecordHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WSPlayerShareData.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="WSPlayerShareDataMgr.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="MasterSectRelation.cpp">
+      <Filter>Relation</Filter>
+    </ClCompile>
+    <ClCompile Include="WSMasterSystem.cpp">
+      <Filter>Relation</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldDigHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="Dig.cpp">
+      <Filter>Dig</Filter>
+    </ClCompile>
+    <ClCompile Include="DigMap.cpp">
+      <Filter>Dig</Filter>
+    </ClCompile>
+    <ClCompile Include="DigMapMgr.cpp">
+      <Filter>Dig</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldSecurityLockHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WSShopMgr.cpp">
+      <Filter>Shop</Filter>
+    </ClCompile>
+    <ClCompile Include="WSShop.cpp">
+      <Filter>Shop</Filter>
+    </ClCompile>
+    <ClCompile Include="WSShopItem.cpp">
+      <Filter>Shop</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldShopHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WSShopItemBuyRecord.cpp">
+      <Filter>Shop</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildDungeonMgr.cpp">
+      <Filter>GuildDungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildDungeon.cpp">
+      <Filter>GuildDungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="AuctionTransRecord.cpp">
+      <Filter>Auction</Filter>
+    </ClCompile>
+    <ClCompile Include="WSItemCheck.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldRoleHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildDungeonVerifyMgr.cpp">
+      <Filter>GuildDungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="MallItem.cpp">
+      <Filter>Mall</Filter>
+    </ClCompile>
+    <ClCompile Include="AuctionAttentRecord.cpp">
+      <Filter>Auction</Filter>
+    </ClCompile>
+    <ClCompile Include="BlackMarketMgr.cpp">
+      <Filter>BlackMarket</Filter>
+    </ClCompile>
+    <ClCompile Include="WSBlackMarketHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountCounter.cpp">
+      <Filter>Account</Filter>
+    </ClCompile>
+    <ClCompile Include="MallItemBuyRecord.cpp">
+      <Filter>Mall</Filter>
+    </ClCompile>
+    <ClCompile Include="ExpeditionMgr.cpp">
+      <Filter>Expedition</Filter>
+    </ClCompile>
+    <ClCompile Include="ExpeditionMember.cpp">
+      <Filter>Expedition</Filter>
+    </ClCompile>
+    <ClCompile Include="ExpeditionMap.cpp">
+      <Filter>Expedition</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldAdventureTeamHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildAuctionMgr.cpp">
+      <Filter>GuildAuction</Filter>
+    </ClCompile>
+    <ClCompile Include="NewTitle.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldNewTitleHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerJoins.cpp">
+      <Filter>PlayerJoins</Filter>
+    </ClCompile>
+    <ClCompile Include="DailyTodo.cpp">
+      <Filter>DailyTodo</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldDailyTodoHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="AdventurePassMgr.cpp">
+      <Filter>AdventurePass</Filter>
+    </ClCompile>
+    <ClCompile Include="AdventurePassInfo.cpp">
+      <Filter>AdventurePass</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldAdventurePassHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountTask.cpp">
+      <Filter>AccountTask</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountTaskMgr.cpp">
+      <Filter>AccountTask</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldTaskHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskScript.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountAchievementTaskMgr.cpp">
+      <Filter>AccountTask</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonRoll.cpp">
+      <Filter>DungeonRace</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemFriendPresent.cpp">
+      <Filter>ItemFriendPresent</Filter>
+    </ClCompile>
+    <ClCompile Include="HireMgr.cpp">
+      <Filter>Hire</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldHireHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldTransferHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="WSRegisterTransferProtocols.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="MailRecvMgr.cpp">
+      <Filter>Mail</Filter>
+    </ClCompile>
+    <ClCompile Include="Monopoly.cpp">
+      <Filter>Monopoly</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldMonopolyHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildEventMgr.cpp">
+      <Filter>Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildHonorMgr.cpp">
+      <Filter>Guild</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="WSApplication.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="WSEnterGameHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WSGateHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WSSceneHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WSSysHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WSNetwork.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="WSPlayer.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="WSPlayerMgr.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="WSScene.h">
+      <Filter>RelaySession\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="WSSceneMgr.h">
+      <Filter>RelaySession\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="WSMoveHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldSysNotify.h">
+      <Filter>Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptMgr.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatDataMgr.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="WSChatHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WSTeam.h">
+      <Filter>Team</Filter>
+    </ClInclude>
+    <ClInclude Include="WSRouter.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="MailBox.h">
+      <Filter>Mail</Filter>
+    </ClInclude>
+    <ClInclude Include="WSItem.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldMailHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WSTeamMgr.h">
+      <Filter>Team</Filter>
+    </ClInclude>
+    <ClInclude Include="WSTeamHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WSRelation.h">
+      <Filter>Relation</Filter>
+    </ClInclude>
+    <ClInclude Include="WSRelationMgr.h">
+      <Filter>Relation</Filter>
+    </ClInclude>
+    <ClInclude Include="WSRelationHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldSyncObjectHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WSSelectInitDataCallback.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="WSItemTransaction.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="WSItemHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="OfflineEvent.h">
+      <Filter>OfflineEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="OfflineEventMgr.h">
+      <Filter>OfflineEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="SysInterface.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="TimerScript.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="WSSortListMgr.h">
+      <Filter>SortList</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldSortListHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="MallMgr.h">
+      <Filter>Mall</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldMallHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldBossMgr.h">
+      <Filter>WorldBoss</Filter>
+    </ClInclude>
+    <ClInclude Include="WSConsoleHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WSConsoleAgent.h">
+      <Filter>Console</Filter>
+    </ClInclude>
+    <ClInclude Include="WSConsoleCmdHandler.h">
+      <Filter>Console</Filter>
+    </ClInclude>
+    <ClInclude Include="PunishmentMgr.h">
+      <Filter>Punishment</Filter>
+    </ClInclude>
+    <ClInclude Include="AnnouncementMgr.h">
+      <Filter>Announcement</Filter>
+    </ClInclude>
+    <ClInclude Include="BroadcastMailMgr.h">
+      <Filter>Mail</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGMSystem.h">
+      <Filter>Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="WSActivityMgr.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="GameParamMgr.h">
+      <Filter>GameParam</Filter>
+    </ClInclude>
+    <ClInclude Include="WSPackage.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="WSItemMgr.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldAuctionHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WSBillingHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SortlistActivityScript.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="MallScript.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="WSCenterHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldSettingHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldPlayerScript.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="WSActivityHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WSWorldChallengeHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="OfflineNotifyMgr.h">
+      <Filter>OfflineNotify</Filter>
+    </ClInclude>
+    <ClInclude Include="WSChangeZoneHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldMatchHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="RelaySession.h">
+      <Filter>RelaySession</Filter>
+    </ClInclude>
+    <ClInclude Include="RelaySessionMgr.h">
+      <Filter>RelaySession</Filter>
+    </ClInclude>
+    <ClInclude Include="WSLeaveGameHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldDungeonHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WSAsyncMsgHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="NewAuctionMgr.h">
+      <Filter>Auction</Filter>
+    </ClInclude>
+    <ClInclude Include="WSAdminHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WSServiceSwitchMgr.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="WSDungeonConfigMgr.h">
+      <Filter>DungeonConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonMonsterGenerator.h">
+      <Filter>DungeonRace</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonPlayer.h">
+      <Filter>DungeonRace</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonRace.h">
+      <Filter>DungeonRace</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonRaceMgr.h">
+      <Filter>DungeonRace</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonArea.h">
+      <Filter>DungeonRace</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonChestTask.h">
+      <Filter>DungeonRace</Filter>
+    </ClInclude>
+    <ClInclude Include="SysRecordMgr.h">
+      <Filter>SysRecord</Filter>
+    </ClInclude>
+    <ClInclude Include="Guild.h">
+      <Filter>Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildMgr.h">
+      <Filter>Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildMember.h">
+      <Filter>Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGuildHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildBuilding.h">
+      <Filter>Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildDonate.h">
+      <Filter>Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildTable.h">
+      <Filter>Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="RedPacket.h">
+      <Filter>RedPacket</Filter>
+    </ClInclude>
+    <ClInclude Include="RedPacketReceiver.h">
+      <Filter>RedPacket</Filter>
+    </ClInclude>
+    <ClInclude Include="RedPacketMgr.h">
+      <Filter>RedPacket</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldRedPacketHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildBattleMgr.h">
+      <Filter>GuildBattle</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildBattleTerritory.h">
+      <Filter>GuildBattle</Filter>
+    </ClInclude>
+    <ClInclude Include="ChargeManager.h">
+      <Filter>Charge</Filter>
+    </ClInclude>
+    <ClInclude Include="ChargeOrderContext.h">
+      <Filter>Charge</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountChargeRecord.h">
+      <Filter>Charge</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountInfo.h">
+      <Filter>Account</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountMgr.h">
+      <Filter>Account</Filter>
+    </ClInclude>
+    <ClInclude Include="TeamMatchMgr.h">
+      <Filter>Team</Filter>
+    </ClInclude>
+    <ClInclude Include="TeamMatchDefine.h">
+      <Filter>Team</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountChargeElem.h">
+      <Filter>Charge</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonHardInfo.h">
+      <Filter>Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountLoadDataCallback.h">
+      <Filter>Account</Filter>
+    </ClInclude>
+    <ClInclude Include="WSSeasonMgr.h">
+      <Filter>Season</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldOperateHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WSJarMgr.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="WSPlayerLoading.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="MallGiftPack.h">
+      <Filter>Mall</Filter>
+    </ClInclude>
+    <ClInclude Include="MallGiftPackMgr.h">
+      <Filter>Mall</Filter>
+    </ClInclude>
+    <ClInclude Include="WSPushNotify.h">
+      <Filter>Announcement</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildStorage.h">
+      <Filter>Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="FigureStatueMgr.h">
+      <Filter>FigureStatue</Filter>
+    </ClInclude>
+    <ClInclude Include="FigureStatue.h">
+      <Filter>FigureStatue</Filter>
+    </ClInclude>
+    <ClInclude Include="CondActivateInfo.h">
+      <Filter>Mall</Filter>
+    </ClInclude>
+    <ClInclude Include="CondActivateMgr.h">
+      <Filter>Mall</Filter>
+    </ClInclude>
+    <ClInclude Include="VerifyServerMgr.h">
+      <Filter>VerifyServerMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldVerifyHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="PremiumLeagueMgr.h">
+      <Filter>PremiumLeague</Filter>
+    </ClInclude>
+    <ClInclude Include="PremiumLeagueGamer.h">
+      <Filter>PremiumLeague</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldPremiumLeagueHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleRecordMgr.h">
+      <Filter>PremiumLeague\Record</Filter>
+    </ClInclude>
+    <ClInclude Include="PremiumLeagueBattle.h">
+      <Filter>PremiumLeague</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginPushMgr.h">
+      <Filter>Login</Filter>
+    </ClInclude>
+    <ClInclude Include="Room.h">
+      <Filter>Room</Filter>
+    </ClInclude>
+    <ClInclude Include="RoomMgr.h">
+      <Filter>Room</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldRoomHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WSActivityMonsterMgr.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountActivityTaskMgr.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="WSActivityTask.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldGlobalActivityHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldSysRecordHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WSPlayerShareData.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="WSPlayerShareDataMgr.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="WSShareDataLoadCallback.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="MasterSectRelation.h">
+      <Filter>Relation</Filter>
+    </ClInclude>
+    <ClInclude Include="WSMasterSystem.h">
+      <Filter>Relation</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldDigHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="Dig.h">
+      <Filter>Dig</Filter>
+    </ClInclude>
+    <ClInclude Include="DigMap.h">
+      <Filter>Dig</Filter>
+    </ClInclude>
+    <ClInclude Include="DigMapMgr.h">
+      <Filter>Dig</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldSecurityLockHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WSShopMgr.h">
+      <Filter>Shop</Filter>
+    </ClInclude>
+    <ClInclude Include="WSShop.h">
+      <Filter>Shop</Filter>
+    </ClInclude>
+    <ClInclude Include="WSShopItem.h">
+      <Filter>Shop</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldShopHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WSShopItemBuyRecord.h">
+      <Filter>Shop</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildDungeonMgr.h">
+      <Filter>GuildDungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildDungeon.h">
+      <Filter>GuildDungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="AuctionTransRecord.h">
+      <Filter>Auction</Filter>
+    </ClInclude>
+    <ClInclude Include="WSItemCheck.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="WSItemTransactionUtil.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldRoleHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildDungeonVerify.h">
+      <Filter>GuildDungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildDungeonVerifyMgr.h">
+      <Filter>GuildDungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="MallItem.h">
+      <Filter>Mall</Filter>
+    </ClInclude>
+    <ClInclude Include="AuctionAttentRecord.h">
+      <Filter>Auction</Filter>
+    </ClInclude>
+    <ClInclude Include="BlackMarketMgr.h">
+      <Filter>BlackMarket</Filter>
+    </ClInclude>
+    <ClInclude Include="WSBlackMarketHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountCounter.h">
+      <Filter>Account</Filter>
+    </ClInclude>
+    <ClInclude Include="MallItemBuyRecord.h">
+      <Filter>Mall</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpeditionMgr.h">
+      <Filter>Expedition</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpeditionMember.h">
+      <Filter>Expedition</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpeditionMap.h">
+      <Filter>Expedition</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildAuctionMgr.h">
+      <Filter>GuildAuction</Filter>
+    </ClInclude>
+    <ClInclude Include="NewTitle.h">
+      <Filter>Title</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldNewTitleHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerJoins.h">
+      <Filter>PlayerJoins</Filter>
+    </ClInclude>
+    <ClInclude Include="DailyTodo.h">
+      <Filter>DailyTodo</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldDailyTodoHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountTask.h">
+      <Filter>AccountTask</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountTaskMgr.h">
+      <Filter>AccountTask</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldTaskHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskScript.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountAchievementTaskMgr.h">
+      <Filter>AccountTask</Filter>
+    </ClInclude>
+    <ClInclude Include="AdventurePassMgr.h">
+      <Filter>AdventurePass</Filter>
+    </ClInclude>
+    <ClInclude Include="AdventurePassInfo.h">
+      <Filter>AdventurePass</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldAdventurePassHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonRoll.h">
+      <Filter>DungeonRace</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemFriendPresent.h">
+      <Filter>ItemFriendPresent</Filter>
+    </ClInclude>
+    <ClInclude Include="HireMgr.h">
+      <Filter>Hire</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldHireHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldTransferHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="MailRecvMgr.h">
+      <Filter>Mail</Filter>
+    </ClInclude>
+    <ClInclude Include="Monopoly.h">
+      <Filter>Monopoly</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldMonopolyHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildEventMgr.h">
+      <Filter>Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildHonorMgr.h">
+      <Filter>Guild</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Application">
+      <UniqueIdentifier>{cdcf2c70-05c5-4740-b7ca-4e58d7f9972c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Handler">
+      <UniqueIdentifier>{a44d7be2-c7f0-4e17-b839-8514898bd6d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{b0cf2b3b-856c-43ac-84b7-aa22a47f4341}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{4ec6ca45-071a-4068-a898-8e35e60fdc56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sys">
+      <UniqueIdentifier>{39b00ce7-e3e3-4976-a25f-c55f29ef7c07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script">
+      <UniqueIdentifier>{2d503bb6-444d-44f6-bdc8-b012a23208fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Team">
+      <UniqueIdentifier>{a8c9818b-57b4-43d1-84f3-676512c224ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mail">
+      <UniqueIdentifier>{a7ee1f1b-92c7-422d-8f36-00259f31e986}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Item">
+      <UniqueIdentifier>{93e53698-790c-4d53-b4f3-544693ab6b1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Relation">
+      <UniqueIdentifier>{e90fa632-e34e-481d-b9bf-3aa47cfcf5f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OfflineEvent">
+      <UniqueIdentifier>{5b8e13c9-7c85-4ee0-8e31-2c2d403b699d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SortList">
+      <UniqueIdentifier>{3c8297cb-4616-4bfa-8435-489b14635275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mall">
+      <UniqueIdentifier>{6272ee0c-3d14-4706-8cba-5e0f665bb999}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WorldBoss">
+      <UniqueIdentifier>{b88ac58c-5612-42ff-8558-7cdcc9306d12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Console">
+      <UniqueIdentifier>{335e0883-db5b-4bb1-a720-b904d264d7a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Punishment">
+      <UniqueIdentifier>{103bb007-0303-43e5-b086-acdae318bb3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Announcement">
+      <UniqueIdentifier>{c77f0b35-6cb7-4c6e-be68-b3ad24c466c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Activity">
+      <UniqueIdentifier>{7d2d99b3-664b-4254-b970-0db0c931f967}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameParam">
+      <UniqueIdentifier>{fca6cf38-d78e-46c3-b456-9c79dcdf1050}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Auction">
+      <UniqueIdentifier>{eece5f7e-5dd2-4108-8aaf-242595bfe785}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OfflineNotify">
+      <UniqueIdentifier>{8910a33e-0ef2-4dfe-99a2-5507e495d6a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RelaySession">
+      <UniqueIdentifier>{0d1e49d7-867a-4dce-b429-6368651e9a0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DungeonConfig">
+      <UniqueIdentifier>{4bbe9cf3-8d8a-46ee-b1f8-d82b0862afe5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DungeonRace">
+      <UniqueIdentifier>{4230e1f7-4b49-4e37-85f3-4bee2b40c1d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SysRecord">
+      <UniqueIdentifier>{a9d15e86-035f-4c14-9cf6-2bdafbe0d755}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Guild">
+      <UniqueIdentifier>{4a5f75b7-f052-425c-a7d9-7630834a2c8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RedPacket">
+      <UniqueIdentifier>{ce0e8f50-5f0f-433a-8102-ab0ce35de6b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Charge">
+      <UniqueIdentifier>{a5f37465-8758-4a7a-86c6-c2541b107617}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Account">
+      <UniqueIdentifier>{24200a93-1d24-48da-8082-341e26f7d920}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dungeon">
+      <UniqueIdentifier>{93ee92ba-d21c-4425-9e0a-d5772fb25c04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Season">
+      <UniqueIdentifier>{415e010f-0e0f-46e2-863a-104011acc80a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GuildBattle">
+      <UniqueIdentifier>{32b615e2-e0c9-4fc3-a98a-ff5bd406e0b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FigureStatue">
+      <UniqueIdentifier>{a8995dfe-4bd7-4776-815b-4c0b194b5476}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VerifyServerMgr">
+      <UniqueIdentifier>{0ae59b6a-d8fb-49bf-bb6e-bd2ae19d46a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PremiumLeague">
+      <UniqueIdentifier>{9f33219c-4101-4ef0-8c88-860ed5599fcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PremiumLeague\Record">
+      <UniqueIdentifier>{e619760f-1fd6-45dd-bfb8-0b8c0e324f12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Login">
+      <UniqueIdentifier>{fd2af90e-c73c-45de-87ac-b2dd4022b609}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RelaySession\Scene">
+      <UniqueIdentifier>{4177d715-f33f-4b22-8b0a-1f1b77384119}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Room">
+      <UniqueIdentifier>{f4acb065-1abe-46c9-8375-83123f6e32a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dig">
+      <UniqueIdentifier>{320f11e4-71cf-4b00-9a75-6824891ed5ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shop">
+      <UniqueIdentifier>{e53d2bf8-7a28-4d0d-b4bf-a129e986c3af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GuildDungeon">
+      <UniqueIdentifier>{de4ea2d7-bf19-421d-8029-04da3e6ad88e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BlackMarket">
+      <UniqueIdentifier>{159ecc60-bd2f-4544-81ab-6d72758e1aea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Expedition">
+      <UniqueIdentifier>{71102885-5f0e-432b-abfc-dba37ba6152d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GuildAuction">
+      <UniqueIdentifier>{2e21f04e-9789-48b5-9510-5d5cfb7b624f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Title">
+      <UniqueIdentifier>{1986a076-c415-4b14-8dd7-d7735439960e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlayerJoins">
+      <UniqueIdentifier>{4ec77bd1-86f8-4b6b-a4e2-dfc5a9ae9fcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DailyTodo">
+      <UniqueIdentifier>{af41dcc4-a463-4834-9fae-48e18214d942}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AccountTask">
+      <UniqueIdentifier>{c67c77eb-c749-46a8-a2ec-1e1a0e3455e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AdventurePass">
+      <UniqueIdentifier>{29cf0785-851f-4b77-8796-11e61579ab8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ItemFriendPresent">
+      <UniqueIdentifier>{0822003b-547b-4c82-9b8b-975fdb41e1bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hire">
+      <UniqueIdentifier>{0f36c148-3ee6-48ee-8b0a-84e52029b411}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Monopoly">
+      <UniqueIdentifier>{4387c840-b6f0-4d66-b601-56b31e01b5db}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

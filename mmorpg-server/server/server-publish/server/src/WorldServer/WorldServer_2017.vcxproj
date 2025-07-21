@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F1831270-7614-4816-9450-7800DF4D6DF6}</ProjectGuid>
+    <RootNamespace>WorldServer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>WorldServer</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\server_res\Bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)bin\win32\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)dep\luaplus;$(SolutionDir)dep\zlib\include;$(SolutionDir)dep\avalon\include;$(SolutionDir)dep\fmt\include;$(SolutionDir)include;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdk_IncludePath);$(FrameworkSDKDir)\include;$(VC_IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)dep\avalon\include;$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>_MBCS;_CRT_SECURE_NO_WARNINGS;_DUNGEON_TODO_;_NEW_SCRIPT_MGR_;__OPEN_LOGIN_WAIT_LIST__;_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)/bigobj</AdditionalOptions>
+      <IncludeInUnityFile>true</IncludeInUnityFile>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>AvalonCore.lib;AvalonCodec.lib;AvalonGame.lib;AvalonDatabase.lib;AvalonFramework.lib;AvalonLogger.lib;AvalonNetwork.lib;AvalonThread.lib;AvalonXml.lib;AvalonScript.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)dep\avalon\lib\win32\$(Configuration);$(SolutionDir)lib\win32\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(SolutionDir)dep\avalon\include;$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(SolutionDir)dep\avalon\lib\win32\$(Configuration);$(SolutionDir)lib\win32\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>AvalonCore.lib;AvalonDatabase.lib;AvalonFramework.lib;AvalonLogger.lib;AvalonNetwork.lib;AvalonThread.lib;AvalonXml.lib;AvalonScript.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AccountAchievementTaskMgr.cpp" />
+    <ClCompile Include="AccountActivityTaskMgr.cpp" />
+    <ClCompile Include="AccountChargeElem.cpp" />
+    <ClCompile Include="AccountChargeRecord.cpp" />
+    <ClCompile Include="AccountCounter.cpp" />
+    <ClCompile Include="AccountInfo.cpp" />
+    <ClCompile Include="AccountMgr.cpp" />
+    <ClCompile Include="AccountTask.cpp" />
+    <ClCompile Include="AccountTaskMgr.cpp" />
+    <ClCompile Include="AdventurePassInfo.cpp" />
+    <ClCompile Include="AdventurePassMgr.cpp" />
+    <ClCompile Include="AuctionAttentRecord.cpp" />
+    <ClCompile Include="AuctionTransRecord.cpp" />
+    <ClCompile Include="BlackMarketMgr.cpp" />
+    <ClCompile Include="DailyTodo.cpp" />
+    <ClCompile Include="Dig.cpp" />
+    <ClCompile Include="DigMap.cpp" />
+    <ClCompile Include="DigMapMgr.cpp" />
+    <ClCompile Include="DungeonRoll.cpp" />
+    <ClCompile Include="ExpeditionMap.cpp" />
+    <ClCompile Include="ExpeditionMember.cpp" />
+    <ClCompile Include="ExpeditionMgr.cpp" />
+    <ClCompile Include="GuildAuctionMgr.cpp" />
+    <ClCompile Include="GuildDungeon.cpp" />
+    <ClCompile Include="GuildDungeonMgr.cpp" />
+    <ClCompile Include="GuildEventMgr.cpp" />
+    <ClCompile Include="GuildHonorMgr.cpp" />
+    <ClCompile Include="HireMgr.cpp" />
+    <ClCompile Include="ItemFriendPresent.cpp" />
+    <ClCompile Include="MailRecvMgr.cpp" />
+    <ClCompile Include="MallItem.cpp" />
+    <ClCompile Include="GuildDungeonVerifyMgr.cpp" />
+    <ClCompile Include="MallItemBuyRecord.cpp" />
+    <ClCompile Include="MasterSectRelation.cpp" />
+    <ClCompile Include="Monopoly.cpp" />
+    <ClCompile Include="NewTitle.cpp" />
+    <ClCompile Include="PlayerJoins.cpp" />
+    <ClCompile Include="TaskScript.cpp" />
+    <ClCompile Include="WorldAdventurePassHandler.cpp" />
+    <ClCompile Include="WorldAdventureTeamHandler.cpp" />
+    <ClCompile Include="WorldDailyTodoHandler.cpp" />
+    <ClCompile Include="WorldDigHandler.cpp" />
+    <ClCompile Include="WorldGlobalActivityHandler.cpp" />
+    <ClCompile Include="WorldHireHandler.cpp" />
+    <ClCompile Include="WorldMonopolyHandler.cpp" />
+    <ClCompile Include="WorldNewTitleHandler.cpp" />
+    <ClCompile Include="WorldRoleHandler.cpp" />
+    <ClCompile Include="WorldSecurityLockHandler.cpp" />
+    <ClCompile Include="WorldShopHandler.cpp" />
+    <ClCompile Include="WorldSysRecordHandler.cpp" />
+    <ClCompile Include="WorldTaskHandler.cpp" />
+    <ClCompile Include="WorldTransferHandler.cpp" />
+    <ClCompile Include="WSActivityTask.cpp" />
+    <ClCompile Include="AnnouncementMgr.cpp" />
+    <ClCompile Include="BattleRecordMgr.cpp" />
+    <ClCompile Include="ChargeManager.cpp" />
+    <ClCompile Include="ChargeOrderContext.cpp" />
+    <ClCompile Include="CondActivateInfo.cpp" />
+    <ClCompile Include="CondActivateMgr.cpp" />
+    <ClCompile Include="DungeonArea.cpp" />
+    <ClCompile Include="DungeonChestTask.cpp" />
+    <ClCompile Include="DungeonHardInfo.cpp" />
+    <ClCompile Include="DungeonMonsterGenerator.cpp" />
+    <ClCompile Include="DungeonPlayer.cpp" />
+    <ClCompile Include="DungeonRace.cpp" />
+    <ClCompile Include="DungeonRaceMgr.cpp" />
+    <ClCompile Include="FigureStatue.cpp" />
+    <ClCompile Include="FigureStatueMgr.cpp" />
+    <ClCompile Include="GuildStorage.cpp" />
+    <ClCompile Include="LoginPushMgr.cpp" />
+    <ClCompile Include="MallGiftPack.cpp" />
+    <ClCompile Include="Guild.cpp" />
+    <ClCompile Include="GuildBattleMgr.cpp" />
+    <ClCompile Include="GuildBattleTerritory.cpp" />
+    <ClCompile Include="GuildBuilding.cpp" />
+    <ClCompile Include="GuildDonate.cpp" />
+    <ClCompile Include="GuildMember.cpp" />
+    <ClCompile Include="GuildMgr.cpp" />
+    <ClCompile Include="GuildTable.cpp" />
+    <ClCompile Include="MallGiftPackMgr.cpp" />
+    <ClCompile Include="NewAuctionMgr.cpp" />
+    <ClCompile Include="OfflineNotifyMgr.cpp" />
+    <ClCompile Include="PremiumLeagueBattle.cpp" />
+    <ClCompile Include="PremiumLeagueGamer.cpp" />
+    <ClCompile Include="PremiumLeagueMgr.cpp" />
+    <ClCompile Include="RedPacket.cpp" />
+    <ClCompile Include="RedPacketMgr.cpp" />
+    <ClCompile Include="RedPacketReceiver.cpp" />
+    <ClCompile Include="RelaySession.cpp" />
+    <ClCompile Include="RelaySessionMgr.cpp" />
+    <ClCompile Include="Room.cpp" />
+    <ClCompile Include="RoomMgr.cpp" />
+    <ClCompile Include="WorldOperateHandler.cpp" />
+    <ClCompile Include="WorldPremiumLeagueHandler.cpp" />
+    <ClCompile Include="WorldRoomHandler.cpp" />
+    <ClCompile Include="WorldVerifyHandler.cpp" />
+    <ClCompile Include="WSActivityMonsterMgr.cpp" />
+    <ClCompile Include="WSBlackMarketHandler.cpp" />
+    <ClCompile Include="WSItemCheck.cpp" />
+    <ClCompile Include="WSJarMgr.cpp" />
+    <ClCompile Include="WSMasterSystem.cpp" />
+    <ClCompile Include="WSPlayerShareData.cpp" />
+    <ClCompile Include="WSPlayerShareDataMgr.cpp" />
+    <ClCompile Include="WSRegisterTransferProtocols.cpp" />
+    <ClCompile Include="WSSeasonMgr.cpp" />
+    <ClCompile Include="SysRecordMgr.cpp" />
+    <ClCompile Include="TeamMatchMgr.cpp" />
+    <ClCompile Include="WorldDungeonHandler.cpp" />
+    <ClCompile Include="WorldGuildHandler.cpp" />
+    <ClCompile Include="WorldMatchHandler.cpp" />
+    <ClCompile Include="WorldPlayerScript.cpp" />
+    <ClCompile Include="WorldRedPacketHandler.cpp" />
+    <ClCompile Include="WSActivityHandler.cpp" />
+    <ClCompile Include="WSAdminHandler.cpp" />
+    <ClCompile Include="WSAsyncMsgHandler.cpp" />
+    <ClCompile Include="WSChangeZoneHandler.cpp" />
+    <ClCompile Include="WSDungeonConfigMgr.cpp" />
+    <ClCompile Include="BroadcastMailMgr.cpp" />
+    <ClCompile Include="ChatDataMgr.cpp" />
+    <ClCompile Include="GameParamMgr.cpp" />
+    <ClCompile Include="MallMgr.cpp" />
+    <ClCompile Include="MallScript.cpp" />
+    <ClCompile Include="PunishmentMgr.cpp" />
+    <ClCompile Include="SortlistActivityScript.cpp" />
+    <ClCompile Include="WorldAuctionHandler.cpp" />
+    <ClCompile Include="WorldBossMgr.cpp" />
+    <ClCompile Include="WorldGMSystem.cpp" />
+    <ClCompile Include="WorldMallHandler.cpp" />
+    <ClCompile Include="WorldSettingHandler.cpp" />
+    <ClCompile Include="WorldSortListHandler.cpp" />
+    <ClCompile Include="WSActivityMgr.cpp" />
+    <ClCompile Include="WSBillingHandler.cpp" />
+    <ClCompile Include="WSCenterHandler.cpp" />
+    <ClCompile Include="WSConsoleAgent.cpp" />
+    <ClCompile Include="WSConsoleCmdHandler.cpp" />
+    <ClCompile Include="WSConsoleHandler.cpp" />
+    <ClCompile Include="WSItemMgr.cpp" />
+    <ClCompile Include="WSPackage.cpp" />
+    <ClCompile Include="WSServiceSwitchMgr.cpp" />
+    <ClCompile Include="WSShop.cpp" />
+    <ClCompile Include="WSShopItemBuyRecord.cpp" />
+    <ClCompile Include="WSShopItem.cpp" />
+    <ClCompile Include="WSShopMgr.cpp" />
+    <ClCompile Include="WSSortListMgr.cpp" />
+    <ClCompile Include="SysInterface.cpp" />
+    <ClCompile Include="TimerScript.cpp" />
+    <ClCompile Include="MailBox.cpp" />
+    <ClCompile Include="OfflineEvent.cpp" />
+    <ClCompile Include="OfflineEventMgr.cpp" />
+    <ClCompile Include="ScriptMgr.cpp" />
+    <ClCompile Include="WorldMailHandler.cpp" />
+    <ClCompile Include="WorldSyncObjectHandler.cpp" />
+    <ClCompile Include="WorldSysNotify.cpp" />
+    <ClCompile Include="WSChatHandler.cpp" />
+    <ClCompile Include="WSItem.cpp" />
+    <ClCompile Include="WSItemHandler.cpp" />
+    <ClCompile Include="WSItemTransaction.cpp" />
+    <ClCompile Include="WSRelation.cpp" />
+    <ClCompile Include="WSRelationHandler.cpp" />
+    <ClCompile Include="WSRelationMgr.cpp" />
+    <ClCompile Include="WSRouter.cpp" />
+    <ClCompile Include="WSMoveHandler.cpp" />
+    <ClCompile Include="WSNetwork.cpp" />
+    <ClCompile Include="WSRegisterProtocols.cpp" />
+    <ClCompile Include="WSEnterGameHandler.cpp" />
+    <ClCompile Include="WSGateHandler.cpp" />
+    <ClCompile Include="WSLeaveGameHandler.cpp" />
+    <ClCompile Include="WSSceneHandler.cpp" />
+    <ClCompile Include="WSSelectInitDataCallback.cpp" />
+    <ClCompile Include="WSSysHandler.cpp" />
+    <ClCompile Include="WSPlayer.cpp" />
+    <ClCompile Include="WSPlayerMgr.cpp" />
+    <ClCompile Include="WSRegPlayerProtocols.cpp" />
+    <ClCompile Include="WSScene.cpp" />
+    <ClCompile Include="WSSceneMgr.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="WSApplication.cpp" />
+    <ClCompile Include="WSTeam.cpp" />
+    <ClCompile Include="WSTeamHandler.cpp" />
+    <ClCompile Include="WSTeamMgr.cpp" />
+    <ClCompile Include="WSWorldChallengeHandler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AccountAchievementTaskMgr.h" />
+    <ClInclude Include="AccountActivityTaskMgr.h" />
+    <ClInclude Include="AccountChargeElem.h" />
+    <ClInclude Include="AccountChargeRecord.h" />
+    <ClInclude Include="AccountInfo.h" />
+    <ClInclude Include="AccountLoadDataCallback.h" />
+    <ClInclude Include="AccountMgr.h" />
+    <ClInclude Include="AccountTask.h" />
+    <ClInclude Include="AccountTaskMgr.h" />
+    <ClInclude Include="AdventurePassInfo.h" />
+    <ClInclude Include="AdventurePassMgr.h" />
+    <ClInclude Include="AuctionAttentRecord.h" />
+    <ClInclude Include="AuctionTransRecord.h" />
+    <ClInclude Include="BlackMarketMgr.h" />
+    <ClInclude Include="DailyTodo.h" />
+    <ClInclude Include="Dig.h" />
+    <ClInclude Include="DigMap.h" />
+    <ClInclude Include="DigMapMgr.h" />
+    <ClInclude Include="DungeonRoll.h" />
+    <ClInclude Include="ExpeditionMap.h" />
+    <ClInclude Include="ExpeditionMember.h" />
+    <ClInclude Include="ExpeditionMgr.h" />
+    <ClInclude Include="GuildAuctionMgr.h" />
+    <ClInclude Include="GuildDungeon.h" />
+    <ClInclude Include="GuildDungeonMgr.h" />
+    <ClInclude Include="GuildEventMgr.h" />
+    <ClInclude Include="GuildHonorMgr.h" />
+    <ClInclude Include="HireMgr.h" />
+    <ClInclude Include="ItemFriendPresent.h" />
+    <ClInclude Include="MailRecvMgr.h" />
+    <ClInclude Include="MallItem.h" />
+    <ClInclude Include="GuildDungeonVerify.h" />
+    <ClInclude Include="GuildDungeonVerifyMgr.h" />
+    <ClInclude Include="MallItemBuyRecord.h" />
+    <ClInclude Include="MasterSectRelation.h" />
+    <ClInclude Include="Monopoly.h" />
+    <ClInclude Include="NewTitle.h" />
+    <ClInclude Include="PlayerJoins.h" />
+    <ClInclude Include="TaskScript.h" />
+    <ClInclude Include="WorldAdventurePassHandler.h" />
+    <ClInclude Include="WorldDailyTodoHandler.h" />
+    <ClInclude Include="WorldHireHandler.h" />
+    <ClInclude Include="WorldMonopolyHandler.h" />
+    <ClInclude Include="WorldNewTitleHandler.h" />
+    <ClInclude Include="WorldRoleHandler.h" />
+    <ClInclude Include="AccountCounter.h" />
+    <ClInclude Include="WorldShopHandler.h" />
+    <ClInclude Include="WorldTaskHandler.h" />
+    <ClInclude Include="WorldTransferHandler.h" />
+    <ClInclude Include="WSBlackMarketHandler.h" />
+    <ClInclude Include="WSItemCheck.h" />
+    <ClInclude Include="WSItemTransactionUtil.h" />
+    <ClInclude Include="WSShop.h" />
+    <ClInclude Include="WorldDigHandler.h" />
+    <ClInclude Include="WorldGlobalActivityHandler.h" />
+    <ClInclude Include="WorldSecurityLockHandler.h" />
+    <ClInclude Include="WorldSysRecordHandler.h" />
+    <ClInclude Include="WSActivityTask.h" />
+    <ClInclude Include="AnnouncementMgr.h" />
+    <ClInclude Include="BattleRecordMgr.h" />
+    <ClInclude Include="ChargeManager.h" />
+    <ClInclude Include="ChargeOrderContext.h" />
+    <ClInclude Include="CondActivateInfo.h" />
+    <ClInclude Include="CondActivateMgr.h" />
+    <ClInclude Include="DungeonArea.h" />
+    <ClInclude Include="DungeonChestTask.h" />
+    <ClInclude Include="DungeonHardInfo.h" />
+    <ClInclude Include="DungeonMonsterGenerator.h" />
+    <ClInclude Include="DungeonPlayer.h" />
+    <ClInclude Include="DungeonRace.h" />
+    <ClInclude Include="DungeonRaceMgr.h" />
+    <ClInclude Include="FigureStatue.h" />
+    <ClInclude Include="FigureStatueMgr.h" />
+    <ClInclude Include="GuildStorage.h" />
+    <ClInclude Include="LoginPushMgr.h" />
+    <ClInclude Include="MallGiftPack.h" />
+    <ClInclude Include="Guild.h" />
+    <ClInclude Include="GuildBattleMgr.h" />
+    <ClInclude Include="GuildBattleTerritory.h" />
+    <ClInclude Include="GuildBuilding.h" />
+    <ClInclude Include="GuildDonate.h" />
+    <ClInclude Include="GuildMember.h" />
+    <ClInclude Include="GuildMgr.h" />
+    <ClInclude Include="GuildTable.h" />
+    <ClInclude Include="MallGiftPackMgr.h" />
+    <ClInclude Include="NewAuctionMgr.h" />
+    <ClInclude Include="OfflineNotifyMgr.h" />
+    <ClInclude Include="PremiumLeagueBattle.h" />
+    <ClInclude Include="PremiumLeagueGamer.h" />
+    <ClInclude Include="PremiumLeagueMgr.h" />
+    <ClInclude Include="Room.h" />
+    <ClInclude Include="RoomMgr.h" />
+    <ClInclude Include="VerifyServerMgr.h" />
+    <ClInclude Include="WorldPremiumLeagueHandler.h" />
+    <ClInclude Include="WorldRoomHandler.h" />
+    <ClInclude Include="WorldVerifyHandler.h" />
+    <ClInclude Include="WSActivityMonsterMgr.h" />
+    <ClInclude Include="WSMasterSystem.h" />
+    <ClInclude Include="WSPlayerShareData.h" />
+    <ClInclude Include="WSPlayerShareDataMgr.h" />
+    <ClInclude Include="WSPushNotify.h" />
+    <ClInclude Include="WSPlayerLoading.h" />
+    <ClInclude Include="RedPacket.h" />
+    <ClInclude Include="RedPacketMgr.h" />
+    <ClInclude Include="RedPacketReceiver.h" />
+    <ClInclude Include="RelaySession.h" />
+    <ClInclude Include="RelaySessionMgr.h" />
+    <ClInclude Include="WorldOperateHandler.h" />
+    <ClInclude Include="WSJarMgr.h" />
+    <ClInclude Include="WSSeasonMgr.h" />
+    <ClInclude Include="SysRecordMgr.h" />
+    <ClInclude Include="TeamMatchDefine.h" />
+    <ClInclude Include="TeamMatchMgr.h" />
+    <ClInclude Include="WorldDungeonHandler.h" />
+    <ClInclude Include="WorldGuildHandler.h" />
+    <ClInclude Include="WorldMatchHandler.h" />
+    <ClInclude Include="WorldPlayerScript.h" />
+    <ClInclude Include="WorldRedPacketHandler.h" />
+    <ClInclude Include="WSActivityHandler.h" />
+    <ClInclude Include="WSAdminHandler.h" />
+    <ClInclude Include="WSAsyncMsgHandler.h" />
+    <ClInclude Include="WSChangeZoneHandler.h" />
+    <ClInclude Include="WSDungeonConfigMgr.h" />
+    <ClInclude Include="BroadcastMailMgr.h" />
+    <ClInclude Include="ChatDataMgr.h" />
+    <ClInclude Include="GameParamMgr.h" />
+    <ClInclude Include="MallMgr.h" />
+    <ClInclude Include="MallScript.h" />
+    <ClInclude Include="PunishmentMgr.h" />
+    <ClInclude Include="SortlistActivityScript.h" />
+    <ClInclude Include="WorldAuctionHandler.h" />
+    <ClInclude Include="WorldBossMgr.h" />
+    <ClInclude Include="WorldGMSystem.h" />
+    <ClInclude Include="WorldMallHandler.h" />
+    <ClInclude Include="WorldSettingHandler.h" />
+    <ClInclude Include="WorldSortListHandler.h" />
+    <ClInclude Include="WSActivityMgr.h" />
+    <ClInclude Include="WSBillingHandler.h" />
+    <ClInclude Include="WSCenterHandler.h" />
+    <ClInclude Include="WSConsoleAgent.h" />
+    <ClInclude Include="WSConsoleCmdHandler.h" />
+    <ClInclude Include="WSConsoleHandler.h" />
+    <ClInclude Include="WSItemMgr.h" />
+    <ClInclude Include="WSPackage.h" />
+    <ClInclude Include="WSServiceSwitchMgr.h" />
+    <ClInclude Include="WSShareDataLoadCallback.h" />
+    <ClInclude Include="WSShopItemBuyRecord.h" />
+    <ClInclude Include="WSShopItem.h" />
+    <ClInclude Include="WSShopMgr.h" />
+    <ClInclude Include="WSSortListMgr.h" />
+    <ClInclude Include="SysInterface.h" />
+    <ClInclude Include="TimerScript.h" />
+    <ClInclude Include="MailBox.h" />
+    <ClInclude Include="OfflineEvent.h" />
+    <ClInclude Include="OfflineEventMgr.h" />
+    <ClInclude Include="ScriptMgr.h" />
+    <ClInclude Include="WorldMailHandler.h" />
+    <ClInclude Include="WorldSyncObjectHandler.h" />
+    <ClInclude Include="WorldSysNotify.h" />
+    <ClInclude Include="WSChatHandler.h" />
+    <ClInclude Include="WSItem.h" />
+    <ClInclude Include="WSItemHandler.h" />
+    <ClInclude Include="WSItemTransaction.h" />
+    <ClInclude Include="WSRelation.h" />
+    <ClInclude Include="WSRelationHandler.h" />
+    <ClInclude Include="WSRelationMgr.h" />
+    <ClInclude Include="WSRouter.h" />
+    <ClInclude Include="WSMoveHandler.h" />
+    <ClInclude Include="WSNetwork.h" />
+    <ClInclude Include="WSEnterGameHandler.h" />
+    <ClInclude Include="WSGateHandler.h" />
+    <ClInclude Include="WSLeaveGameHandler.h" />
+    <ClInclude Include="WSSceneHandler.h" />
+    <ClInclude Include="WSSelectInitDataCallback.h" />
+    <ClInclude Include="WSSysHandler.h" />
+    <ClInclude Include="WSPlayer.h" />
+    <ClInclude Include="WSPlayerMgr.h" />
+    <ClInclude Include="WSScene.h" />
+    <ClInclude Include="WSSceneMgr.h" />
+    <ClInclude Include="WSApplication.h" />
+    <ClInclude Include="WSTeam.h" />
+    <ClInclude Include="WSTeamHandler.h" />
+    <ClInclude Include="WSTeamMgr.h" />
+    <ClInclude Include="WSWorldChallengeHandler.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonLib\CommonLib.vcxproj">
+      <Project>{69e52f08-11ac-4809-b362-6f79ed392b41}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

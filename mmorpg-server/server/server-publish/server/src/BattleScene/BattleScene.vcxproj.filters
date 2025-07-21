@@ -1,0 +1,984 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="SSApplication.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMgr.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Creature.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneObject.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="SSNetwork.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="SSRegisterProtocols.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="SSRegPlayerProtocols.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="SSEnterGameHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="SSGateHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="SSLeaveGameHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="SSMoveHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="SkillMgr.cpp">
+      <Filter>Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneSkillHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneChatHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGMSystem.cpp">
+      <Filter>Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Package.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemMgr.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneItemHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemMaker.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Task.cpp">
+      <Filter>Task</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskScript.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptMgr.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskMgr.cpp">
+      <Filter>Task</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneTaskHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneSysNotify.cpp">
+      <Filter>Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemScript.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemCD.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneTradeHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="Trade.cpp">
+      <Filter>Trade</Filter>
+    </ClCompile>
+    <ClCompile Include="SSRouter.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMailHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneTeamHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="Team.cpp">
+      <Filter>Team</Filter>
+    </ClCompile>
+    <ClCompile Include="TeamMgr.cpp">
+      <Filter>Team</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneSyncObjectHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneRelationHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneScript.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="CounterMgr.cpp">
+      <Filter>Counter</Filter>
+    </ClCompile>
+    <ClCompile Include="AIScript.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="SysInterface.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="SortListMgr.cpp">
+      <Filter>SortList</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneSortListHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneRoutineHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="RoutineMgr.cpp">
+      <Filter>Active</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerScript.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGiftBagHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneVipHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneDataCenterHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="EscortScript.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="ActivityMgr.cpp">
+      <Filter>Active</Filter>
+    </ClCompile>
+    <ClCompile Include="FinalEquipScript.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneSysHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneAuctionHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemReasonMgr.cpp">
+      <Filter>ItemReason</Filter>
+    </ClCompile>
+    <ClCompile Include="SSConsoleAgent.cpp">
+      <Filter>Console</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneConsoleHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneInviteHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="InviteMgr.cpp">
+      <Filter>Invite</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneStoryHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionCounterMgr.cpp">
+      <Filter>Counter</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="EquipShopMgr.cpp">
+      <Filter>EquipShop</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneChangeZoneHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneRecordHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerMgr.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Dungeon.cpp">
+      <Filter>Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonMgr.cpp">
+      <Filter>Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneDungeonHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonHardInfo.cpp">
+      <Filter>Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="QuickBar.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMatchHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonEntryScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Fatigue.cpp">
+      <Filter>Fatigue</Filter>
+    </ClCompile>
+    <ClCompile Include="Shop.cpp">
+      <Filter>Shop</Filter>
+    </ClCompile>
+    <ClCompile Include="ShopItem.cpp">
+      <Filter>Shop</Filter>
+    </ClCompile>
+    <ClCompile Include="ShopMgr.cpp">
+      <Filter>Shop</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="EquipCalcScript.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="PkOccuRecord.cpp">
+      <Filter>PkStatistic</Filter>
+    </ClCompile>
+    <ClCompile Include="PkStatistic.cpp">
+      <Filter>PkStatistic</Filter>
+    </ClCompile>
+    <ClCompile Include="PkStatisticMgr.cpp">
+      <Filter>PkStatistic</Filter>
+    </ClCompile>
+    <ClCompile Include="WarpStoneMgr.cpp">
+      <Filter>WarpStone</Filter>
+    </ClCompile>
+    <ClCompile Include="WarpStone.cpp">
+      <Filter>WarpStone</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneWarpStoneHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="Retinue.cpp">
+      <Filter>Retinue</Filter>
+    </ClCompile>
+    <ClCompile Include="RetinueMgr.cpp">
+      <Filter>Retinue</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneRetinueHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="PKPrepareScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="ActivityScript.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="ActiveTaskMgr.cpp">
+      <Filter>Active</Filter>
+    </ClCompile>
+    <ClCompile Include="ActiveTask.cpp">
+      <Filter>Active</Filter>
+    </ClCompile>
+    <ClCompile Include="QuickBuyTransaction.cpp">
+      <Filter>QuickBuy</Filter>
+    </ClCompile>
+    <ClCompile Include="ReviveiQuickBuyTransaction.cpp">
+      <Filter>QuickBuy\Instances</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneQuickBuyHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseTask.cpp">
+      <Filter>Task</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseTaskMgr.cpp">
+      <Filter>Task</Filter>
+    </ClCompile>
+    <ClCompile Include="SSDungeonConfigMgr.cpp">
+      <Filter>Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="Vip.cpp">
+      <Filter>Vip</Filter>
+    </ClCompile>
+    <ClCompile Include="BuffMgr.cpp">
+      <Filter>Buff</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenJarMgr.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="JarItem.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGuildHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBillingHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonQuickBuyTransaction.cpp">
+      <Filter>QuickBuy\Instances</Filter>
+    </ClCompile>
+    <ClCompile Include="SeasonLevel.cpp">
+      <Filter>SeasonLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="SeasonMgr.cpp">
+      <Filter>SeasonLevel</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneOperateHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="SSServiceSwitchMgr.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="ScenePetHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="PetMgr.cpp">
+      <Filter>Pet</Filter>
+    </ClCompile>
+    <ClCompile Include="Pet.cpp">
+      <Filter>Pet</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneReplayHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="SSFigureStatueMgr.cpp">
+      <Filter>FigureStatue</Filter>
+    </ClCompile>
+    <ClCompile Include="CondActivateEvent.cpp">
+      <Filter>Mall</Filter>
+    </ClCompile>
+    <ClCompile Include="MallCheckBuyMgr.cpp">
+      <Filter>Mall</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneRoomHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneCrossHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="AbnormalTransactionRecord.cpp">
+      <Filter>Auction</Filter>
+    </ClCompile>
+    <ClCompile Include="AbnormalTransactionMgr.cpp">
+      <Filter>Auction</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneSysRecordHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="CityMonster.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptUtil.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneScoreWarHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoreWarMgr.cpp">
+      <Filter>ScoreWar</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneSecurityLockHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="StrengthenTicketPlanMgr.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="SSConsoleCmdHandler.cpp">
+      <Filter>Console</Filter>
+    </ClCompile>
+    <ClCompile Include="ActivityAttributeMgr.cpp">
+      <Filter>Active</Filter>
+    </ClCompile>
+    <ClCompile Include="ActivityAttribute.cpp">
+      <Filter>Active</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneAdventureTeamHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="HeadFrameMgr.cpp">
+      <Filter>HeadFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneHeadFrameHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneNewTitleHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBattleHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="GameParamMgr.cpp">
+      <Filter>GameParam</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SSApplication.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerMgr.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMgr.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Creature.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneObject.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="SSNetwork.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SSEnterGameHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SSGateHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SSLeaveGameHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SSMoveHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SkillMgr.h">
+      <Filter>Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneSkillHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneChatHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGMSystem.h">
+      <Filter>Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Package.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemMgr.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneItemHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemMaker.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Task.h">
+      <Filter>Task</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskMgr.h">
+      <Filter>Task</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskScript.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptMgr.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneTaskHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SettingHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneSysNotify.h">
+      <Filter>Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemScript.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemCD.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneTradeHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="Trade.h">
+      <Filter>Trade</Filter>
+    </ClInclude>
+    <ClInclude Include="SSRouter.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMailHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneTeamHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="Team.h">
+      <Filter>Team</Filter>
+    </ClInclude>
+    <ClInclude Include="TeamMgr.h">
+      <Filter>Team</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneSyncObjectHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneRelationHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneScript.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="CounterMgr.h">
+      <Filter>Counter</Filter>
+    </ClInclude>
+    <ClInclude Include="AIScript.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="SysInterface.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="SortListMgr.h">
+      <Filter>SortList</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneSortListHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneRoutineHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="RoutineMgr.h">
+      <Filter>Active</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerScript.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGiftBagHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneVipHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneDataCenterHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="FinalEquipScript.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="EscortScript.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="ActivityMgr.h">
+      <Filter>Active</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneSysHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneAuctionHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemReasonMgr.h">
+      <Filter>ItemReason</Filter>
+    </ClInclude>
+    <ClInclude Include="SSConsoleAgent.h">
+      <Filter>Console</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneConsoleHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneInviteHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="InviteMgr.h">
+      <Filter>Invite</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneStoryHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionCounterMgr.h">
+      <Filter>Counter</Filter>
+    </ClInclude>
+    <ClInclude Include="EquipShopMgr.h">
+      <Filter>EquipShop</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneChangeZoneHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneRecordHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickBar.h">
+      <Filter>Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="Dungeon.h">
+      <Filter>Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonMgr.h">
+      <Filter>Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneDungeonHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonHardInfo.h">
+      <Filter>Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMatchHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="DungeonEntryScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Fatigue.h">
+      <Filter>Fatigue</Filter>
+    </ClInclude>
+    <ClInclude Include="Shop.h">
+      <Filter>Shop</Filter>
+    </ClInclude>
+    <ClInclude Include="ShopItem.h">
+      <Filter>Shop</Filter>
+    </ClInclude>
+    <ClInclude Include="ShopMgr.h">
+      <Filter>Shop</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="EquipCalcScript.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="PKOccuRecord.h">
+      <Filter>PkStatistic</Filter>
+    </ClInclude>
+    <ClInclude Include="PkStatistic.h">
+      <Filter>PkStatistic</Filter>
+    </ClInclude>
+    <ClInclude Include="PkStatisticMgr.h">
+      <Filter>PkStatistic</Filter>
+    </ClInclude>
+    <ClInclude Include="WarpStoneMgr.h">
+      <Filter>WarpStone</Filter>
+    </ClInclude>
+    <ClInclude Include="WarpStone.h">
+      <Filter>WarpStone</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneWarpStoneHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="Retinue.h">
+      <Filter>Retinue</Filter>
+    </ClInclude>
+    <ClInclude Include="RetinueMgr.h">
+      <Filter>Retinue</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneRetinueHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="PKPrepareScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SSServiceSwitchMgr.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="PkScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="ActivityScript.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="ActiveTaskMgr.h">
+      <Filter>Active</Filter>
+    </ClInclude>
+    <ClInclude Include="ActiveTask.h">
+      <Filter>Active</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickBuyTransaction.h">
+      <Filter>QuickBuy</Filter>
+    </ClInclude>
+    <ClInclude Include="ReviveQuickBuyTransaction.h">
+      <Filter>QuickBuy\Instances</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickBuyTransactionInstances.h">
+      <Filter>QuickBuy</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneQuickBuyHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseTask.h">
+      <Filter>Task</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseTaskMgr.h">
+      <Filter>Task</Filter>
+    </ClInclude>
+    <ClInclude Include="SSDungeonConfigMgr.h">
+      <Filter>Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="Vip.h">
+      <Filter>Vip</Filter>
+    </ClInclude>
+    <ClInclude Include="ActivityScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="BuffMgr.h">
+      <Filter>Buff</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenJarMgr.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="JarItem.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGuildHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBillingHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonQuickBuyTransaction.h">
+      <Filter>QuickBuy\Instances</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerLoading.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerLoadCallback.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="SeasonLevel.h">
+      <Filter>SeasonLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="SeasonMgr.h">
+      <Filter>SeasonLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneOperateHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="ScenePetHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="PetMgr.h">
+      <Filter>Pet</Filter>
+    </ClInclude>
+    <ClInclude Include="Pet.h">
+      <Filter>Pet</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneReplayHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SSPushNotify.h">
+      <Filter>Notify</Filter>
+    </ClInclude>
+    <ClInclude Include="SSFigureStatueMgr.h">
+      <Filter>FigureStatue</Filter>
+    </ClInclude>
+    <ClInclude Include="CondActivateEvent.h">
+      <Filter>Mall</Filter>
+    </ClInclude>
+    <ClInclude Include="MallCheckBuyMgr.h">
+      <Filter>Mall</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneRoomHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneCrossHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="AbnormalTransactionRecord.h">
+      <Filter>Auction</Filter>
+    </ClInclude>
+    <ClInclude Include="AbnormalTransactionMgr.h">
+      <Filter>Auction</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneSysRecordHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="CityMonster.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptUtil.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneScoreWarHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreWarMgr.h">
+      <Filter>ScoreWar</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneSecurityLockHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="StrengthenTicketPlanMgr.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="SSConsoleCmdHandler.h">
+      <Filter>Console</Filter>
+    </ClInclude>
+    <ClInclude Include="ActivityAttributeMgr.h">
+      <Filter>Active</Filter>
+    </ClInclude>
+    <ClInclude Include="ActivityAttribute.h">
+      <Filter>Active</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneAdventureTeamHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="HeadFrameMgr.h">
+      <Filter>HeadFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneHeadFrameHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneNewTitleHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBattleHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="GameParamMgr.h">
+      <Filter>GameParam</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Application">
+      <UniqueIdentifier>{af35a098-712f-4ccb-8f8e-a952a6a0563a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{8f58aa78-1a42-41bf-9050-f1894c2c6433}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{8597ffdc-4584-49ef-8649-d83a9fe4becf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Skill">
+      <UniqueIdentifier>{ac3a0579-c6f2-4903-8c03-3fa526dafef0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Item">
+      <UniqueIdentifier>{2e8be649-5cbf-4316-a469-ee082ea81de9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script">
+      <UniqueIdentifier>{6f54f115-4090-4352-94d2-b4e183d96dd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Task">
+      <UniqueIdentifier>{c4df4542-601d-476f-9a54-25f9ae06acdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{cc1c509f-5b04-4b47-b51d-440c35000807}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Setting">
+      <UniqueIdentifier>{f1fe21b2-f1d9-4eb2-b644-0782b86ba618}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Trade">
+      <UniqueIdentifier>{e4500506-8c0c-4d43-861c-396eb54326be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Team">
+      <UniqueIdentifier>{b9849d69-aca4-460a-8718-a2abd6bae46c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Counter">
+      <UniqueIdentifier>{6bc2f911-81e0-4aa8-898c-841c9436e95c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Handler">
+      <UniqueIdentifier>{28fdf3fb-0fbc-428c-9978-bb66abee4b92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SortList">
+      <UniqueIdentifier>{69ecadb2-041b-4642-8b6c-95a0ace389e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ItemReason">
+      <UniqueIdentifier>{a8c9dedf-04fe-49bd-a502-fba6f38c9b11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Console">
+      <UniqueIdentifier>{ad982857-d815-491f-b034-2d4214ab6b12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Invite">
+      <UniqueIdentifier>{f427b149-ed06-4c3d-be80-9b1338cac1bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EquipShop">
+      <UniqueIdentifier>{c1cafe70-26c1-45a9-a24e-55658fc53a8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{2f0548a3-bbaf-418e-808b-4a5c64152fac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dungeon">
+      <UniqueIdentifier>{ed9143d1-7073-4d68-8279-052f7c7e62fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fatigue">
+      <UniqueIdentifier>{d0f63b48-e116-47cc-b7e9-4cf55420ef25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shop">
+      <UniqueIdentifier>{424d1ac7-5120-4cbe-b00a-619812c11ab1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PkStatistic">
+      <UniqueIdentifier>{151c8735-53d2-43df-8df9-dbc0f70d892b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WarpStone">
+      <UniqueIdentifier>{65869134-ae9c-4e2c-9510-0b68bc45da9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Retinue">
+      <UniqueIdentifier>{6b7e0df7-b5ed-4f91-b3c2-a79d8f0b7d73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QuickBuy">
+      <UniqueIdentifier>{b9ecf314-915d-4a5a-8bf7-29966e0ca11c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QuickBuy\Instances">
+      <UniqueIdentifier>{b98adfd7-50ac-4ddc-9372-ec82782f2c4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vip">
+      <UniqueIdentifier>{67bf14f6-b593-4acb-828a-559dddeec7d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buff">
+      <UniqueIdentifier>{78fb1d88-67f8-46d7-a80e-016038f615be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Active">
+      <UniqueIdentifier>{a3e3b1ee-d49b-49b8-b871-acdb53383924}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SeasonLevel">
+      <UniqueIdentifier>{64ee55a1-dd9a-4a23-86bb-36370a808919}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pet">
+      <UniqueIdentifier>{bf2b8b1f-2afb-4073-8624-d2f0752b88f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sys">
+      <UniqueIdentifier>{51fafa40-968e-45c3-9a95-57f5e695ad08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Notify">
+      <UniqueIdentifier>{59ae30cd-5e75-428f-a732-f520603eea35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FigureStatue">
+      <UniqueIdentifier>{7520bc47-3440-49a8-b6d2-73b784b8ab92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mall">
+      <UniqueIdentifier>{e2d7e369-bf33-488b-9cb4-eca306502c3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Auction">
+      <UniqueIdentifier>{328b8ee1-982b-4281-b135-44b9497d284e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScoreWar">
+      <UniqueIdentifier>{58d942c9-78eb-424a-b152-5f9ec22cfd70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeadFrame">
+      <UniqueIdentifier>{4074e01a-c0b6-4f81-b601-5ae8dbdd6fb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameParam">
+      <UniqueIdentifier>{8ffc2254-f3d8-4b32-abe7-687d875017a2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
