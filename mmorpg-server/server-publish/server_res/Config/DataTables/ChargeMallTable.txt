@@ -1,0 +1,8 @@
+1	2	购买可获得60点券	1	6	6	-	600000002	60	30		UIFlatten/Image/Icon/Item/dianquan1.png:dianquan1
+2	3	购买可获得300点券	1	30	30	-	600000002	300	150		UIFlatten/Image/Icon/Item/dianquan2.png:dianquan2
+3	4	购买可获得600点券	1	60	60	-	600000002	600	300		UIFlatten/Image/Icon/Item/dianquan3.png:dianquan3
+4	6	购买可获得1280点券		128	128	-	600000002	1280	640		UIFlatten/Image/Icon/Item/dianquan4.png:dianquan4
+5	7	购买可获得3280点券		328	328	-	600000002	3280	1640		UIFlatten/Image/Icon/Item/dianquan5.png:dianquan5
+6	8	购买可获得6480点券		648	648	-	600000002	6480	3240		UIFlatten/Image/Icon/Item/dianquan6.png:dianquan6
+7	1	300	1	30	30	-	230000301	1			UIFlatten/Image/Icon/Item/consumable-51.png:consumable-51
+8	5	购买可获得980点券	1	98	98	-	600000002	980	490		UIFlatten/Image/Icon/Item/dianquan3.png:dianquan3

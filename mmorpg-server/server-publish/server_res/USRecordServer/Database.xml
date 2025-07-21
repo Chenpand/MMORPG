@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 本地数据库 host:主机地址 port:数据库端口 user:用户名 passwd:密码 dbname:数据库名 -->
+  <localdb host="192.168.2.250" port="3306" user="root" passwd="123456" dbname="aldzn_cxy_union"/>
+</root>

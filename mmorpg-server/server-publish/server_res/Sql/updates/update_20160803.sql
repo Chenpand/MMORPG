@@ -1,0 +1,1 @@
+ALTER TABLE `t_player_info` ADD COLUMN `pk_coin`  int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `retinuefighting`;

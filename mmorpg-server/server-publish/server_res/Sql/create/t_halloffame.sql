@@ -1,0 +1,12 @@
+#名人堂
+CREATE TABLE IF NOT EXISTS `t_halloffame`(
+	`guid`		BIGINT	UNSIGNED NOT NULL,				#主键
+	`hoftype`	TINYINT UNSIGNED NOT NULL,				#名人堂类型
+	`ranking`	TINYINT UNSIGNED NOT NULL,				#等级
+	`id`		BIGINT	UNSIGNED NOT NULL,				#id
+	`name`		VARCHAR(32)	NOT NULL,					#名字
+	`occu`		TINYINT UNSIGNED NOT NULL DEFAULT 0,	#职业
+	`sex`		TINYINT UNSIGNED NOT NULL DEFAULT 0,	#性别
+	`vip`		TINYINT	UNSIGNED NOT NULL DEFAULT 0,	#vip
+	PRIMARY KEY(`guid`)
+);

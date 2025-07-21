@@ -1,0 +1,1 @@
+ALTER TABLE `t_player_info` ADD COLUMN `month_card_expire_time`  int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `last_reset_mjarpoint`;

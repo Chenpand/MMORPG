@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tables>
+  <table id="1" name="gb"/>
+  <table id="2" name="prop" />
+  <table id="3" name="mb"/>
+  <table id="4" name="user_exp" />
+  <table id="5" name="store_exp"/>
+  <table id="6" name="tb_user"/>
+</tables>

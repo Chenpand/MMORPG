@@ -1,0 +1,1 @@
+ALTER TABLE `t_account` MODIFY COLUMN `total_charge_num`  int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `vipexp`;

@@ -1,0 +1,25 @@
+准备合服:
+
+1. 远程到各center, 执行:
+#拷贝环境到目标机器上
+ansible bsxy-logic-26 -m shell -a 'wget http://39.108.116.227:8090/merge_pre.sh && sh merge_pre.sh'
+
+2. 在center cd /data/ansible/mkServer/
+#创建replay库
+sh create_db.sh rm-bp1b61677oy77z3o8 replay_870 cn-hangzhou
+#导入replay表
+mysql -h rm-bp1b61677oy77z3o8.mysql.rds.aliyuncs.com -u aldzn -p2AJfPNFQxH7HWDc! replay_870< /data/ansible/mkServer/template/replay.sql
+
+开始合服:
+
+1. 停服
+ansible bsxy-logic-26,bsxy-*-27 -m shell -a 'cd /data/dnf/bin;./stop.sh'
+
+2. 目标机上,修改各类配置文件(id分别为主服, 结果服, 从服)
+sh merge_conf_update.sh 427 870 428 rm-bp1b61677oy77z3o8 rm-wz92ws4672a5318l1
+
+3. 修改merge_ali.sh里得remoteip（从服得内网ip）
+
+4. 执行merge_ali.sh
+
+5. 配置directserver, globalserver, billserver, dealcustom, gm工具服务器列表,日志, serverlist_all.json, ansible配置

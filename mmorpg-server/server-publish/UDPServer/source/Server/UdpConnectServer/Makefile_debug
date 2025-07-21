@@ -1,0 +1,32 @@
+include ../MakeFile_Public
+
+
+TARGET = $(SERVER_DIR)/Bin/Debug/UdpConnectorServer/udpconnectorsvrd
+
+
+CURRENT_OBJ_DIR = ./.objs
+CONNECTOR_LD_FLAG = $(LDFLAGS) #-lepoll		#LDFLAGS = -g -L$(COMMONLIB_DIR_DEBUG) -lconnector -lcommon -lpublic -ltinyxml
+CONNECTOR_CPP_FLAG = $(CPPFLAGS) #-D__MULTI_THREAD__ #CPPFLAGS= -g -Wall $(PUBLIC_INC)
+
+SRC = $(wildcard *.cpp) $(wildcard *.c) $(wildcard *.cxx)
+OBJS = $(addprefix $(CURRENT_OBJ_DIR)/,$(subst .cpp,.o,$(SRC)))
+
+CONNSVRD_BIN_DEBUG_DIR = $(SERVER_DIR)/Bin/Debug/UdpConnectorServer/
+CONNSVRD_BIN_RELEASE_DIR = $(SERVER_DIR)/Bin/Release/UdpConnectorServer/
+
+
+all : $(TARGET)
+
+$(TARGET): $(OBJS)
+	$(CXX)  -o $@ $(OBJS)  $(CONNECTOR_LD_FLAG)
+$(CURRENT_OBJ_DIR)/%.o : %.cpp
+	@if [ ! -e $(CURRENT_OBJ_DIR) ]; then \
+		mkdir $(CURRENT_OBJ_DIR); \
+	fi
+	$(CXX) $(CONNECTOR_CPP_FLAG) -c $< -o $@
+
+install:
+	cp -f $(TARGET) $(CONNSVRD_BIN_DEBUG_DIR)
+clean:
+#	rm -f $(LOGICSERVER_OBJS) $(TARGET)
+	rm -f $(TARGET) $(OBJS)

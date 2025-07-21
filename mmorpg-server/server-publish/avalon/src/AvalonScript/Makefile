@@ -1,0 +1,31 @@
+# The pre-processor options used by the cpp (man cpp for more).
+CPPFLAGS  	+= -I../../include/ -I../../include/lua/ -g -O2 -Wall -MMD
+
+# The options used in linking as well as in any direct use of ld.
+LDFLAGS   	+= -lpthread 
+
+
+# preheader file.
+PREHEADER 	= 
+
+PREHEADERGCH = 
+
+
+# The target file. Choose the right one.
+TARGETPROG 	=
+
+TARGETLIB  	= libAvalonScript.a
+
+TARGETSO   	=
+
+
+#source directory
+SRCDIRS 	= ./lua/ ./
+
+#target directory
+TARGETDIR  	= ../../lib/linux/
+
+
+## Implicit Section: change the following only when necessary.
+##==========================================================================
+-include ../../Common.mak

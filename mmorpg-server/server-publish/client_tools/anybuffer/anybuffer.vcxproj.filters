@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="src\CodeGenerator.h">
+      <Filter>CodeGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CSharpGenerator.h">
+      <Filter>CodeGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LuaGenerator.h">
+      <Filter>CodeGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base_tools.h" />
+    <ClInclude Include="src\field.h" />
+    <ClInclude Include="src\parser.h" />
+    <ClInclude Include="src\utility.h" />
+    <ClInclude Include="src\CSharpMockGenerator.h">
+      <Filter>CodeGenerator</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CSharpGenerator.cpp">
+      <Filter>CodeGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LuaGenerator.cpp">
+      <Filter>CodeGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\parser.cpp" />
+    <ClCompile Include="src\CSharpMockGenerator.cpp">
+      <Filter>CodeGenerator</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CodeGenerator">
+      <UniqueIdentifier>{14a295f2-3b13-4208-b150-0362ec69a79a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

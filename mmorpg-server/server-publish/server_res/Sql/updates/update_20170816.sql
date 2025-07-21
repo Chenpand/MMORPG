@@ -1,0 +1,1 @@
+ALTER TABLE `t_charge_order` ADD COLUMN `channel`  varchar(16) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `guid`;

@@ -1,0 +1,18 @@
+<%- include header %>
+
+<form method="post">
+  玩家ID：  <input type="text" name="playerid"/><br />
+  道具ID：  <input type="text" name="itemid"/><br />
+  道具数量： <input type="text" name="itemnum"/><br />
+  邮件内容： <textarea name="content" rows="20" cols="100"></textarea><br />
+         <input type="submit" value="提交"/>
+</form>
+
+<% if (success) { %>
+  <div><%= success %></div>
+<% } %>
+<% if (error) { %>
+  <div><%= error %> </div>
+<% } %>
+
+<%- include footer %>

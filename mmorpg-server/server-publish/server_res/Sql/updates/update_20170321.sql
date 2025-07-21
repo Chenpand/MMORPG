@@ -1,0 +1,2 @@
+ALTER TABLE `t_player_info` ADD COLUMN `onlinetime`  int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `localsavetime`;
+ALTER TABLE `t_player_info` ADD COLUMN `login_ip`  varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' AFTER `forbid_talk_duetime`;

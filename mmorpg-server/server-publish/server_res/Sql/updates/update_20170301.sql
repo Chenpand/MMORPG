@@ -1,0 +1,1 @@
+ALTER TABLE `t_account` ADD COLUMN `month_card_expire_time`  int(10) UNSIGNED NOT NULL AFTER `total_charge_num`;

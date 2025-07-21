@@ -1,0 +1,1 @@
+ALTER TABLE `t_guild_member` ADD COLUMN `vip_level`  tinyint(10) NOT NULL DEFAULT 0 AFTER `level`;

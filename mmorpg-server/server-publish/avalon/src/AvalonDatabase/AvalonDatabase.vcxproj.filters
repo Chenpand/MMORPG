@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AvalonDBConnection.cpp" />
+    <ClCompile Include="AvalonMysqlResultSet.cpp" />
+    <ClCompile Include="AvalonMysqlConnection.cpp" />
+    <ClCompile Include="AvalonRetryDBConnection.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\AvalonDBConnection.h" />
+    <ClInclude Include="..\..\include\AvalonDBField.h" />
+    <ClInclude Include="AvalonMysqlConnection.h" />
+    <ClInclude Include="AvalonMysqlResultSet.h" />
+    <ClInclude Include="..\..\include\AvalonResultSet.h" />
+    <ClInclude Include="mysql\include\base64.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_alloc.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\config-win.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\decimal.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\errmsg.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\atomic\gcc_builtins.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\atomic\generic-msvc.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\hash.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\keycache.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\lf.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\m_ctype.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\m_string.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_aes.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_alarm.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_atomic.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_list.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_attribute.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_base.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_bit.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_bitmap.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_charsets.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_config.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_dbug.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_dir.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_getopt.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_global.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_libwrap.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_md5.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_net.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_no_pthread.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_nosys.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_pthread.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_stacktrace.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_sys.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_time.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_tree.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_trie.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_uctype.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_vle.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\my_xml.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\myisampack.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql_com.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\sha2.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql_time.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysql_version.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysqld_error.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysys_err.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\atomic\nolock.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\queues.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\mysys\rijndael.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\atomic\rwlock.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\service_versions.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\sha1.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\sql_common.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\atomic\x86-gcc.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\sslopt-case.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\sslopt-longopts.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\sslopt-vars.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\t_ctype.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\thr_alarm.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\thr_lock.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\typelib.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\violite.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\waiting_threads.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\include\wqueue.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\AvalonRetryDBConnection.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="mysql">
+      <UniqueIdentifier>{c7e2522b-e5f6-4c50-8b0f-a6a14b48cdab}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

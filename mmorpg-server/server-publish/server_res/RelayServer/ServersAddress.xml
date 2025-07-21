@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- type:服务器类型 id:服务器id  internaladdress:内部地址 externaladdress:外部地址 -->
+  <!-- 管理服务器 -->
+  <server type="2" id="0" internaladdress="127.0.0.1:5020" externaladdress="192.168.88.12:843" consoleaddress="192.168.88.12:3021" billingaddress="192.168.88.12:3022"/>
+  
+  <!-- 网关服务器 -->
+  <!-- <server type="3" id="1" internaladdress="127.0.0.1:5030" externaladdress="192.168.88.12:5035" />-->
+  <!--<server type="3" id="2" internaladdress="127.0.0.1:5031" externaladdress="192.168.88.12:5036" />-->
+
+  <!-- 档案服务器 -->
+  <!--<server type="4" id="0" internaladdress="127.0.0.1:5040" />-->
+
+  <!-- 场景服务器 -->
+  <!--<server type="5" id="1" internaladdress="127.0.0.1:5050" />-->
+  <!--<server type="5" id="2" internaladdress="127.0.0.1:5051" />-->
+
+ 
+  <!-- 世界服务器 -->
+  <!-- <server type="6" id="0" internaladdress="192.168.0.116:5060" /> -->
+  <!-- match server -->
+  <server type="15" id="0" internaladdress="127.0.0.1:6000" />
+</root>

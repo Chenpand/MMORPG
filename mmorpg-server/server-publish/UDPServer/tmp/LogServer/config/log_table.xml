@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tables>
+<table id="1" name="login"/>
+<table id="2" name="logout" />
+<table id="3" name="pcu" />
+<table id="4" name="new_boot" />
+<table id="5" name="delete" />
+<table id="6" name="create" />
+
+<table id="10" name="item" />
+<table id="11" name="asset" />
+<table id="12" name="task_accept" />
+<table id="13" name="task_abandon" />
+<table id="14" name="task_submit" />
+<table id="15" name="level" />
+<table id="16" name="dungeon" />
+<table id="17" name="function" />
+<table id="18" name="skill_change" />
+<table id="19" name="revive" />
+<table id="20" name="auction_up" />
+<table id="21" name="auction_down" />
+<table id="22" name="auction_buy" />
+
+<table id="23" name="warp_stone_unlock" />
+<table id="24" name="warp_stone_charge" />
+<table id="25" name="retinue_unlock" />
+<table id="26" name="retinue_uplevel" />
+<table id="27" name="retinue_upstar" />
+<table id="28" name="retinue_change_skill" />
+
+<table id="29" name="active_finish" />
+<table id="30" name="shop_buy" />
+<table id="31" name="mall_buy" />
+
+<table id="32" name="strength_equip" />
+<table id="33" name="dungeon_start" />
+<table id="34" name="first_clear_death_tower" />
+
+<table id="35" name="match_start" />
+<table id="36" name="pvp_end" />
+
+</tables>

@@ -1,0 +1,35 @@
+<%- include new_header %>
+
+    <body id="contentBody" onload="">
+        <%- include main_side %>
+
+        <div class="container-fluid">
+        <h3 class="page-header" id="frame_title">游戏管理--重新加载脚本</h3>
+
+        <!--查询玩家信息-->
+        <div class="dash_board_row_item_left panel panel-default">
+            <div class="panel-heading">
+                重新加载版本
+            </div>
+            <div class="panel-body">
+                <form method="post">
+                    <div class="script-checkbox">
+                        SceneServer脚本</br>
+                        <input name="SceneScript" type="checkbox" value="0" />任务脚本
+                        <input name="SceneScript" type="checkbox" value="2" />物品脚本
+                        <input name="SceneScript" type="checkbox" value="6" />活动脚本
+                    </div>
+                    <hr width=100% size=10 color=#00ffff align=center noshade>
+                    <div class="script-checkbox">
+                        WorldServer脚本</br>
+                        <input name="WorldScript" type="checkbox" value="4" />玩家脚本
+                    </div>
+                    
+                    <br/>
+                    <input type="submit" value="提交"/>
+                </form>
+            </div>
+        </div>
+
+
+<%- include new_footer %>

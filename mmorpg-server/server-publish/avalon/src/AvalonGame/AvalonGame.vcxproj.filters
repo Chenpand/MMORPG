@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AvalonAStar.cpp" />
+    <ClCompile Include="AvalonPos2D.cpp" />
+    <ClCompile Include="AvalonDataRow.cpp" />
+    <ClCompile Include="AvalonDataTable.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\AvalonAStar.h" />
+    <ClInclude Include="..\..\include\AvalonPos2D.h" />
+    <ClInclude Include="..\..\include\AvalonDataTable.h" />
+    <ClInclude Include="..\..\include\AvalonDataRow.h" />
+    <ClInclude Include="..\..\include\AvalonDataEntryMgr.h" />
+    <ClInclude Include="..\..\include\AvalonDataEntry.h" />
+  </ItemGroup>
+</Project>

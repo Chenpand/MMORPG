@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 本地数据库 host:主机地址 port:数据库端口 user:用户名 passwd:密码 dbname:数据库名 -->
+  <localdb host="192.168.2.50" port="3306" user="root" passwd="123456" dbname="dnf-db-zjy"/>
+
+  <!-- 需要全服唯一名认证的表和字段 -->
+  <uniquenamedb host="192.168.2.50" port="3306" user="root" passwd="123456" dbname="dnf-db-zjy">
+    <!--全服唯一性验证的名字字段 -->
+    <uniquename table="t_player_info" namecolumn="name" />
+	<uniquename table="t_tribe" namecolumn="name" />
+  </uniquenamedb>
+</root>

@@ -1,0 +1,11 @@
+CREATE TABLE `t_g_dungeon_hard` (
+`guid`  bigint(20) UNSIGNED NOT NULL ,
+`account`  int(10) UNSIGNED NOT NULL ,
+`dungeon_id`  int(10) UNSIGNED NOT NULL ,
+`unlocked_hard_type`  tinyint(10) UNSIGNED NOT NULL ,
+PRIMARY KEY (`guid`)
+)
+ENGINE=InnoDB
+DEFAULT CHARACTER SET=utf8 COLLATE=utf8_general_ci
+ROW_FORMAT=Dynamic
+;

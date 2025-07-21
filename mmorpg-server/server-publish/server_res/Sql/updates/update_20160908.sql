@@ -1,0 +1,1 @@
+ALTER TABLE `t_player_info` ADD COLUMN `active_tasks` varchar(2048) NOT NULL DEFAULT '';

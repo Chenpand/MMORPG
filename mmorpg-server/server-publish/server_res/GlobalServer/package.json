@@ -1,0 +1,16 @@
+{
+  "name": "globalserver",
+  "main": "src/app.js",
+  "version": "0.0.1",
+  "private": true,
+  "description": "GlobalServer",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "dependencies": {
+    "memcached": "latest",
+    "mysql": "latest",
+    "request": "latest",
+    "log4js": "latest"
+  }
+}

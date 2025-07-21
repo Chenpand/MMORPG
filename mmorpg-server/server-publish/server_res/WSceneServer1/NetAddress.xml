@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- type:服务器类型 id:服务器id  -->
+  <!-- 管理服务器 -->
+  <server type="9" id="0" internaladdress="127.0.0.1:9992" />
+</root>

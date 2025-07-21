@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <sceneserver id="1">
+	<map id="5003"/>
+	<map id="5004"/>
+	<map id="9999"/>
+	<map id="6000"/>
+	<map id="6001"/>
+	<map id="6003"/>
+	<map id="6004"/>
+	<map id="6005"/>
+	<map id="6006"/>
+	<map id="6007"/>
+	<map id="6008"/>
+	<map id="6009"/>
+	<map id="6010"/>
+	<map id="6011"/>
+	<map id="6012"/>
+	<dungeonentry id="6002"/>
+  </sceneserver>
+</root>

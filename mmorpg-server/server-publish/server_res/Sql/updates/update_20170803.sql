@@ -1,0 +1,2 @@
+ALTER TABLE `t_shop` ADD COLUMN `week_refreshtime` bigint(20) UNSIGNED NOT NULL DEFAULT 0 COMMENT '每周刷新时间点' AFTER `refreshtime`;
+ALTER TABLE `t_shop` ADD COLUMN `month_refreshtime` bigint(20) UNSIGNED NOT NULL DEFAULT 0 COMMENT '每月刷新时间点' AFTER `week_refreshtime`;

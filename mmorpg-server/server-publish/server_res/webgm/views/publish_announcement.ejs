@@ -1,0 +1,44 @@
+<%- include new_header %>
+    <body id="contentBody" onload="">
+        <%- include main_side %>
+
+        <div class="container-fluid">
+        <h3 class="page-header" id="frame_title">游戏管理--发布公告</h3>
+
+         <div class="panel panel-default">
+            <div class="panel-heading">
+                发布公告
+            </div>
+            <div class="panel-body">
+                <form method="post">
+                <div class="panel-body1">
+                    <span class="input-group">开始时间:</span><input type="datetime-local" name="fuck" />
+                </div>
+                <div class="panel-body1">
+                    <span class="input-group">间隔时间(秒):</span><input type="text" name="interval"/>
+                </div>
+                <div class="panel-body1">
+                    <span class="input-group">重复次数:</span><input type="text" name="repeattimes"/>
+                </div>
+                <div class="panel-body1">
+                    <span class="input-group">邮件内容:</span><textarea name="content" rows="5" cols="50"></textarea>
+                </div>
+                <div class="panel-body1">
+                    <input type="submit" value="提交"/>
+                </div>
+                </form>
+            </div>
+        </div>
+
+        <% if (success) { %>
+            <script type="text/javascript">
+                duihua('<%= success %>');
+            </script>
+        <% } %>
+        <% if (error) { %>
+            <script type="text/javascript">
+                duihua('<%= error %>');
+            </script>
+        <% } %>
+
+<%- include new_footer %>

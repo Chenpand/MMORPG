@@ -1,0 +1,7 @@
+/* inspired by http://yihui.name/cn/ */
+div.dash_board_row_item_side{width:9%; min-width:90px;float:left;}
+div.dash_board_row_item_space{width:1%; min-width:12px;float:left;}
+div.dash_board_row_item_main{width:90%; float:left;}
+div.loading{position:fixed;top:0;left:0;width:100%;height:100%;background:url("/pic/loaderc.gif") no-repeat center;z-index:7; }
+
+div.container-fluid{width:85%; float:right;}

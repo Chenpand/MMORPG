@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<filelog>
+		<!-- name:日志名 rollType:切分方式 0不切分 1按时切分 2按日切分 3按月切分 -->
+		<logger name="Property" 	rollType="2" />
+		<logger name="Player" 		rollType="2" />
+		<logger name="MailBox" 		rollType="2" />
+		<logger name="Console" 		rollType="2" />
+		<logger name="Tribe"		rollType="2" />
+		<logger name="GMCommand"	rollType="2" />
+		<logger name="Auction"		rollType="2" />
+		<logger name="Billing"		rollType="2" />
+		<logger name="MallItem"		rollType="2" />
+		<logger name="Pet"			rollType="2" />
+		<logger name="Fabao"		rollType="2" />
+		<logger name="Task"			rollType="2" />
+		<logger name="Lifesap"		rollType="2" />
+		<logger name="Center"		rollType="2" />
+		<logger name="Country"		rollType="2" />
+		<logger name="Story"		rollType="2" />
+		<logger name="Item"			rollType="2" />
+		<logger name="Storage"		rollType="2" />
+		<logger name="Package"		rollType="2" />
+		<logger name="Damage"		rollType="2" />
+	</filelog>
+	<dblog threadnum="5">
+		<!-- name:日志名 keeptime:保存时间(秒) -->
+		<logger name="goldconsume" 			keeptime="25920000" />
+		<logger name="bindgoldconsume" 		keeptime="3456000" />
+		<logger name="pointconsume"			keeptime="25920000" />
+		<logger name="silverconsume" 		keeptime="3456000" 	/>
+		<logger name="loginout"				keeptime="3456000" 	/>
+		<logger name="itemobtain"			keeptime="3456000" 	/>
+		<logger name="itemconsume"			keeptime="3456000" 	/>
+		<logger name="ironstoneconsume"		keeptime="3456000" 	/>
+		<logger name="mail"					keeptime="3456000"	/>
+		<logger name="goldalarm"			keeptime="3456000"	/>	
+		<logger name="petconsume"			keeptime="3456000" 	/>
+	</dblog>
+</root>

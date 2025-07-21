@@ -1,0 +1,1 @@
+ALTER TABLE `t_player_info` ADD COLUMN `tower_wipeout_end_time`  int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `newboot`;

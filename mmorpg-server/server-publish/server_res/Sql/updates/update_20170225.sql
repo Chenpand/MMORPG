@@ -1,0 +1,1 @@
+ALTER TABLE `t_guild_member` ADD COLUMN `active_degree`  int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `battle_mp`;

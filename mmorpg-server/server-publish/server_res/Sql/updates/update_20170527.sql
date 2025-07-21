@@ -1,0 +1,2 @@
+ALTER TABLE `t_item` ADD COLUMN `fashionattrid`  int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `setqlnum`;
+ALTER TABLE `t_item` ADD COLUMN `fashionattrnum`  int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `fashionattrid`;

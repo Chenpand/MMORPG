@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\src\snappy.cc" />
+    <ClCompile Include="..\..\src\snappy-c.cc" />
+    <ClCompile Include="..\..\src\snappy-sinksource.cc" />
+    <ClCompile Include="..\..\src\snappy-stubs-internal.cc" />
+    <ClCompile Include="..\..\src\dllmain.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\snappy.h" />
+    <ClInclude Include="..\..\src\snappy-c.h" />
+    <ClInclude Include="..\..\src\snappy-internal.h" />
+    <ClInclude Include="..\..\src\snappy-sinksource.h" />
+    <ClInclude Include="..\..\src\snappy-stubs-internal.h" />
+    <ClInclude Include="..\..\src\snappy-stubs-public.h" />
+    <ClInclude Include="..\..\src\configure.h">
+      <Filter>config</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="config">
+      <UniqueIdentifier>{44ce3ce1-c071-480a-a136-f2d60be7e437}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

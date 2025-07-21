@@ -1,0 +1,37 @@
+CREATE TABLE IF NOT EXISTS `t_pet` (
+	`guid`		BIGINT		UNSIGNED NOT NULL,		#主键
+	`owner`		BIGINT		UNSIGNED NOT NULL,		#拥有者
+	`dataid`		INT		UNSIGNED NOT NULL,	#宠物id
+	`name`		VARCHAR(32)	NOT NULL,			#宠物名字
+	`level`		SMALLINT	UNSIGNED NOT NULL,	#等级
+	`exp`		INT			UNSIGNED NOT NULL,		#经验
+	`growth`	INT			UNSIGNED NOT NULL,		#成长
+	`aptitude`	TINYINT		UNSIGNED NOT NULL,	#资质
+	`skills`	VARCHAR(128) NOT NULL,		#宠物技能
+	`transid`	INT			UNSIGNED NOT NULL,		#幻化id
+	`petsoul`	VARCHAR(256) NOT NULL DEFAULT '',	#兽魂
+	`aimode`	TINYINT		UNSIGNED NOT NULL,		#ai模式
+	PRIMARY KEY(`guid`),
+	INDEX(`owner`)
+);
+
+CREATE TABLE IF NOT EXISTS `t_pasture`(
+	`guid`		BIGINT		UNSIGNED NOT NULL,		#主键
+	`level`		SMALLINT	UNSIGNED NOT NULL DEFAULT 1,		#等级
+	`exp`		INT 		UNSIGNED NOT NULL DEFAULT 0,		#经验
+	`dailyexp`	INT 		UNSIGNED NOT NULL DEFAULT 0,		#今日经验
+	`fetchWaterList`	VARCHAR(512)	NOT NULL DEFAULT "",	#蓄水玩家列表		
+	`wateringTimes`	SMALLINT	UNSIGNED NOT NULL DEFAULT 0,	#浇水次数
+	`unloadTime`	INT			UNSIGNED NOT NULL DEFAULT 0,	#卸载时间
+	`events`	SMALLINT	UNSIGNED NOT NULL DEFAULT 0,		#事件
+	`grid1`		VARCHAR(128)	NOT NULL DEFAULT "",	#栏位1
+	`grid2`		VARCHAR(128)	NOT NULL DEFAULT "",	#栏位2
+	`grid3`		VARCHAR(128)	NOT NULL DEFAULT "",	#栏位3
+	`grid4`		VARCHAR(128)	NOT NULL DEFAULT "",	#栏位4
+	`grid5`		VARCHAR(128)	NOT NULL DEFAULT "",	#栏位5
+	`grid6`		VARCHAR(128)	NOT NULL DEFAULT "",	#栏位6
+	`grid7`		VARCHAR(128)	NOT NULL DEFAULT "",	#栏位7
+	`grid8`		VARCHAR(128)	NOT NULL DEFAULT "",	#栏位8
+	`grid9`		VARCHAR(128)	NOT NULL DEFAULT "",	#栏位9
+	PRIMARY KEY(`guid`)
+);

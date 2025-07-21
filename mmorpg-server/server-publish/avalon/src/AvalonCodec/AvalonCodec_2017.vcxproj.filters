@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="..\..\include\AvalonBase64.h" />
+    <ClInclude Include="..\..\include\AvalonMd5.h" />
+    <ClInclude Include="..\..\include\AvalonSha1.h" />
+    <ClInclude Include="snappy\snappy.h">
+      <Filter>snappy</Filter>
+    </ClInclude>
+    <ClInclude Include="snappy\snappy-c.h">
+      <Filter>snappy</Filter>
+    </ClInclude>
+    <ClInclude Include="snappy\snappy-internal.h">
+      <Filter>snappy</Filter>
+    </ClInclude>
+    <ClInclude Include="snappy\snappy-sinksource.h">
+      <Filter>snappy</Filter>
+    </ClInclude>
+    <ClInclude Include="snappy\snappy-stubs-internal.h">
+      <Filter>snappy</Filter>
+    </ClInclude>
+    <ClInclude Include="snappy\snappy-stubs-public.h">
+      <Filter>snappy</Filter>
+    </ClInclude>
+    <ClInclude Include="snappy\config.h">
+      <Filter>snappy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\AvalonCompress.h" />
+    <ClInclude Include="pcre\config.h">
+      <Filter>pcre</Filter>
+    </ClInclude>
+    <ClInclude Include="pcre\pcre.h">
+      <Filter>pcre</Filter>
+    </ClInclude>
+    <ClInclude Include="pcre\pcre_internal.h">
+      <Filter>pcre</Filter>
+    </ClInclude>
+    <ClInclude Include="pcre\ucp.h">
+      <Filter>pcre</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\AvalonRegex.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AvalonBase64.cpp" />
+    <ClCompile Include="AvalonMd5.cpp" />
+    <ClCompile Include="AvalonSha1.cpp" />
+    <ClCompile Include="snappy\snappy-c.cpp">
+      <Filter>snappy</Filter>
+    </ClCompile>
+    <ClCompile Include="snappy\snappy-sinksource.cpp">
+      <Filter>snappy</Filter>
+    </ClCompile>
+    <ClCompile Include="snappy\snappy-stubs-internal.cpp">
+      <Filter>snappy</Filter>
+    </ClCompile>
+    <ClCompile Include="snappy\snappy.cpp">
+      <Filter>snappy</Filter>
+    </ClCompile>
+    <ClCompile Include="AvalonCompress.cpp" />
+    <ClCompile Include="pcre\pcre_compile.c">
+      <Filter>pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="pcre\pcre_config.c">
+      <Filter>pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="pcre\pcre_dfa_exec.c">
+      <Filter>pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="pcre\pcre_exec.c">
+      <Filter>pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="pcre\pcre_fullinfo.c">
+      <Filter>pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="pcre\pcre_get.c">
+      <Filter>pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="pcre\pcre_globals.c">
+      <Filter>pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="pcre\pcre_newline.c">
+      <Filter>pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="pcre\pcre_ord2utf8.c">
+      <Filter>pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="pcre\pcre_printint.c">
+      <Filter>pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="pcre\pcre_refcount.c">
+      <Filter>pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="pcre\pcre_study.c">
+      <Filter>pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="pcre\pcre_tables.c">
+      <Filter>pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="pcre\pcre_ucd.c">
+      <Filter>pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="pcre\pcre_valid_utf8.c">
+      <Filter>pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="pcre\pcre_version.c">
+      <Filter>pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="pcre\pcre_xclass.c">
+      <Filter>pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="AvalonRegex.cpp" />
+    <ClCompile Include="pcre\pcre_byte_order.c">
+      <Filter>pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="pcre\pcre_jit_compile.c">
+      <Filter>pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="pcre\pcre_string_utils.c">
+      <Filter>pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="pcre\pcre_chartables.c">
+      <Filter>pcre</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="snappy">
+      <UniqueIdentifier>{ee9063f4-426d-41c4-b278-f75d9cc2e14a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pcre">
+      <UniqueIdentifier>{b4b23008-6001-4263-85d9-5428e8922b42}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

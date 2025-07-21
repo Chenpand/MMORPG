@@ -1,0 +1,1 @@
+ALTER TABLE `t_player_info` ADD COLUMN `warpstone` varchar(512) NOT NULL DEFAULT '' COMMENT '´ÎÔªÊ¯';

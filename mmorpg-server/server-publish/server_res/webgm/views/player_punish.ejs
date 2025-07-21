@@ -1,0 +1,33 @@
+<%- include new_header %>
+
+    <body id="contentBody" onload="">
+        <%- include main_side %>
+
+        <div class="container-fluid">
+        <h3 class="page-header" id="frame_title">玩家管理--玩家惩罚</h3>
+
+        <!--玩家惩罚-->
+        <div class="dash_board_row_item_left panel panel-default">
+            <div class="panel-heading">
+                玩家惩罚
+            </div>
+            <div class="panel-body">
+                <form method="post">
+                    <div>账号:</div>
+                        <input type="text" name="account_id"/>
+                    <br />
+                    <div>类型:</div>
+                        <select name="type">
+                            <option value="1">禁言</option>
+                            <option value="2">封号</option>
+                        </select>
+                    <div>持续时间:</div>
+                        <input type="text" name="time"/>(秒)
+                    <br /><br />
+                    <input type="submit" value="提交"/>
+                </form>
+            </div>
+        </div>
+
+
+<%- include new_footer %>

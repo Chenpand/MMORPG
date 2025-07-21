@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3f893495-cf5b-ff4e-acf2-4d50eed3f35a",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "3f893495-cf5b-ff4e-acf2-4d50eed3f35a" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3f893495-cf5b-ff4e-acf2-4d50eed3f35a" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3FE09C57-DE52-48C3-A2C4-0F51B9383A7A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3f893495-cf5b-ff4e-acf2-4d50eed3f35a" : "DNF_Project_Server\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "snappy",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "trunk\/client_tools\/snappy-back\/proj.ios\/snappy.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.0.198:8080\/svn\/DNF_Project_Server",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3f893495-cf5b-ff4e-acf2-4d50eed3f35a"
+    }
+  ]
+}

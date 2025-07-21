@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS `t_lottery_rec` (
+	`guid`		BIGINT	UNSIGNED NOT NULL,		#主键
+	`type`		TINYINT	UNSIGNED NOT NULL DEFAULT 0,	#类型
+	`playerid`	BIGINT	UNSIGNED NOT NULL,		#玩家id
+	`name`		VARCHAR(32)	NOT NULL,			#玩家名字
+	`itemid`	INT	UNSIGNED NOT NULL,			#道具id
+	`quality`	TINYINT	UNSIGNED NOT NULL DEFAULT 0,	#道具品质
+	`price`		INT	UNSIGNED NOT NULL DEFAULT 0,	#道具品质	
+	`gettime`	INT	UNSIGNED NOT NULL,			#获得的时间
+	PRIMARY KEY(`guid`)
+);
+
+##删除20天前的抽奖记录
+CREATE EVENT IF NOT EXISTS event_clearlotteryrec ON SCHEDULE EVERY 600 SECOND
+ON COMPLETION PRESERVE ENABLE
+DO DELETE FROM `t_lottery_rec` WHERE UNIX_TIMESTAMP() > `gettime` + 1728000;

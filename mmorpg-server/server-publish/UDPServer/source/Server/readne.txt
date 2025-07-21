@@ -1,0 +1,13 @@
+1.Compiler Lib
+chmod 775 makelib
+./makelib
+if you execute ./makelib appear this error ": No such file or directory" then execute this command
+dos2unix makelib
+./makelib
+
+2.Clean memory
+chmod 775 rm_shm
+./rm_shm
+if you execute ./rm_shm appear this error ": No such file or directory" then execute this command
+dos2unix rm_shm
+./rm_shm

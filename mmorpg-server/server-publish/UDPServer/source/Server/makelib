@@ -1,0 +1,30 @@
+#!/bin/bash
+
+. env.sh
+
+lib_home=${SERVER_ROOT}/LibSource
+lib=(Common Connector lzma public tinyxml json)
+lib_count=${#lib[*]}
+i=0
+while [ $i -lt $lib_count ]
+do
+	cd $lib_home/${lib[$i]}
+	if [ $? -eq 0 ];then
+		echo "success cd "${lib[$i]}
+	else
+		exit 0
+	fi
+	if [ "${lib[$i]}"x = "Common"x ];then
+		 make -f Makefile_MT clean;make -f Makefile_MT
+	fi
+	make clean;make
+	if [ $? -eq 0 ];then
+		echo "success "${lib[$i]}
+	else
+		exit 0
+	fi
+	if [ "${lib[$i]}"x = "tinyxml"x ];then
+		make install
+	fi
+	let i++
+done

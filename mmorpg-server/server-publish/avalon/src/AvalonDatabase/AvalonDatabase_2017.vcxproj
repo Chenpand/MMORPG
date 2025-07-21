@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{82DBABEF-F9FB-44C4-A11B-22798EA34049}</ProjectGuid>
+    <RootNamespace>AvalonDatabase</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>AvalonDatabase</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)lib\win32\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)lib\win32\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AvalonDBConnection.cpp" />
+    <ClCompile Include="AvalonMysqlConnection.cpp" />
+    <ClCompile Include="AvalonMysqlResultSet.cpp" />
+    <ClCompile Include="AvalonRetryDBConnection.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\AvalonDBConnection.h" />
+    <ClInclude Include="..\..\include\AvalonDBField.h" />
+    <ClInclude Include="..\..\include\AvalonRetryDBConnection.h" />
+    <ClInclude Include="AvalonMysqlConnection.h" />
+    <ClInclude Include="AvalonMysqlResultSet.h" />
+    <ClInclude Include="..\..\include\AvalonResultSet.h" />
+    <ClInclude Include="mysql\include\base64.h" />
+    <ClInclude Include="mysql\include\config-win.h" />
+    <ClInclude Include="mysql\include\decimal.h" />
+    <ClInclude Include="mysql\include\errmsg.h" />
+    <ClInclude Include="mysql\include\atomic\gcc_builtins.h" />
+    <ClInclude Include="mysql\include\atomic\generic-msvc.h" />
+    <ClInclude Include="mysql\include\hash.h" />
+    <ClInclude Include="mysql\include\keycache.h" />
+    <ClInclude Include="mysql\include\lf.h" />
+    <ClInclude Include="mysql\include\m_ctype.h" />
+    <ClInclude Include="mysql\include\m_string.h" />
+    <ClInclude Include="mysql\include\my_aes.h" />
+    <ClInclude Include="mysql\include\my_alarm.h" />
+    <ClInclude Include="mysql\include\my_alloc.h" />
+    <ClInclude Include="mysql\include\my_atomic.h" />
+    <ClInclude Include="mysql\include\my_attribute.h" />
+    <ClInclude Include="mysql\include\my_base.h" />
+    <ClInclude Include="mysql\include\my_bit.h" />
+    <ClInclude Include="mysql\include\my_bitmap.h" />
+    <ClInclude Include="mysql\include\my_charsets.h" />
+    <ClInclude Include="mysql\include\my_config.h" />
+    <ClInclude Include="mysql\include\my_dbug.h" />
+    <ClInclude Include="mysql\include\my_dir.h" />
+    <ClInclude Include="mysql\include\my_getopt.h" />
+    <ClInclude Include="mysql\include\my_global.h" />
+    <ClInclude Include="mysql\include\my_libwrap.h" />
+    <ClInclude Include="mysql\include\my_list.h" />
+    <ClInclude Include="mysql\include\my_md5.h" />
+    <ClInclude Include="mysql\include\my_net.h" />
+    <ClInclude Include="mysql\include\my_no_pthread.h" />
+    <ClInclude Include="mysql\include\my_nosys.h" />
+    <ClInclude Include="mysql\include\my_pthread.h" />
+    <ClInclude Include="mysql\include\my_stacktrace.h" />
+    <ClInclude Include="mysql\include\my_sys.h" />
+    <ClInclude Include="mysql\include\my_time.h" />
+    <ClInclude Include="mysql\include\my_tree.h" />
+    <ClInclude Include="mysql\include\my_trie.h" />
+    <ClInclude Include="mysql\include\my_uctype.h" />
+    <ClInclude Include="mysql\include\my_vle.h" />
+    <ClInclude Include="mysql\include\my_xml.h" />
+    <ClInclude Include="mysql\include\myisampack.h" />
+    <ClInclude Include="mysql\include\mysql.h" />
+    <ClInclude Include="mysql\include\mysql_com.h" />
+    <ClInclude Include="mysql\include\mysql_time.h" />
+    <ClInclude Include="mysql\include\mysql_version.h" />
+    <ClInclude Include="mysql\include\mysqld_error.h" />
+    <ClInclude Include="mysql\include\mysys_err.h" />
+    <ClInclude Include="mysql\include\atomic\nolock.h" />
+    <ClInclude Include="mysql\include\queues.h" />
+    <ClInclude Include="mysql\include\mysys\rijndael.h" />
+    <ClInclude Include="mysql\include\atomic\rwlock.h" />
+    <ClInclude Include="mysql\include\service_versions.h" />
+    <ClInclude Include="mysql\include\sha1.h" />
+    <ClInclude Include="mysql\include\sha2.h" />
+    <ClInclude Include="mysql\include\sql_common.h" />
+    <ClInclude Include="mysql\include\sslopt-case.h" />
+    <ClInclude Include="mysql\include\sslopt-longopts.h" />
+    <ClInclude Include="mysql\include\sslopt-vars.h" />
+    <ClInclude Include="mysql\include\t_ctype.h" />
+    <ClInclude Include="mysql\include\thr_alarm.h" />
+    <ClInclude Include="mysql\include\thr_lock.h" />
+    <ClInclude Include="mysql\include\typelib.h" />
+    <ClInclude Include="mysql\include\violite.h" />
+    <ClInclude Include="mysql\include\waiting_threads.h" />
+    <ClInclude Include="mysql\include\wqueue.h" />
+    <ClInclude Include="mysql\include\atomic\x86-gcc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AvalonCore\AvalonCore.vcxproj">
+      <Project>{290bffab-0a7f-4de9-886d-6f6b86b18b45}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

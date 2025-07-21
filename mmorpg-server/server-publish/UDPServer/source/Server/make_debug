@@ -1,0 +1,84 @@
+#!/usr/bin/env bash
+home=`pwd`
+bin=Bin/Debug
+sdk=sdk/Debug
+dest=(ExternStatServer HallServer ScoreServer CatalogServer FriendDBServer \
+	HotNewsServer LogicServer ProfileServer ChestServer GameDBServer \
+	ItemDBServer MarketServer RouterServer StateServer ConnectServer \
+	GMServer MonitorServer WebConnectServer)
+dest_count=${#dest[*]}
+i=0
+while [ $i -lt $dest_count ]
+do
+	rm -rf $home/$bin/${dest[$i]}
+	mkdir -p $home/$bin/${dest[$i]}
+	let i++
+done
+
+rm -rf $home/Lib/Debug/libtinyxml.a
+
+mkdir -p $home/$sdk
+server=(LibSource ExternStatServer/src HallServer ScoreServer/src CatalogServer/Catalog \
+	FriendDBServer HotNewsServer/src LogicServer ProfileServer ChestServer/src \
+	 GameDBServer ItemDBServer MarketServer/src RouterServer StateServer/state connsvrd \
+	 Gmserver MonitorServer/src WebConnsvrd)
+lib=(Common Connector lzma public tinyxml)
+
+server_count=${#server[*]}
+lib_count=${#lib[*]}
+
+i=0
+while [ $i -lt $server_count ]
+do
+	if [ "${server[$i]}"x = "LibSource"x ];then
+		j=0
+		while [ $j -lt $lib_count ]
+		do
+			cd $home/${server[$i]}/${lib[$j]}
+			if [ $? -eq 0 ]; then
+                                echo "success cd "${lib[$j]}
+                        else
+                                exit 0
+                        fi
+			mkdir -p .objs
+			mkdir -p ../.objs
+			if [ "${lib[$j]}"x = "Common"x ];then
+                                make -f Makefile_MT clean;make -f Makefile_MT
+                        fi
+			make clean;make
+			if [ $? -eq 0 ]; then
+				echo "success"${lib[$j]}
+			else
+				exit 0
+			fi
+			if [ "${lib[$j]}"x = "tinyxml"x ];then
+				make install
+			fi
+			let j++
+		done
+	else
+		cd $home/${server[$i]}
+		mkdir -p .objs
+		make -f Makefile_debug clean;make -f Makefile_debug
+		if [ $? -eq 0 ]; then
+                	echo "success"${server[$i]}
+                else
+                        exit 0
+                fi
+		make -f Makefile_debug install
+	fi
+	let i++
+	sleep 3
+done
+
+
+i=0
+while [ $i -lt $dest_count ]
+do
+	mv  $home/$bin/${dest[$i]}/* $home/$sdk
+	echo "mv "$home/$bin/${dest[$i]}/*" "$home/$sdk
+        let i++
+done
+echo "success && finish "
+cd $home/Game
+./MakeGame

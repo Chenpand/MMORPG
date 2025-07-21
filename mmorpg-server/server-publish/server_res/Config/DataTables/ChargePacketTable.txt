@@ -1,0 +1,5 @@
+1	1	深渊尝鲜包	10	6	6	1493049600	1496073600	3	-	200000002:40	UIFlatten/Image/tmp/UI_Common_IconBx.png:UI_Common_IconBx
+2	2	刷图药品包	40	6	6	1493049600	1496073600	1	-	600000006:10|200001001:20	UIFlatten/Image/tmp/UI_Common_IconBx.png:UI_Common_IconBx
+3	3	折扣大礼包	2	1	1	1489739645	1489826100	1	2	800000036:1|800000034:1	UIFlatten/Image/tmp/UI_Common_IconBx.png:UI_Common_IconBx
+4	4	折扣大礼包	789	6	0	1489739645	1489826100	0	2	800000036:1|800000007:1	UIFlatten/Image/tmp/UI_Common_IconBx.png:UI_Common_IconBx
+5	5	折扣大礼包	888	50	0	1489739645	1489826100	2	4	600000002:50|800000034:1	UIFlatten/Image/tmp/UI_Common_IconBx.png:UI_Common_IconBx

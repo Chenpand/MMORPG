@@ -1,0 +1,4 @@
+ALTER TABLE `t_item` ADD COLUMN `addpreciousbead`  varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' AFTER `fashionattrnum`;
+ALTER TABLE `t_guild_storage` ADD COLUMN `addpreciousbead`  varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' AFTER `fashionattrnum`;
+ALTER TABLE `t_auction_new` ADD COLUMN `addpreciousbead`  varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' AFTER `fashionattrnum`;
+ALTER TABLE `t_mailitem` ADD COLUMN `addpreciousbead`  varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' AFTER `fashionattrnum`;

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- type:服务器类型 id:服务器id  internaladdress:内部地址 externaladdress:外部地址 -->
+  <!-- 验证中心服务器 -->
+  <server type="20" id="1" internaladdress="127.0.0.1:20000" />
+</root>

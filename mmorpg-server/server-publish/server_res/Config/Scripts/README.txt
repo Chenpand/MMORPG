@@ -1,0 +1,9 @@
+Common/			---存放脚本共用模块。
+Item/  			---道具脚本，一个道具类型对应一个脚本，一般任务道具使用走脚本流程。文件名格式:item_道具id.lua，如item_000403.lua。
+Npc/			---npc脚本，一种npc对应一个脚本，用于任务对话和功能选项。文件名格式npc_NPC的id.lua，如npc_210005.lua。
+Scene/			---Scene脚本，编写副本或战场等逻辑。文件名格式scene_场景id.lua，如scene_000301.lua。
+Task/			---任务脚本，一个任务对应一个脚本。文件名格式task_任务id.lua，如task_003001.lua。
+AI/				---ai脚本，一种怪物对应一个脚本。文件名格式ai_怪物id.lua，如ai_210005.lua。
+WorldTimer.lua	---定时器，主要控制活动时间。
+Counter.lua		---玩家周期计数的注册。
+SysNotify.lua	---系统提示

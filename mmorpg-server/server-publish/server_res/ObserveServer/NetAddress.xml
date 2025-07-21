@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- type:服务器类型 id:服务器id  -->
+  <!-- 跨服服务器 -->
+  <server type="27" id="1" internaladdress="192.168.2.95:10001" />  
+</root>

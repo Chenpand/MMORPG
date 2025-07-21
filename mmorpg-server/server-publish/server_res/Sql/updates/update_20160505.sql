@@ -1,0 +1,2 @@
+ALTER TABLE `t_player_info` ADD COLUMN `pkvalue`  int(10) UNSIGNED NOT NULL DEFAULT 0 COMMENT '决斗场经验' AFTER `itembar`;
+ALTER TABLE `t_player_info` ADD COLUMN `fatigue` varchar(128) NOT NULL DEFAULT '';

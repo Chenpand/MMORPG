@@ -1,0 +1,2 @@
+ALTER TABLE `t_player_info` ADD COLUMN `last_reset_gjarpoint`  int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `season_attr_end_time`;
+ALTER TABLE `t_player_info` ADD COLUMN `last_reset_mjarpoint`  int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `last_reset_gjarpoint`;

@@ -1,0 +1,42 @@
+<%- include new_header %>
+
+    <body onresize="javascript:auto_height()">
+        
+        <%- include main_side %>
+
+        <div class="loading" style="display: none"></div>
+
+        <script type="text/javascript" language="javascript">
+            function auto_height() {
+                var ifm = document.getElementById("frame_content");
+                var subWeb = document.frames ? document.frames["frame_content"].document : ifm.contentDocument;
+                if (ifm != null && subWeb != null) {
+                    if (subWeb.body.scrollHeight > window.outerHeight){
+                        ifm.height = subWeb.body.scrollHeight;
+                    }
+                    else {
+                        ifm.height = window.outerHeight;
+                    }
+                }
+            }
+            function auto_link_html(url){
+                var ifm = document.getElementById("frame_content");
+                ifm.setAttribute("src", url);
+            }
+            function show_loading(show){
+                if (show == true){
+                    $(".loading").show();
+                }
+                else {
+                    $(".loading").hide();
+                }
+            }
+            function set_global_data(name, data){
+                $(window).data(name, data);
+            }
+            function get_global_data(name){
+                return $(window).data(name);
+            }
+        </script>
+
+<%- include new_footer %>

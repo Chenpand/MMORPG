@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 社会服务器 -->
+  <server type="7" id="0" internaladdress="127.0.0.1:5070" />
+  <!-- 中心服务器 -->
+  <server type="8" id="0" internaladdress="127.0.0.1:8888" />
+  <!-- 跨服挑战服 -->
+  <server type="9" id="0" internaladdress="127.0.0.1:9992" />
+  <!-- 跨服场景服 -->
+  <server type="10" id="1" internaladdress="127.0.0.1:9991" />
+  <!--<server type="10" id="2" internaladdress="192.168.88.215:9992" />-->
+  <!-- 排行服 -->
+  <server type="11" id="0" internaladdress="127.0.0.1:9995" />
+  
+  <server type="12" id="0" internaladdress="127.0.0.1:3088" />
+
+  <!-- 匹配服务器 -->
+  <server type="15" id="0" internaladdress="127.0.0.1:6000" />
+  
+  <!-- 目录服务器 -->
+  <server type="16" id="0" diraddress="127.0.0.1:41234" />
+</root>

@@ -1,0 +1,34 @@
+############################################################
+#some variables
+############################################################
+CC	= gcc
+CXX	= g++
+CPP	= g++
+AR	= ar
+
+###########################################################
+#some flags
+###########################################################
+ARFLAGS = cr
+CPPFLAGS= -g -Wall $(PUBLIC_INC)
+
+LDFLAGS = -g -L$(COMMONLIB_DIR_DEBUG) -lconnector  -lpublic -lcommon -ltinyxml -llzma -ljson
+
+###########################################################
+#some path definition
+###########################################################
+COMMON_INCLUDE_DIR = $(SOURCE_ROOT)/include
+
+INCLUDE_DIR = $(SERVER_ROOT)/include
+
+BOOST_DIR = ${HOME}/boost/boost_1_37_0
+
+COMMONLIB_DIR_RELEASE = $(SERVER_ROOT)/Lib/Release
+COMMONLIB_DIR_DEBUG = $(SERVER_ROOT)/Lib/Debug
+
+#OBJ_DIR	= ./.objs
+
+PUBLIC_INC	= -I$(COMMON_INCLUDE_DIR) -I$(INCLUDE_DIR) -I$(BOOST_DIR)
+
+SRC = $(wildcard *.cpp) $(wildcard *.c) $(wildcard *.cxx)
+OBJS = $(addprefix $(OBJ_DIR)/,$(subst .cpp,.o,$(SRC)))

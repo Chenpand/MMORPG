@@ -1,0 +1,52 @@
+<%- include new_header %>
+
+    <body id="contentBody" onload="">
+        <%- include main_side %>
+
+        <div class="container-fluid">
+        <h3 class="page-header" id="frame_title">道具管理--发放道具</h3>
+
+        <!--物品信息-->
+         <div class="panel panel-default">
+            <div class="panel-heading">
+                赠送物品
+            </div>
+            <div class="panel-body">
+                <form method="post" enctype="multipart/form-data">
+                <div class="panel-body1">
+                    <span class="input-group">玩家ID:</span><input type="text" name="playerid"/>
+                </div>
+                <div class="panel-body1">
+                    <span class="input-group">批量发送:</span><input type="file" name="file">
+                </div>
+                <div class="panel-body1">
+                    <input name="server_broadcast" type="checkbox" value="1" />全服发放
+                </div>
+                <div class="panel-body1">
+                    <span class="input-group">道具ID:</span><input type="text" name="itemid"/>
+                </div>
+                <div class="panel-body1">
+                    <span class="input-group">道具数量:</span><input type="text" name="itemnum"/>
+                </div>
+                <div class="panel-body1">
+                    <span class="input-group">邮件内容:</span><textarea name="content" rows="5" cols="50"></textarea>
+                </div>
+                <div class="panel-body1">
+                    <input type="submit" value="提交"/>
+                </div>
+                </form>
+            </div>
+        </div>
+
+        <% if (success) { %>
+            <script type="text/javascript">
+                duihua('<%= success %>');
+            </script>
+        <% } %>
+        <% if (error) { %>
+            <script type="text/javascript">
+                duihua('<%= error %>');
+            </script>
+        <% } %>
+
+<%- include new_footer %>

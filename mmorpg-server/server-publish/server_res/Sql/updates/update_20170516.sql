@@ -1,0 +1,20 @@
+ALTER TABLE `t_player_info` ADD COLUMN `season_uplevel_records` varchar(128) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT '赛季晋级赛记录';
+ALTER TABLE `t_player_info` ADD COLUMN `season_attr` tinyint(3) UNSIGNED NOT NULL DEFAULT 0 COMMENT '赛季属性';
+ALTER TABLE `t_player_info` ADD COLUMN `season_attr_end_time` int(10) UNSIGNED NOT NULL DEFAULT 0 COMMENT '赛季属性结束时间';
+ALTER TABLE `t_player_info` ADD COLUMN `season_king_mark_count` smallint(5) UNSIGNED NOT NULL DEFAULT 0 COMMENT '王者印记';
+
+ALTER TABLE `t_auction_new` ADD COLUMN `pvpdisphyatk`  int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `dismagdef`;
+ALTER TABLE `t_auction_new` ADD COLUMN `pvpdismagatk`  int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `pvpdisphyatk`;
+ALTER TABLE `t_auction_new` ADD COLUMN `pvpdisphydef`  int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `pvpdismagatk`;
+ALTER TABLE `t_auction_new` ADD COLUMN `pvpdismagdef`  int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `pvpdisphydef`;
+ALTER TABLE `t_auction_new` ADD COLUMN `strenthnum`  int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `pvpdismagdef`;
+ALTER TABLE `t_auction_new` ADD COLUMN `valuedscore`  int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `strenthnum`;
+ALTER TABLE `t_auction_new` ADD COLUMN `setqlnum`  int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `valuedscore`;
+ALTER TABLE `t_mailitem` ADD COLUMN `pvpdisphyatk`  int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `sealcount`;
+ALTER TABLE `t_mailitem` ADD COLUMN `pvpdismagatk`  int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `pvpdisphyatk`;
+ALTER TABLE `t_mailitem` ADD COLUMN `pvpdisphydef`  int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `pvpdismagatk`;
+ALTER TABLE `t_mailitem` ADD COLUMN `pvpdismagdef`  int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `pvpdisphydef`;
+ALTER TABLE `t_mailitem` ADD COLUMN `strenthnum`  int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `pvpdismagdef`;
+ALTER TABLE `t_mailitem` ADD COLUMN `valuedscore`  int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `strenthnum`;
+ALTER TABLE `t_mailitem` ADD COLUMN `setqlnum`  int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `valuedscore`;
+CREATE INDEX `name` ON `t_player_info`(`name`) USING BTREE ;

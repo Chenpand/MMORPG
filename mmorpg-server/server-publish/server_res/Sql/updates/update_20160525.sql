@@ -1,0 +1,1 @@
+ALTER TABLE `t_dungeon` ADD COLUMN `best_record_time`  int(20) UNSIGNED NOT NULL DEFAULT 0 AFTER `best_score`;

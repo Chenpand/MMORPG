@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logsvrd
+      id                   =   "1"
+      
+      core_key             =   "580100"
+      cs_channel_key       =   "580102"
+      sc_channel_key       =   "580103"
+      
+      udp_cs_channel_key   =   "580106"
+      udp_sc_channel_key   =   "580107"
+      
+      log_level            =   "11"
+      
+      log_table           =   "./config/log_table.xml"
+  />

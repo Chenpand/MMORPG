@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+	<udplog_server>
+		<item ip="192.168.2.251" port="8800" />
+		<item ip="192.168.2.251" port="8801" />
+		<item ip="192.168.2.251" port="8802" />
+		<item ip="192.168.2.251" port="8803" />
+	</udplog_server>
+</config>

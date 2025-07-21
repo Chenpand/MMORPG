@@ -1,0 +1,1 @@
+ALTER TABLE `t_player_info` ADD COLUMN `death_coin`  int(10) UNSIGNED NOT NULL AFTER `fatigue`;

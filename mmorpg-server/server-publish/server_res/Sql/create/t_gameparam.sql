@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS `t_gameparam`(
+	`guid`	BIGINT	UNSIGNED NOT NULL,	#主键
+	`name`	VARCHAR(32)	NOT NULL,		#名字 
+	`value`	INT	UNSIGNED NOT NULL DEFAULT 0, #值
+	PRIMARY KEY(`guid`)
+);

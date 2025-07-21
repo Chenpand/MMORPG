@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+
+        <title>阿拉德之怒</title>
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css" type="text/css" />
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+
+        <link rel="stylesheet" href="bootstrap-3.3.5/dist/css/bootstrap.css" type="text/css" />
+        <style type="text/css">
+            .logoncss{width:300px; text-align:center; margin-left:auto; margin-right:auto;}
+            .spacecss{height:15px;}
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="logoncss">
+            <div class="form-signin">
+                <form action="/login" method="post">
+                    <h2 class="form-signin-heading">阿拉德之怒</h2>
+                    <div class="spacecss"></div>
+                    <label for="inputEmail" class="sr-only">用户名</label>
+                    <input type="input" name="username" id="name" class="form-control" placeholder="用户账号" required autofocus>
+                    <div class="spacecss"></div>
+                    <label for="inputPassword" class="sr-only" >密码</label>
+                    <input type="password" name="password" id="pass" class="form-control" placeholder="密码" required>
+                    <div class="spacecss"></div>
+                    <% if (error) { %>
+                        <h4 class='form-signin-heading'><font color='#FF0000'><%= error %></font></h4>
+                    <% } %>
+                    <div class="spacecss"></div>
+                    <input type="submit" class="btn btn-lg btn-primary btn-block" value="登陆">
+                </form>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <script src="/jquery-2.1.4.js"></script>
+        <script src="/bootstrap/dist/js/bootstrap.js"></script>
+        <!--<script src="/bootstrap/docs/assets/js/docs.min.js"></script>-->
+    
+    </body>
+</html>

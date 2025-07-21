@@ -1,0 +1,279 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9541E7DD1CCE0E3E00383DAF /* snappy-c.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9541E7D21CCE0E3E00383DAF /* snappy-c.cc */; };
+		9541E7DE1CCE0E3E00383DAF /* snappy-sinksource.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9541E7D51CCE0E3E00383DAF /* snappy-sinksource.cc */; };
+		9541E7DF1CCE0E3E00383DAF /* snappy-stubs-internal.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9541E7D71CCE0E3E00383DAF /* snappy-stubs-internal.cc */; };
+		9541E7E01CCE0E3E00383DAF /* snappy.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9541E7DA1CCE0E3E00383DAF /* snappy.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9541E7C11CCE0DB400383DAF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9541E7C31CCE0DB400383DAF /* libsnappy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsnappy.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9541E7D01CCE0E3E00383DAF /* configure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = configure.h; sourceTree = "<group>"; };
+		9541E7D21CCE0E3E00383DAF /* snappy-c.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "snappy-c.cc"; sourceTree = "<group>"; };
+		9541E7D31CCE0E3E00383DAF /* snappy-c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "snappy-c.h"; sourceTree = "<group>"; };
+		9541E7D41CCE0E3E00383DAF /* snappy-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "snappy-internal.h"; sourceTree = "<group>"; };
+		9541E7D51CCE0E3E00383DAF /* snappy-sinksource.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "snappy-sinksource.cc"; sourceTree = "<group>"; };
+		9541E7D61CCE0E3E00383DAF /* snappy-sinksource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "snappy-sinksource.h"; sourceTree = "<group>"; };
+		9541E7D71CCE0E3E00383DAF /* snappy-stubs-internal.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "snappy-stubs-internal.cc"; sourceTree = "<group>"; };
+		9541E7D81CCE0E3E00383DAF /* snappy-stubs-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "snappy-stubs-internal.h"; sourceTree = "<group>"; };
+		9541E7D91CCE0E3E00383DAF /* snappy-stubs-public.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "snappy-stubs-public.h"; sourceTree = "<group>"; };
+		9541E7DA1CCE0E3E00383DAF /* snappy.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = snappy.cc; sourceTree = "<group>"; };
+		9541E7DB1CCE0E3E00383DAF /* snappy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snappy.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9541E7C01CCE0DB400383DAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9541E7BA1CCE0DB400383DAF = {
+			isa = PBXGroup;
+			children = (
+				9541E7C41CCE0DB400383DAF /* Products */,
+				9541E7CF1CCE0E3E00383DAF /* src */,
+			);
+			sourceTree = "<group>";
+		};
+		9541E7C41CCE0DB400383DAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9541E7C31CCE0DB400383DAF /* libsnappy.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9541E7CF1CCE0E3E00383DAF /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9541E7D01CCE0E3E00383DAF /* configure.h */,
+				9541E7D21CCE0E3E00383DAF /* snappy-c.cc */,
+				9541E7D31CCE0E3E00383DAF /* snappy-c.h */,
+				9541E7D41CCE0E3E00383DAF /* snappy-internal.h */,
+				9541E7D51CCE0E3E00383DAF /* snappy-sinksource.cc */,
+				9541E7D61CCE0E3E00383DAF /* snappy-sinksource.h */,
+				9541E7D71CCE0E3E00383DAF /* snappy-stubs-internal.cc */,
+				9541E7D81CCE0E3E00383DAF /* snappy-stubs-internal.h */,
+				9541E7D91CCE0E3E00383DAF /* snappy-stubs-public.h */,
+				9541E7DA1CCE0E3E00383DAF /* snappy.cc */,
+				9541E7DB1CCE0E3E00383DAF /* snappy.h */,
+			);
+			name = src;
+			path = ../src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9541E7C21CCE0DB400383DAF /* snappy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9541E7CC1CCE0DB400383DAF /* Build configuration list for PBXNativeTarget "snappy" */;
+			buildPhases = (
+				9541E7BF1CCE0DB400383DAF /* Sources */,
+				9541E7C01CCE0DB400383DAF /* Frameworks */,
+				9541E7C11CCE0DB400383DAF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = snappy;
+			productName = snappy;
+			productReference = 9541E7C31CCE0DB400383DAF /* libsnappy.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9541E7BB1CCE0DB400383DAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = hegu;
+				TargetAttributes = {
+					9541E7C21CCE0DB400383DAF = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 9541E7BE1CCE0DB400383DAF /* Build configuration list for PBXProject "snappy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9541E7BA1CCE0DB400383DAF;
+			productRefGroup = 9541E7C41CCE0DB400383DAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9541E7C21CCE0DB400383DAF /* snappy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9541E7BF1CCE0DB400383DAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9541E7E01CCE0E3E00383DAF /* snappy.cc in Sources */,
+				9541E7DD1CCE0E3E00383DAF /* snappy-c.cc in Sources */,
+				9541E7DE1CCE0E3E00383DAF /* snappy-sinksource.cc in Sources */,
+				9541E7DF1CCE0E3E00383DAF /* snappy-stubs-internal.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9541E7CA1CCE0DB400383DAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9541E7CB1CCE0DB400383DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9541E7CD1CCE0DB400383DAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = ../src/;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9541E7CE1CCE0DB400383DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = ../src/;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9541E7BE1CCE0DB400383DAF /* Build configuration list for PBXProject "snappy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9541E7CA1CCE0DB400383DAF /* Debug */,
+				9541E7CB1CCE0DB400383DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9541E7CC1CCE0DB400383DAF /* Build configuration list for PBXNativeTarget "snappy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9541E7CD1CCE0DB400383DAF /* Debug */,
+				9541E7CE1CCE0DB400383DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9541E7BB1CCE0DB400383DAF /* Project object */;
+}

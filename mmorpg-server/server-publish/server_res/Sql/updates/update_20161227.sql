@@ -1,0 +1,1 @@
+ALTER TABLE `t_account` ADD COLUMN `gmauthority`  tinyint(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `reg_time`;

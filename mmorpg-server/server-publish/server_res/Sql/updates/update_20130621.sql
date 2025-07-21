@@ -1,0 +1,2 @@
+
+ALTER TABLE `t_player_info` ADD COLUMN `tourzone`	SMALLINT		UNSIGNED NOT NULL DEFAULT 0;

@@ -1,0 +1,1 @@
+ALTER TABLE `t_player_info` ADD COLUMN `match_score`  int(10) UNSIGNED NOT NULL DEFAULT 1000 COMMENT 'Æ¥Åä»ý·Ö' AFTER `warpstone`;

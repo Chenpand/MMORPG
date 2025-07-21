@@ -1,0 +1,2 @@
+ALTER TABLE `t_account` ADD COLUMN `role_delete_time` int(10) UNSIGNED NOT NULL DEFAULT 0 COMMENT '角色删除时间点' AFTER `storage_size`;
+ALTER TABLE `t_account` ADD COLUMN `role_recover_time` int(10) UNSIGNED NOT NULL DEFAULT 0 COMMENT '角色恢复时间点' AFTER `role_delete_time`;

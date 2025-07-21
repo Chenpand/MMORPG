@@ -1,0 +1,1 @@
+ALTER TABLE `t_announcement` ADD COLUMN `dataid` int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `color`;

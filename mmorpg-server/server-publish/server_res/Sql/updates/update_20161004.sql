@@ -1,0 +1,1 @@
+ALTER TABLE `t_player_info` ADD COLUMN `vipexp` int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `viplvl`;

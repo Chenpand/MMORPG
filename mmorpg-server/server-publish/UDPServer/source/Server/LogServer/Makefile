@@ -1,0 +1,31 @@
+include ../MakeFile_Public
+
+
+TARGET = logsvrd
+
+
+CURRENT_OBJ_DIR = ./.objs
+CHATSVR_LD_FLAG = -g -L$(COMMONLIB_DIR_DEBUG) -lconnector -lpublic -ltinyxml -llzma -lcommon_mt -lpthread -ldl
+CHATSVR_CPP_FLAG = $(CPPFLAGS) -DDEBUG -D__MULTI_THREAD__
+
+SRC = $(wildcard *.cpp) $(wildcard *.c) $(wildcard *.cxx)
+OBJS = $(addprefix $(CURRENT_OBJ_DIR)/,$(subst .cpp,.o,$(SRC)))
+
+CHATSVR_BIN_DEBUG_DIR = $(PROJECT_ROOT)/tmp/LogServer/
+CHATSVR_BIN_RELEASE_DIR = $(PROJECT_ROOT)/tmp/LogServer/
+
+
+all : $(TARGET)
+
+$(TARGET): $(OBJS)
+	$(CXX)  -o $@ $(OBJS)  $(CHATSVR_LD_FLAG)
+$(CURRENT_OBJ_DIR)/%.o : %.cpp
+	@if [ ! -e $(CURRENT_OBJ_DIR) ]; then \
+		mkdir $(CURRENT_OBJ_DIR); \
+	fi
+	$(CXX) $(CHATSVR_CPP_FLAG) -c $< -o $@
+
+install:
+	cp -f $(TARGET) $(CHATSVR_BIN_DEBUG_DIR)
+clean:
+	rm -f $(TARGET) $(OBJS)

@@ -1,0 +1,11 @@
+#捕鱼表
+CREATE TABLE IF NOT EXISTS `t_fish`(
+	`guid`			BIGINT UNSIGNED NOT NULL,				#主键(钓鱼者)
+	`name`			VARCHAR(32)	NOT NULL,					#钓鱼者名字
+	`herring`	SMALLINT UNSIGNED NOT NULL DEFAULT 0,		#青鱼数量
+	`carp`		SMALLINT UNSIGNED NOT NULL DEFAULT 0,		#鲫鱼数量
+	`doll`		SMALLINT UNSIGNED NOT NULL DEFAULT 0,		#娃娃鱼数量
+	`goldcarp`	SMALLINT UNSIGNED NOT NULL DEFAULT 0,		#黄金龙鲤数量
+	`score`			INT UNSIGNED NOT NULL DEFAULT 0,		#积分	
+	PRIMARY KEY(`guid`)	
+);

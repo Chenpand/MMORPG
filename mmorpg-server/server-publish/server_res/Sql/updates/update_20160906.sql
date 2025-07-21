@@ -1,0 +1,1 @@
+ALTER TABLE `t_player_info` ADD COLUMN `avatar`  varchar(128) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' AFTER `pk_coin`;

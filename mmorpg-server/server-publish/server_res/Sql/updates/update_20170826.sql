@@ -1,0 +1,1 @@
+ALTER TABLE `t_mall` ADD COLUMN `goods_subtype`  tinyint(3) UNSIGNED NOT NULL AFTER `goods_type`;

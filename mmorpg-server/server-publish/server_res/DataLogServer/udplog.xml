@@ -1,0 +1,15 @@
+<? xml version="1.0" encoding="utf-8" ?>
+<config>
+	<datalogdir dir="DataLog/" />
+	<logfile>
+		<item typeinfo="login"	/> 
+		<item typeinfo="pay"	/> 
+		<item typeinfo="props"	/> 
+		<item typeinfo="act"	/> 
+		<item typeinfo="refer"	/> 
+		<item typeinfo="guide"	/> 
+		<item typeinfo="inventory"	/>
+		<item typeinfo="ser" 	/> 
+		<item typeinfo="feed"	/> 
+	</logfile>
+</config>

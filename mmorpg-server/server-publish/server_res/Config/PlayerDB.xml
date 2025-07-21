@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <tables>
+	<table name="t_activitygiftbag"	player_id="owner" />
+	<table name="t_auction" 			player_id="owner" />
+	<table name="t_challenger" 		player_id="guid" />
+	<table name="t_counter" 		player_id="owner" />
+	<table name="t_item" 			player_id="owner" />
+	<table name="t_mail"			player_id="owner" />
+	<table name="t_mailitem"		player_id="owner" />
+	<table name="t_offline_event"	player_id="owner" />
+	<table name="t_pet"				player_id="owner" />
+	<table name="t_player_info_name"	player_name="name" />
+	<table name="t_relation"		player_id="owner" />
+	<table name="t_relation"		player_id="id"	/>
+	<table name="t_tribe_member"	player_id="guid"  />
+	<table name="t_pasture"			player_id="guid"  />
+  </tables>
+  
+  <uniqueName table="t_player_info" column="name">
+	<relatedColumn table="t_relation" column="name" key="id"/>
+	<relatedColumn table="t_tribe_member" column="name" key="guid" />
+	<relatedColumn table="t_sortlist" column="name" key="id" />
+	<relatedColumn table="t_sortlist" column="ownername" key="ownerid" />
+  </uniqueName>
+  
+  <uniqueName table="t_tribe" column="name">
+  </uniqueName>
+</root>

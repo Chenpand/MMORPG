@@ -1,0 +1,1 @@
+ALTER TABLE `t_pk_statistic` ADD COLUMN `cur_lose_streak`  int(10) NOT NULL DEFAULT 0 COMMENT '当前连败场数' AFTER `cur_win_streak`;

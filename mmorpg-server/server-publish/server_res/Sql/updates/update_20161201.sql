@@ -1,0 +1,1 @@
+ALTER TABLE `t_player_info` ADD COLUMN `guild_contri`  int(10) UNSIGNED NOT NULL DEFAULT 0 AFTER `tower_wipeout_end_time`;

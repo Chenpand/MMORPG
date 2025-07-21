@@ -1,0 +1,1 @@
+ALTER TABLE `t_player_info` ADD COLUMN `bootflag`  varchar(32) NOT NULL DEFAULT ''
